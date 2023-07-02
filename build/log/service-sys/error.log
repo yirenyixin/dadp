@@ -1,0 +1,5 @@
+00:07:00.772 [http-nio-9801-exec-9] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+00:07:00.774 [http-nio-9801-exec-9] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+17:11:31.247 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+17:11:31.247 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+17:16:18.907 [http-nio-9801-exec-2] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,69] - 操作鉴权null

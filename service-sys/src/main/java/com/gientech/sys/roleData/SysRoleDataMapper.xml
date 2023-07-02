@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.sys.roleData.SysRoleDataMapper">
+	
+	<!-- 查询条件置顶 -->
+	<sql id="sysRoleDataList_filter">
+		<where>
+			<trim suffixOverrides="and">
+				<if test="dto.roleId != null and dto.roleId !=''">
+					<![CDATA[	a.ROLE_ID = #{dto.roleId} and	]]>
+				</if>
+			</trim>
+		</where>
+	</sql>
+
+	<select id="getSysRoleDataList" resultType="com.gientech.sys.roleData.SysRoleDataVO" parameterType="com.gientech.sys.roleData.SysRoleDataDTO4List">
+		select
+
+		a.ROLE_DATA_ID as roleDataId,
+		a.ROLE_ID as roleId,
+		a.TABLE_NAME as tableName,
+		a.AUTH_TYPE as authType,
+		a.AUTH_SCOPE_ID as authScopeId,
+		a.AUTH_SCOPE_NAME as authScopeName,
+		a.IS_INCLUDE_SUB as isIncludeSub,
+		a.VER as ver
+
+		from T_SYS_ROLE_DATA a
+
+		<include refid="sysRoleDataList_filter" />
+
+        order by a.AUTH_TYPE asc, a.ROLE_DATA_ID asc
+	</select>
+
+</mapper>

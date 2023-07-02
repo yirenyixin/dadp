@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dadp</artifactId>
+        <groupId>com.gientech</groupId>
+        <version>4.3</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>service-study</artifactId>
+    <!-- 编译时忽略单元测试相关代码 -->
+    <properties>
+        <skipTests>true</skipTests>
+    </properties>
+    <dependencies>
+        <!-- 内部依赖 -->
+        <dependency>
+            <groupId>com.gientech</groupId>
+            <artifactId>dadp-core</artifactId>
+            <version>4.3</version>
+        </dependency>
+        <!-- pinyin4j拼音转换和排序 -->
+        <dependency>
+            <groupId>com.belerweb</groupId>
+            <artifactId>pinyin4j</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!--fork 设置为 true，实际上是会在 maven 编译的时候新创建一个虚拟机执行。这个新创建 JVM 就是这里的 fork。它速度会稍慢一些，但是隔离性非常好。 -->
+                    <fork>true</fork>
+                    <addResources>true</addResources>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

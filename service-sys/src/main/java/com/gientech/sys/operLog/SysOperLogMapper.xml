@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.sys.operLog.SysOperLogMapper">
+
+	<!-- 查询条件置顶 -->
+	<sql id="sysOperLogList_filter">
+		<where>
+			<trim suffixOverrides="and">
+				<if test="dto.dateFrom != null">
+					<![CDATA[	a.LOG_TIME >= #{dto.dateFrom} and	]]>
+				</if>
+				<if test="dto.dateTo != null">
+					<![CDATA[	a.LOG_TIME <= #{dto.dateTo} and	]]>
+				</if>
+				<if test="dto.moduleName != null and dto.moduleName !=''">
+					<![CDATA[	a.MODULE_NAME like #{dto.moduleName} and	]]>
+				</if>
+				<if test="dto.operType != null and dto.operType !=''">
+					<![CDATA[	a.OPER_TYPE = #{dto.operType} and	]]>
+				</if>
+				<if test="dto.operSource != null and dto.operSource !=''">
+					<![CDATA[	a.OPER_SOURCE = #{dto.operSource} and	]]>
+				</if>
+				<if test="dto.userId != null and dto.userId !=''">
+					<![CDATA[	a.USER_ID like #{dto.userId} and	]]>
+				</if>
+				<if test="dto.orgId != null and dto.orgId !=''">
+					<![CDATA[	a.ORG_ID like #{dto.orgId} and	]]>
+				</if>
+				<if test="dto.reqUrl != null and dto.reqUrl !=''">
+					<![CDATA[	a.REQ_URL like #{dto.reqUrl} and	]]>
+				</if>
+				<if test="dto.reqMethod != null and dto.reqMethod !=''">
+					<![CDATA[	a.REQ_METHOD like #{dto.reqMethod} and	]]>
+				</if>
+				<if test="dto.reqMode != null and dto.reqMode !=''">
+					<![CDATA[	a.REQ_MODE like #{dto.reqMode} and	]]>
+				</if>
+				<if test="dto.ipAddr != null and dto.ipAddr !=''">
+					<![CDATA[	a.IP_ADDR like #{dto.ipAddr} and	]]>
+				</if>
+				<if test="dto.reqParam != null and dto.reqParam !=''">
+					<![CDATA[	a.REQ_PARAM like #{dto.reqParam} and	]]>
+				</if>
+				<if test="dto.result != null and dto.result !=''">
+					<![CDATA[	a.RESULT like #{dto.result} and	]]>
+				</if>
+				<if test="dto.isOk != null and dto.isOk !=''">
+					<![CDATA[	a.IS_OK = #{dto.isOk} and	]]>
+				</if>
+			</trim>
+		</where>
+	</sql>
+
+	<select id="getSysOperLogList" resultType="com.gientech.sys.operLog.SysOperLogVO" parameterType="com.gientech.sys.operLog.SysOperLogDTO4List">
+		select
+
+		a.OPER_LOG_ID as operLogId,
+		a.MODULE_NAME as moduleName,
+		a.OPER_TYPE as operType,
+		a.OPER_SOURCE as operSource,
+		a.USER_ID as userId,
+		a.ORG_ID as orgId,
+		a.REQ_URL as reqUrl,
+		a.REQ_METHOD as reqMethod,
+		a.REQ_MODE as reqMode,
+		a.IP_ADDR as ipAddr,
+		a.REQ_PARAM as reqParam,
+		a.RESULT as result,
+		a.IS_OK as isOk,
+		a.LOG_TIME as logTime
+
+		from T_SYS_OPER_LOG a
+
+		<include refid="sysOperLogList_filter" />
+
+		order by LOG_TIME desc
+	</select>
+
+</mapper>

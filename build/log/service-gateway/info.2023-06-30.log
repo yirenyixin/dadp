@@ -1,0 +1,165 @@
+08:55:01.148 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 20 ms to scan 1 urls, producing 3 keys and 6 values 
+08:55:01.170 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 4 keys and 9 values 
+08:55:01.179 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 3 keys and 10 values 
+08:55:01.182 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 2 ms to scan 1 urls, producing 0 keys and 0 values 
+08:55:01.192 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 1 keys and 5 values 
+08:55:01.204 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 10 ms to scan 1 urls, producing 1 keys and 7 values 
+08:55:01.212 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+08:55:01.214 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 0 ms to scan 1 urls, producing 0 keys and 0 values 
+08:55:03.224 [restartedMain] INFO  c.g.g.StartGateway - [logStartupProfileInfo,652] - The following profiles are active: dev
+08:55:04.122 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+08:55:04.128 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+08:55:13.987 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-gateway 192.168.76.1:9999 register finished
+08:55:14.010 [restartedMain] INFO  c.g.g.StartGateway - [logStarted,61] - Started StartGateway in 16.473 seconds (JVM running for 17.858)
+08:57:17.086 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+08:57:17.103 [reactor-http-nio-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+08:57:17.105 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+08:57:17.118 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+08:57:17.119 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@1bcc117a
+08:57:18.119 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:25:35.415 [Thread-25] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+09:25:35.421 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+09:25:35.424 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+09:26:14.673 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 14 ms to scan 1 urls, producing 3 keys and 6 values 
+09:26:14.688 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 4 keys and 9 values 
+09:26:14.695 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+09:26:14.698 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 2 ms to scan 1 urls, producing 0 keys and 0 values 
+09:26:14.704 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+09:26:14.710 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+09:26:14.717 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+09:26:14.719 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 1 ms to scan 1 urls, producing 0 keys and 0 values 
+09:26:16.186 [restartedMain] INFO  c.g.g.StartGateway - [logStartupProfileInfo,652] - The following profiles are active: dev
+09:26:16.773 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+09:26:16.775 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+09:26:25.493 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-gateway 192.168.76.1:9999 register finished
+09:26:25.507 [restartedMain] INFO  c.g.g.StartGateway - [logStarted,61] - Started StartGateway in 14.256 seconds (JVM running for 15.481)
+09:26:35.678 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:26:35.696 [reactor-http-nio-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+09:26:35.700 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+09:26:35.711 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:26:35.712 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@40010adb
+09:26:36.715 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:36:46.960 [Thread-25] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+09:36:46.970 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+09:36:46.973 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+09:45:41.762 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 14 ms to scan 1 urls, producing 3 keys and 6 values 
+09:45:41.776 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+09:45:41.784 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+09:45:41.787 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 2 ms to scan 1 urls, producing 0 keys and 0 values 
+09:45:41.792 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+09:45:41.800 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+09:45:41.807 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+09:45:41.809 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 0 ms to scan 1 urls, producing 0 keys and 0 values 
+09:45:43.625 [restartedMain] INFO  c.g.g.StartGateway - [logStartupProfileInfo,652] - The following profiles are active: dev
+09:45:44.479 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+09:45:44.481 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+09:45:53.895 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-gateway 192.168.76.1:9999 register finished
+09:45:53.907 [restartedMain] INFO  c.g.g.StartGateway - [logStarted,61] - Started StartGateway in 15.542 seconds (JVM running for 16.78)
+09:45:59.810 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:45:59.827 [reactor-http-nio-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+09:45:59.831 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+09:45:59.841 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@b00aeda
+09:46:30.858 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+14:21:05.813 [Thread-25] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+14:21:05.861 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+14:21:05.869 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+14:24:51.314 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 26 ms to scan 1 urls, producing 3 keys and 6 values 
+14:24:51.337 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 10 ms to scan 1 urls, producing 4 keys and 9 values 
+14:24:51.346 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 3 keys and 10 values 
+14:24:51.351 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 2 ms to scan 1 urls, producing 0 keys and 0 values 
+14:24:51.361 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 1 keys and 5 values 
+14:24:51.380 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 15 ms to scan 1 urls, producing 1 keys and 7 values 
+14:24:51.390 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 2 keys and 8 values 
+14:24:51.394 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 1 ms to scan 1 urls, producing 0 keys and 0 values 
+14:24:53.760 [restartedMain] INFO  c.g.g.StartGateway - [logStartupProfileInfo,652] - The following profiles are active: dev
+14:24:54.414 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:24:54.417 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:25:03.516 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-gateway 192.168.76.1:9999 register finished
+14:25:03.530 [restartedMain] INFO  c.g.g.StartGateway - [logStarted,61] - Started StartGateway in 16.26 seconds (JVM running for 17.645)
+14:25:20.462 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+14:25:20.481 [reactor-http-nio-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+14:25:20.485 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+14:25:20.497 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+14:25:20.499 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@5d0240cc
+14:25:21.498 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+16:02:20.382 [Thread-23] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+16:02:20.403 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+16:02:20.406 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+16:03:40.131 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 16 ms to scan 1 urls, producing 3 keys and 6 values 
+16:03:40.147 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+16:03:40.154 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+16:03:40.158 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 2 ms to scan 1 urls, producing 0 keys and 0 values 
+16:03:40.164 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 1 keys and 5 values 
+16:03:40.171 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+16:03:40.178 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+16:03:40.181 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 1 ms to scan 1 urls, producing 0 keys and 0 values 
+16:03:41.844 [restartedMain] INFO  c.g.g.StartGateway - [logStartupProfileInfo,652] - The following profiles are active: dev
+16:03:42.482 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+16:03:42.486 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+16:03:51.263 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-gateway 192.168.76.1:9999 register finished
+16:03:51.275 [restartedMain] INFO  c.g.g.StartGateway - [logStarted,61] - Started StartGateway in 14.533 seconds (JVM running for 15.761)
+16:03:56.146 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+16:03:56.164 [reactor-http-nio-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+16:03:56.169 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+16:03:56.180 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+16:03:56.182 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@35f6c342
+16:03:57.185 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+21:08:12.542 [Thread-23] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+21:08:12.589 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+21:08:12.597 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+21:08:42.880 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 18 ms to scan 1 urls, producing 3 keys and 6 values 
+21:08:42.895 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 4 keys and 9 values 
+21:08:42.902 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+21:08:42.906 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 1 ms to scan 1 urls, producing 0 keys and 0 values 
+21:08:42.912 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+21:08:42.919 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+21:08:42.926 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+21:08:42.929 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 1 ms to scan 1 urls, producing 0 keys and 0 values 
+21:08:44.568 [restartedMain] INFO  c.g.g.StartGateway - [logStartupProfileInfo,652] - The following profiles are active: dev
+21:08:45.162 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:08:45.165 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:08:54.591 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-gateway 192.168.76.1:9999 register finished
+21:08:54.602 [restartedMain] INFO  c.g.g.StartGateway - [logStarted,61] - Started StartGateway in 15.318 seconds (JVM running for 16.612)
+21:09:32.333 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+21:09:32.350 [reactor-http-nio-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+21:09:32.353 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+21:09:32.365 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+21:09:32.366 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@569437e8
+21:09:33.357 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+21:11:20.030 [Thread-23] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+21:11:20.039 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+21:11:20.042 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+21:11:30.256 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 14 ms to scan 1 urls, producing 3 keys and 6 values 
+21:11:30.271 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+21:11:30.278 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 3 keys and 10 values 
+21:11:30.281 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 1 ms to scan 1 urls, producing 0 keys and 0 values 
+21:11:30.287 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+21:11:30.294 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+21:11:30.301 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+21:11:30.303 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 1 ms to scan 1 urls, producing 0 keys and 0 values 
+21:11:31.844 [restartedMain] INFO  c.g.g.StartGateway - [logStartupProfileInfo,652] - The following profiles are active: dev
+21:11:32.381 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:11:32.383 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:11:40.943 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-gateway 192.168.76.1:9999 register finished
+21:11:40.955 [restartedMain] INFO  c.g.g.StartGateway - [logStarted,61] - Started StartGateway in 14.053 seconds (JVM running for 15.295)
+21:15:06.216 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+21:15:06.233 [reactor-http-nio-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+21:15:06.236 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+21:15:06.246 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+21:15:06.248 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@73f086ed
+21:15:07.241 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+22:14:04.250 [Thread-25] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+22:14:04.583 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+22:14:04.906 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.

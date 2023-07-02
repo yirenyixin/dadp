@@ -1,0 +1,37 @@
+17:10:59.065 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 17 ms to scan 1 urls, producing 3 keys and 6 values 
+17:10:59.083 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 4 keys and 9 values 
+17:10:59.092 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 3 keys and 10 values 
+17:10:59.096 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 2 ms to scan 1 urls, producing 0 keys and 0 values 
+17:10:59.104 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 1 keys and 5 values 
+17:10:59.115 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 1 keys and 7 values 
+17:10:59.123 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+17:10:59.126 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 1 ms to scan 1 urls, producing 0 keys and 0 values 
+17:11:00.709 [restartedMain] INFO  c.g.g.StartGateway - [logStartupProfileInfo,652] - The following profiles are active: dev
+17:11:01.293 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+17:11:01.296 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+17:11:10.345 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-gateway 192.168.76.1:9999 register finished
+17:11:10.357 [restartedMain] INFO  c.g.g.StartGateway - [logStarted,61] - Started StartGateway in 14.808 seconds (JVM running for 16.222)
+17:11:30.459 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+17:11:30.476 [reactor-http-nio-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+17:11:30.481 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+17:11:30.492 [reactor-http-nio-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+17:11:30.494 [reactor-http-nio-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@4519fae9
+17:11:31.495 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+19:57:02.203 [Thread-23] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+19:57:02.209 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+19:57:02.211 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+19:57:13.242 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 14 ms to scan 1 urls, producing 3 keys and 6 values 
+19:57:13.258 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 4 keys and 9 values 
+19:57:13.265 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 3 keys and 10 values 
+19:57:13.268 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 1 ms to scan 1 urls, producing 0 keys and 0 values 
+19:57:13.274 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+19:57:13.280 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+19:57:13.287 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+19:57:13.289 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 1 ms to scan 1 urls, producing 0 keys and 0 values 
+19:57:14.800 [restartedMain] INFO  c.g.g.StartGateway - [logStartupProfileInfo,652] - The following profiles are active: dev
+19:57:15.342 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:57:15.344 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:57:23.971 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-gateway 192.168.76.1:9999 register finished
+19:57:23.982 [restartedMain] INFO  c.g.g.StartGateway - [logStarted,61] - Started StartGateway in 14.095 seconds (JVM running for 15.409)

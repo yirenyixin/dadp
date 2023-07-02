@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.sys.config.SysConfigMapper">
+
+	<!-- 查询条件置顶 -->
+	<sql id="sysConfigList_filter">
+		<where>
+			<trim suffixOverrides="and">
+				<if test="dto.configId != null and dto.configId !=''">
+					<![CDATA[	a.CONFIG_ID like #{dto.configId} and	]]>
+				</if>
+				<if test="dto.configName != null and dto.configName !=''">
+					<![CDATA[	a.CONFIG_NAME like #{dto.configName} and	]]>
+				</if>
+				<if test="dto.configValue != null and dto.configValue !=''">
+					<![CDATA[	a.CONFIG_VALUE like #{dto.configValue} and	]]>
+				</if>
+			</trim>
+		</where>
+	</sql>
+
+	<select id="getSysConfigList" resultType="com.gientech.sys.config.SysConfigVO" parameterType="com.gientech.sys.config.SysConfigDTO4List">
+		select
+
+		a.CONFIG_ID as configId,
+		a.CONFIG_NAME as configName,
+		a.CONFIG_VALUE as configValue,
+		a.SORT_NO as sortNo,
+		a.REMARK as remark,
+		a.VER as ver
+
+		from T_SYS_CONFIG a
+
+		<include refid="sysConfigList_filter" />
+
+		order by a.SORT_NO asc, a.CONFIG_ID asc
+	</select>
+
+</mapper>

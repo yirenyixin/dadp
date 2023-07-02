@@ -1,0 +1,8 @@
+# 项目排除路径
+/dadp-common/target/
+/dadp-core/target/
+/dadp-feign/target/
+/dadp-model/target/
+/service-gateway/target/
+/service-study/target/
+/service-sys/target/

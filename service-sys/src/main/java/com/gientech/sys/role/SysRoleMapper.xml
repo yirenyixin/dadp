@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.sys.role.SysRoleMapper">
+
+    <!-- 查询条件置顶 -->
+    <sql id="sysRoleList_filter">
+        <where>
+            <trim suffixOverrides="and">
+                <if test="dto.roleId != null and dto.roleId !=''">
+                    <![CDATA[	a.ROLE_ID like #{dto.roleId} and	]]>
+                </if>
+                <if test="dto.roleName != null and dto.roleName !=''">
+                    <![CDATA[	a.ROLE_NAME like #{dto.roleName} and	]]>
+                </if>
+                <if test="dto.homeUrl != null and dto.homeUrl !=''">
+                    <![CDATA[	a.HOME_URL = #{dto.homeUrl} and	]]>
+                </if>
+                <if test="dto.remark != null and dto.remark !=''">
+                    <![CDATA[	a.REMARK like #{dto.remark} and	]]>
+                </if>
+            </trim>
+        </where>
+    </sql>
+
+    <select id="getSysRoleList" resultType="com.gientech.sys.role.SysRoleVO"
+            parameterType="com.gientech.sys.role.SysRoleDTO4List">
+        select
+
+        a.ROLE_ID as roleId,
+        a.ROLE_NAME as roleName,
+        a.HOME_URL as homeUrl,
+        a.SORT_NO as sortNo,
+        a.REMARK as remark,
+        a.VER as ver
+
+        from T_SYS_ROLE a
+
+        <include refid="sysRoleList_filter"/>
+
+        order by <![CDATA[	${dto.orderBy}	]]>
+    </select>
+
+    <select id="getRole" resultType="com.gientech.sys.role.SysRoleVO"
+            parameterType="java.lang.String">
+        select a.ROLE_ID   as roleId,
+               a.ROLE_NAME as roleName,
+               a.HOME_URL  as homeUrl,
+               a.SORT_NO   as sortNo,
+               a.REMARK    as remark,
+               a.VER       as ver
+        from T_SYS_ROLE a
+        where a.ROLE_ID = #{roleId}
+    </select>
+
+</mapper>

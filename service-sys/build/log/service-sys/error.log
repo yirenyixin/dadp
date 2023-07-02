@@ -1,0 +1,18 @@
+15:37:34.404 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+15:37:34.404 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:JWT strings must contain exactly 2 period characters. Found: 0
+15:37:34.451 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+15:37:34.452 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:JWT strings must contain exactly 2 period characters. Found: 0
+15:37:34.479 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+15:37:34.480 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:JWT strings must contain exactly 2 period characters. Found: 0
+15:37:34.509 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+15:37:34.509 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:JWT strings must contain exactly 2 period characters. Found: 0
+15:38:59.716 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+15:38:59.717 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:JWT strings must contain exactly 2 period characters. Found: 0
+15:39:37.134 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+15:39:37.134 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:JWT strings must contain exactly 2 period characters. Found: 0
+15:39:37.174 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+15:39:37.174 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:JWT strings must contain exactly 2 period characters. Found: 0
+15:39:37.202 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+15:39:37.203 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:JWT strings must contain exactly 2 period characters. Found: 0
+15:39:37.229 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+15:39:37.230 [main] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:JWT strings must contain exactly 2 period characters. Found: 0

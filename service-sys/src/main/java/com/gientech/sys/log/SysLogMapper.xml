@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.sys.log.SysLogMapper">
+
+	<!-- 查询条件置顶 -->
+	<sql id="sysLogList_filter">
+		<where>
+			<trim suffixOverrides="and">
+				<if test="dto.userId != null and dto.userId !=''">
+					<![CDATA[	a.USER_ID like #{dto.userId} and	]]>
+				</if>
+				<if test="dto.userName != null and dto.userName !=''">
+					<![CDATA[	a.USER_NAME like #{dto.userName} and	]]>
+				</if>
+				<if test="dto.logInfo != null and dto.logInfo !=''">
+					<![CDATA[	a.LOG_INFO like #{dto.logInfo} and	]]>
+				</if>
+				<if test="dto.ipAddr != null and dto.ipAddr !=''">
+					<![CDATA[	a.IP_ADDR like #{dto.ipAddr} and	]]>
+				</if>
+			</trim>
+		</where>
+	</sql>
+
+	<select id="getSysLogList" resultType="com.gientech.sys.log.SysLogVO" parameterType="com.gientech.sys.log.SysLogDTO4List">
+		select
+
+		a.LOG_ID as logId,
+		a.USER_ID as userId,
+		a.USER_NAME as userName,
+		a.LOG_INFO as logInfo,
+		a.IP_ADDR as ipAddr,
+		a.LOG_TIME as logTime
+
+		from T_SYS_LOG a
+
+		<include refid="sysLogList_filter" />
+
+		order by a.LOG_TIME desc
+	</select>
+
+</mapper>

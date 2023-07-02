@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.sys.user.SysUserMapper">
+
+	<!-- 查询条件置顶 -->
+	<sql id="sysUserList_filter">
+		<where>
+			<trim suffixOverrides="and">
+				<if test="dto.userId != null and dto.userId !=''">
+					<![CDATA[	a.USER_ID like #{dto.userId} and	]]>
+				</if>
+				<if test="dto.userName != null and dto.userName !=''">
+					<![CDATA[	a.USER_NAME like #{dto.userName} and	]]>
+				</if>
+				<if test="dto.loginName != null and dto.loginName !=''">
+					<![CDATA[	a.LOGIN_NAME like #{dto.loginName} and	]]>
+				</if>
+				<if test="dto.tel != null and dto.tel !=''">
+					<![CDATA[	a.TEL like #{dto.tel} and	]]>
+				</if>
+				<if test="dto.sex != null and dto.sex !=''">
+					<![CDATA[	a.SEX = #{dto.sex} and	]]>
+				</if>
+				<if test="dto.orgId != null and dto.orgId !=''">
+					<![CDATA[	a.ORG_ID = #{dto.orgId} and	]]>
+				</if>
+				<if test="dto.roleId != null and dto.roleId !=''">
+					<![CDATA[	a.ROLE_ID = #{dto.roleId} and	]]>
+				</if>
+				<if test="dto.status != null and dto.status !=''">
+					<![CDATA[	a.STATUS = #{dto.status} and	]]>
+				</if>
+			</trim>
+		</where>
+	</sql>
+
+	<select id="getSysUserList" resultType="com.gientech.sys.user.SysUserVO" parameterType="com.gientech.sys.user.SysUserDTO4List">
+		select
+
+		a.USER_ID as userId,
+		a.USER_NAME as userName,
+		a.LOGIN_NAME as loginName,
+		a.TEL as tel,
+		a.PASSWORD as password,
+		a.SEX as sex,
+		a.ORG_ID as orgId,
+		a.ROLE_ID as roleId,
+		a.ROLE_IDS as roleIds,
+		a.STATUS as status,
+		a.SORT_NO as sortNo,
+		a.REMARK as remark,
+		a.VER as ver,
+		b.ORG_NAME as orgName,
+		c.ROLE_NAME as roleName
+
+		from T_SYS_USER a
+
+		left join T_SYS_ORG b on a.ORG_ID = b.ORG_ID
+		left join T_SYS_ROLE c on a.ROLE_ID = c.ROLE_ID
+
+		<include refid="sysUserList_filter" />
+
+		order by <![CDATA[	${dto.orderBy}	]]>
+	</select>
+
+</mapper>

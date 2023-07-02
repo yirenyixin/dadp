@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gientech.sys.book.SysBookMapper">
+
+    <!-- 查询条件置顶 -->
+    <sql id="sysBookList_filter">
+        <where>
+            <trim suffixOverrides="and">
+                <if test="dto.bookId != null and dto.bookId !=''">
+                    <![CDATA[ a.BOOK_ID LIKE CONCAT('%', #{dto.bookId}, '%') AND ]]>
+                </if>
+                <if test="dto.bookName != null and dto.bookName !=''">
+                    <![CDATA[ a.BOOK_NAME LIKE CONCAT('%', #{dto.bookName}, '%') AND ]]>
+                </if>
+                <if test="dto.author != null and dto.author !=''">
+                    <![CDATA[ a.AUTHOR LIKE CONCAT('%', #{dto.author}, '%') AND ]]>
+                </if>
+                <if test="dto.role != null and dto.role !=''">
+                    <![CDATA[ a.ROLE LIKE CONCAT('%', #{dto.role}, '%') AND ]]>
+                </if>
+                <if test="dto.roleId != null and dto.roleId !=''">
+                    <![CDATA[ a.ROLE_ID LIKE CONCAT('%', #{dto.roleId}, '%') AND ]]>
+                </if>
+                <if test="dto.createTime != null and dto.createTime !=''">
+                    <![CDATA[ DATE_FORMAT(a.CREATE_TIME, '%Y-%m-%d %H:%i:%s') LIKE CONCAT('%', #{dto.createTime}, '%') AND ]]>
+                </if>
+
+            </trim>
+        </where>
+    </sql>
+
+    <select id="getSysBookList" resultType="com.gientech.sys.book.SysBookVO"
+            parameterType="com.gientech.sys.book.SysBookDTO4List">
+        select
+
+        a.BOOK_ID as bookId,
+        a.BOOK_NAME as bookName,
+        a.AUTHOR as author,
+        a.ROLE as role,
+        a.ROLE_ID as role_id,
+        a.CREATE_TIME as createTime
+
+        from T_SYS_BOOK a
+
+        <include refid="sysBookList_filter"/>
+
+        order by <![CDATA[	${dto.orderBy}	]]>
+    </select>
+
+    <select id="getBook" resultType="com.gientech.sys.book.SysBookVO"
+            parameterType="java.lang.String">
+        select a.BOOK_ID as bookId,
+               a.BOOK_NAME as bookName,
+               a.AUTHOR as author,
+               a.ROLE as role,
+               a.ROLE_ID as role_id,
+               a.CREATE_TIME as createTime
+        from T_SYS_BOOK a
+        where a.BOOK_ID = #{bookId}
+    </select>
+
+</mapper>

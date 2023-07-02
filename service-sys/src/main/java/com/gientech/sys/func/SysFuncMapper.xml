@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.sys.func.SysFuncMapper">
+
+	<!-- 查询条件置顶 -->
+	<sql id="sysFuncList_filter">
+		<where>
+			<trim suffixOverrides="and">
+				<if test="dto.menuId != null and dto.menuId !=''">
+					<![CDATA[	a.MENU_ID = #{dto.menuId} and	]]>
+				</if>
+			</trim>
+		</where>
+	</sql>
+
+	<select id="getSysFuncList" resultType="com.gientech.sys.func.SysFuncVO" parameterType="com.gientech.sys.func.SysFuncDTO4List">
+		select
+
+		a.FUNC_ID as funcId,
+		a.FUNC_NAME as funcName,
+		a.MENU_ID as menuId,
+		a.VER as ver
+
+		from T_SYS_FUNC a
+
+		<include refid="sysFuncList_filter" />
+
+		order by a.FUNC_ID asc
+	</select>
+
+</mapper>

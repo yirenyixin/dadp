@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.sys.codeInfo.SysCodeInfoMapper">
+
+	<!-- 查询条件置顶 -->
+	<sql id="sysCodeInfoList_filter">
+		<where>
+			<trim suffixOverrides="and">
+				<if test="dto.codeTypeId != null and dto.codeTypeId !=''">
+					<![CDATA[	a.CODE_TYPE_ID = #{dto.codeTypeId} and	]]>
+				</if>
+				<if test="dto.content != null and dto.content !=''">
+					<![CDATA[	a.CONTENT like #{dto.content} and	]]>
+				</if>
+			</trim>
+		</where>
+	</sql>
+
+	<select id="getSysCodeInfoList" resultType="com.gientech.sys.codeInfo.SysCodeInfoVO" parameterType="com.gientech.sys.codeInfo.SysCodeInfoDTO4List">
+		select
+
+		a.CODE_INFO_ID as codeInfoId,
+		a.CODE_TYPE_ID as codeTypeId,
+		a.VALUE as value,
+		a.CONTENT as content,
+		a.PARENT_VALUE as parentValue,
+		a.SORT_NO as sortNo,
+		a.REMARK as remark,
+		a.VER as ver
+
+		from T_SYS_CODE_INFO a
+
+		<include refid="sysCodeInfoList_filter" />
+
+		order by a.CODE_TYPE_ID asc, a.SORT_NO asc
+	</select>
+
+</mapper>

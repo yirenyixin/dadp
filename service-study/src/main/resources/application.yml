@@ -1,0 +1,33 @@
+#这个yaml放置的配置，不会因开发、测试、生产环境而改变。
+server:
+  port: 9701
+
+spring:
+  application:
+    name: service-study      # 应用名称
+
+  # 遇到相同名字时，是否允许覆盖注册
+  main:
+    allow-bean-definition-overriding: true
+
+  #配置环境
+  profiles:
+    active: dev
+
+#--------mybatis-plus配置控制台打印完整带参数SQL语句--------
+mybatis-plus:
+  mapper-locations:
+    - classpath:/com/gientech/**/*Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#--------暴露监控端点--------          
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#开启swagger文档排序    
+knife4j:
+  enable: true    
