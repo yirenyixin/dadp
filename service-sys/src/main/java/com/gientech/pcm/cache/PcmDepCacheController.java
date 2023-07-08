@@ -1,4 +1,4 @@
-package com.gientech.sys.cache;
+package com.gientech.pcm.cache;//package com.gientech.sys.cache;
 
 import cn.hutool.core.util.StrUtil;
 import com.gientech.common.MyConstants;
@@ -9,6 +9,7 @@ import com.gientech.core.log.annotation.OperLog;
 import com.gientech.core.redis.RedisService;
 import com.gientech.core.security.annotation.PreAuthorize;
 import com.gientech.sys.book.SysBookService;
+import com.gientech.sys.cache.SysCacheDTO;
 import com.gientech.sys.codeType.SysCodeType;
 import com.gientech.sys.codeType.SysCodeTypeService;
 import com.gientech.sys.org.SysOrgService;
@@ -34,11 +35,11 @@ import java.util.Map;
  *
  * @author 胡砥峰
  */
-@Api(tags = "【1-02】获取缓存")
-@ApiSort(value = 102) // 排序号生成后要修改
+@Api(tags = "【1-03】获取缓存")
+@ApiSort(value = 103) // 排序号生成后要修改
 @RestController
-@RequestMapping("/sys/cache")
-public class SysCacheController {
+@RequestMapping("/pcm_dep/cache")
+public class PcmDepCacheController {
 
     @Resource
     RedisService redisService;
@@ -46,13 +47,6 @@ public class SysCacheController {
     @Resource
     SysCodeTypeService sysCodeTypeService;
 
-    @Resource
-    SysOrgService sysOrgService;
-
-    @Resource
-    SysUserService sysUserService;
-    @Resource
-    SysBookService sysBookService;
     /**
      * 【1】获取下拉框列表,传codeTypeId,不传返回全部下拉框。。前段登录后，访问这个请求
      *
@@ -75,33 +69,16 @@ public class SysCacheController {
                 map.put(sysCodeType.getCodeTypeId(), (List<Combo>) this.redisService.get(MyConstants.REDIS_SYS_CODE_TYPE + sysCodeType.getCodeTypeId()));
             }
 
-            map.put(MyConstants.COMBO_ORG_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_ORG));
-            map.put(MyConstants.COMBO_USER_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_USER));
-            map.put(MyConstants.COMBO_ROLE_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_ROLE));
-            map.put(MyConstants.COMBO_BOOK_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_BOOK));
-//            map.put(MyConstants.DEP_FIXED_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_DEP_FIXED));
+            map.put(MyConstants.DEP_FIXED_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_DEP_FIXED));
+            map.put(MyConstants.PCM_DEP_CURR_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_DEP_FIXED));
         } else {
             // 【2】根据前端参数，获取相应的下拉框
             String[] codeTypeIdArray = StrUtil.splitToArray(sysCacheDTO.getCodeTypeId(), ",");
             for (String codeTypeId : codeTypeIdArray) {
-                if (MyConstants.COMBO_ORG_ID.equals(codeTypeId)) {// orgId
-                    map.put(MyConstants.COMBO_ORG_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_ORG));
-
-                } else if (MyConstants.COMBO_USER_ID.equals(codeTypeId)) {// userId
-                    map.put(MyConstants.COMBO_USER_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_USER));
-
-                } else if (MyConstants.COMBO_ROLE_ID.equals(codeTypeId)) {// roleId
-                    map.put(MyConstants.COMBO_ROLE_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_ROLE));
-
-                } else if (MyConstants.COMBO_BOOK_ID.equals(codeTypeId)) {// bookId
-                    map.put(MyConstants.COMBO_BOOK_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_BOOK));
-                }
-//                else if (MyConstants.DEP_FIXED_ID.equals(codeTypeId)) {// DEP_FIXED_ID
-//                    map.put(MyConstants.DEP_FIXED_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_DEP_FIXED));
-//                }
-                else {// 下拉框
-                    map.put(codeTypeId, (List<Combo>) this.redisService.get(MyConstants.REDIS_SYS_CODE_TYPE + codeTypeId));
-
+                if (MyConstants.DEP_FIXED_ID.equals(codeTypeId)) {// DEP_FIXED_ID
+                    map.put(MyConstants.DEP_FIXED_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_DEP_FIXED));
+                }else if(MyConstants.PCM_DEP_CURR_ID.equals(codeTypeId)){
+                    map.put(MyConstants.PCM_DEP_CURR_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_PCM_DEP_CURR));
                 }
             }
         }

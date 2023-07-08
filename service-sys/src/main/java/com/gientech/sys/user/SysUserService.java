@@ -45,7 +45,7 @@ public class SysUserService extends BaseService<SysUserMapper, SysUser> {
 		// 【3】构造分页参数
 		Page<SysUserVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
 
-		return new DataGrid<SysUserVO>(this.getBaseMapper().getSysUserList(page, dto), page.getTotal());
+		return new DataGrid<>(this.getBaseMapper().getSysUserList(page, dto), page.getTotal());
 	}
 
 	/**

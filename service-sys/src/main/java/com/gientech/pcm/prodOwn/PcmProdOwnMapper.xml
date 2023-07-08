@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.pcm.prodOwn.PcmProdOwnMapper">
+
+    <!-- 查询条件置顶 -->
+    <sql id="pcmProdOwnList_filter">
+        <where>
+            <trim suffixOverrides="and">
+                <if test="dto.prodOwnId != null and dto.prodOwnId !=''">
+                    <![CDATA[ a.PROD_OWN_ID = #{dto.prodOwnId} and ]]>
+                </if>
+                <!-- Add more conditions if needed -->
+            </trim>
+        </where>
+    </sql>
+
+    <select id="getPcmProdOwnList" resultType="com.gientech.pcm.prodOwn.PcmProdOwn" parameterType="com.gientech.pcm.prodOwn.PcmProdOwnDTO4List">
+        SELECT
+        a.PROD_OWN_ID as prodOwnId,
+        a.CUST_ID as custId,
+        a.LAW_ORG_ID as lawOrgId,
+        a.ECIF_CUST_ID as ecifCustId,
+        a.IS_DEP as isDep,
+        a.IS_FIXED_DEP as isFixedDep,
+        a.IS_LOAN as isLoan,
+        a.IS_WEALTH as isWealth,
+        a.DEP_BAL as depBal,
+        a.FIXED_DEP_BAL as fixedDepBal,
+        a.LOAN_BAL as loanBal,
+        a.WEALTH_BAL as wealthBal
+        FROM T_PCM_PROD_OWN a
+        <include refid="pcmProdOwnList_filter" />
+        ORDER BY a.PROD_OWN_ID
+    </select>
+
+    <select id="getPcmProdOwn" resultType="com.gientech.pcm.prodOwn.PcmProdOwnDTO4Get" parameterType="String">
+        SELECT
+            a.PROD_OWN_ID as prodOwnId,
+            a.CUST_ID as custId,
+            a.LAW_ORG_ID as lawOrgId,
+            a.ECIF_CUST_ID as ecifCustId,
+            a.IS_DEP as isDep,
+            a.IS_FIXED_DEP as isFixedDep,
+            a.IS_LOAN as isLoan,
+            a.IS_WEALTH as isWealth,
+            a.DEP_BAL as depBal,
+            a.FIXED_DEP_BAL as fixedDepBal,
+            a.LOAN_BAL as loanBal,
+            a.WEALTH_BAL as wealthBal
+        FROM T_PCM_PROD_OWN a
+        WHERE a.PROD_OWN_ID = #{prodOwnId}
+    </select>
+
+
+<!--    <delete id="deleteById" parameterType="String">-->
+<!--        DELETE FROM T_PCM_PROD_OWN WHERE PROD_OWN_ID = #{id}-->
+<!--    </delete>-->
+
+<!--    <update id="updateById" parameterType="com.gientech.pcm.prodOwn.PcmProdOwnDTO4Update">-->
+<!--        UPDATE T_PCM_PROD_OWN-->
+<!--        SET-->
+<!--            CUST_ID = #{custId},-->
+<!--            LAW_ORG_ID = #{lawOrgId},-->
+<!--            ECIF_CUST_ID = #{ecifCustId},-->
+<!--            IS_DEP = #{isDep},-->
+<!--            IS_FIXED_DEP = #{isFixedDep},-->
+<!--            IS_LOAN = #{isLoan},-->
+<!--            IS_WEALTH = #{isWealth},-->
+<!--            DEP_BAL = #{depBal},-->
+<!--            FIXED_DEP_BAL = #{fixedDepBal},-->
+<!--            LOAN_BAL = #{loanBal},-->
+<!--            WEALTH_BAL = #{wealthBal}-->
+<!--        WHERE PROD_OWN_ID = #{prodOwnId}-->
+<!--    </update>-->
+</mapper>

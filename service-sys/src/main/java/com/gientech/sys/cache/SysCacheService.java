@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.gientech.common.MyConstants;
 import com.gientech.common.view.Combo;
 import com.gientech.core.redis.RedisService;
+import com.gientech.pcm.depFixed.PcmDepFixedService;
 import com.gientech.sys.book.SysBook;
 import com.gientech.sys.book.SysBookService;
 import com.gientech.sys.bookState.SysBookState;
@@ -68,6 +69,8 @@ public class SysCacheService implements InitializingBean {
     SysBookService  sysBookService;
     @Resource
     SysBookStateService sysBookStateService;
+    @Resource
+    PcmDepFixedService pcmDepFixedService;
     @Override
     public void afterPropertiesSet() throws Exception {
         loadConfigToRedis();
@@ -81,6 +84,9 @@ public class SysCacheService implements InitializingBean {
 
         loadBookToRedis();
         loadBookStateToRedis(); // 添加此行以将图书状态加载到Redis中
+
+
+//        loadPcmDepFixedToRedis();
     }
 
 
@@ -277,4 +283,24 @@ public class SysCacheService implements InitializingBean {
         log.info("-------------------【9】图书状态SysBookState，加载到redis完成-------------------");
     }
 
+
+
+//    /**
+//     * 【10】将 PcmDepFixed 信息加载到 Redis
+//     */
+//    public void loadPcmDepFixedToRedis() {
+//        List<Combo> comboList = new ArrayList<>();
+//        comboList.add(new Combo(null, "请选择", null));
+//
+//        // 查询所有 PcmDepFixed 信息
+//        List<PcmDepFixed> pcmDepFixedList = pcmDepFixedService.list();
+//        for (PcmDepFixed pcmDepFixed : pcmDepFixedList) {
+//            comboList.add(new Combo(pcmDepFixed.getDepFixedId(), pcmDepFixed.getCustId(), pcmDepFixed.getCustName()));
+//            redisService.set(MyConstants.REDIS_DEP_FIXED + pcmDepFixed.getDepFixedId(), pcmDepFixed.getCustId());
+//        }
+//
+//        redisService.set(MyConstants.DEP_FIXED_ID, comboList);
+//
+//        log.info("-------------------【10】PcmDepFixed 信息加载到 Redis 完成-------------------");
+//    }
 }

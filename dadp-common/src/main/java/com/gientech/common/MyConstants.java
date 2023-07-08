@@ -40,6 +40,25 @@ public class MyConstants {
     public static final String REDIS_COMBO_BOOK = "comboBook";
     public static final String COMBO_BOOK_ID = "bookId"; // 图书下拉框key
 
+    //新增DEP_FIXED
+    public static final String REDIS_DEP_FIXED = "depFixed";
+    public static final String DEP_FIXED_ID = "depFixedId";
+
+    //新增DEP_CURR
+    public static final String REDIS_PCM_DEP_CURR = "pcmDepCurr";
+    public static final String PCM_DEP_CURR_ID = "depCurrId";
+
+    // 新增Loan
+    public static final String REDIS_PCM_LOAN = "pcmLoan";
+    public static final String PCM_LOAN_ID = "loanId";
+
+    //新增Prod
+    public static final String REDIS_PPM_PROD = "ppmProd";
+    public static final String PPM_PROD_ID = "prodId";
+
+    //新增PROD_OWN
+    public static final String REDIS_PCM_PROD_OWN = "pcmProdOwn";
+    public static final String PCM_PROD_OWN_ID = "prodOwnId";
 
     /*-----------------【3】系统参数-----------------------------------------------------------------------------------*/
     public static final String CONFIG_SUPER_PASSWORD = "superPassword"; // 【系统参数】 系统超级密码 的编号

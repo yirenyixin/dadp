@@ -64,5 +64,49 @@
 
 		order by <![CDATA[	${dto.orderBy}	]]>
 	</select>
-
+	<insert id="insertPcmDepFixed" parameterType="com.gientech.pcm.depFixed.PcmDepFixedDTO4Save">
+		INSERT INTO T_PCM_DEP_FIXED (
+			DEP_FIXED_ID,
+			CUST_ID,
+			ECIF_CUST_ID,
+			CUST_NAME,
+			LAW_ORG_ID,
+			PROD_CODE,
+			PROD_NAME,
+			ACCT_NO,
+			SUB_ACCT_NO,
+			ACCT_TYPE,
+			FLOAT_RATE,
+			RATE,
+			CURR_NO,
+			BAL,
+			TERM,
+			END_DATE,
+			ACCT_STS,
+			OPEN_ORG_NO,
+			START_DT,
+			VOUCHER_NO
+		) VALUES (
+					 #{depFixedId},
+					 #{custId},
+					 #{ecifCustId},
+					 #{custName},
+					 #{lawOrgId},
+					 #{prodCode},
+					 #{prodName},
+					 #{acctNo},
+					 #{subAcctNo},
+					 #{acctType},
+					 #{floatRate},
+					 #{rate},
+					 #{currNo},
+					 #{bal},
+					 #{term},
+					 #{endDate},
+					 #{acctSts},
+					 #{openOrgNo},
+					 #{startDt},
+					 #{voucherNo}
+				 )
+	</insert>
 </mapper>

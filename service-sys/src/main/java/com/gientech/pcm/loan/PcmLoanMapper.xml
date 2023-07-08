@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.pcm.loan.PcmLoanMapper">
+
+    <!-- 查询条件置顶 -->
+    <sql id="pcmLoanList_filter">
+        <where>
+            <trim suffixOverrides="and">
+                <if test="dto.custId != null and dto.custId !=''">
+                    <![CDATA[ a.CUST_ID = #{dto.custId} and ]]>
+                </if>
+                <!-- Add more conditions if needed -->
+            </trim>
+        </where>
+    </sql>
+
+    <select id="getPcmLoanList" resultType="com.gientech.pcm.loan.PcmLoan" parameterType="com.gientech.pcm.loan.PcmLoanDTO4List">
+        SELECT
+        a.LOAN_ID as loanId,
+        a.CUST_ID as custId,
+        a.ECIF_CUST_ID as ecifCustId,
+        a.CUST_NAME as custName,
+        a.LAW_ORG_ID as lawOrgId,
+        a.PROD_CODE as prodCode,
+        a.PROD_NAME as prodName,
+        a.LOAN_ACCT as loanAcct,
+        a.LOAN_ACCT_NAME as loanAcctName,
+        a.LOAN_CONT_NO as loanContNo,
+        a.VOUCHER_NO as voucherNo,
+        a.LOAN_MON as loanMon,
+        a.GRANT_MON as grantMon,
+        a.LOAN_BAL as loanBal,
+        a.BAD_BAL as badBal,
+        a.LOAN_TYPE as loanType,
+        a.LOAN_STS as loanSts,
+        a.START_DATE as startDate,
+        a.END_DATE as endDate,
+        a.RATE as rate,
+        a.LOAN_TERM as loanTerm,
+        a.LOAN_CURRENCY as loanCurrency,
+        a.NEXT_REPAYMENT_MON as nextRepaymentMon,
+        a.NEXT_REPAYMENT_DATE as nextRepaymentDate,
+        a.LOAN_FIVE_FORM as loanFiveForm,
+        a.OPEN_ORG_NO as openOrgNo,
+        a.MGR_ID as mgrId,
+        a.REPAY_ACCT as repayAcct,
+        a.REPAY_NAME as repayName,
+        a.LOAN_USE as loanUse
+        FROM T_PCM_LOAN a
+        <include refid="pcmLoanList_filter" />
+        ORDER BY a.LOAN_ID
+    </select>
+
+    <select id="getPcmLoan" resultType="com.gientech.pcm.loan.PcmLoan" parameterType="String">
+        SELECT
+            a.LOAN_ID as loanId,
+            a.CUST_ID as custId,
+            a.ECIF_CUST_ID as ecifCustId,
+            a.CUST_NAME as custName,
+            a.LAW_ORG_ID as lawOrgId,
+            a.PROD_CODE as prodCode,
+            a.PROD_NAME as prodName,
+            a.LOAN_ACCT as loanAcct,
+            a.LOAN_ACCT_NAME as loanAcctName,
+            a.LOAN_CONT_NO as loanContNo,
+            a.VOUCHER_NO as voucherNo,
+            a.LOAN_MON as loanMon,
+            a.GRANT_MON as grantMon,
+            a.LOAN_BAL as loanBal,
+            a.BAD_BAL as badBal,
+            a.LOAN_TYPE as loanType,
+            a.LOAN_STS as loanSts,
+            a.START_DATE as startDate,
+            a.END_DATE as endDate,
+            a.RATE as rate,
+            a.LOAN_TERM as loanTerm,
+            a.LOAN_CURRENCY as loanCurrency,
+            a.NEXT_REPAYMENT_MON as nextRepaymentMon,
+            a.NEXT_REPAYMENT_DATE as nextRepaymentDate,
+            a.LOAN_FIVE_FORM as loanFiveForm,
+            a.OPEN_ORG_NO as openOrgNo,
+            a.MGR_ID as mgrId,
+            a.REPAY_ACCT as repayAcct,
+            a.REPAY_NAME as repayName,
+            a.LOAN_USE as loanUse
+        FROM T_PCM_LOAN a
+        WHERE a.LOAN_ID = #{loanId}
+    </select>
+
+</mapper>
