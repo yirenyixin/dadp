@@ -8,12 +8,14 @@ import com.gientech.common.util.MyBeanUtil;
 import com.gientech.common.util.MyStringUtil;
 import com.gientech.common.view.DataGrid;
 import com.gientech.core.base.BaseService;
-import com.gientech.pcm.loan.PcmLoan;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+/**
+ * PcmProdOwn 服务类
+ */
 @Slf4j
 @Service
 @Transactional
@@ -29,13 +31,13 @@ public class PcmProdOwnService extends BaseService<PcmProdOwnMapper, PcmProdOwn>
      * @return 分页结果
      */
     public DataGrid<PcmProdOwnVO> listPcmProdOwn(PcmProdOwnDTO4List dto) {
-        log.info("【list查询条件--PCM_PROD_OWN】" + dto);
+        log.info("【list查询条件--PcmProdOwn】" + dto);
 
         // 处理模糊查询条件的like
-        MyStringUtil.addObjectLike(dto, "custId,lawOrgId,ecifCustId");
+        MyStringUtil.addObjectLike(dto, "prodOwnId,custId,lawOrgId");
 
         // 处理排序条件
-        dto.setOrderBy(MyStringUtil.getOrderBy(dto.getSort(), dto.getOrder(), ""));
+        dto.setOrderBy(MyStringUtil.getOrderBy(dto.getSort(), dto.getOrder(),"ECIF_CUST_ID asc"));
 
         // 构造分页参数
         Page<PcmProdOwnVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
@@ -44,12 +46,12 @@ public class PcmProdOwnService extends BaseService<PcmProdOwnMapper, PcmProdOwn>
     }
 
     /**
-     * 新增 PCM_PROD_OWN
+     * 新增 PcmProdOwn
      *
      * @param dto 新增DTO
      */
     public void savePcmProdOwn(PcmProdOwnDTO4Save dto) {
-        log.info("【新增--PCM_PROD_OWN】" + dto);
+        log.info("【新增--PcmProdOwn】" + dto);
 
         // 从dto中复制属性
         PcmProdOwn pcmProdOwn = new PcmProdOwn();
@@ -64,37 +66,36 @@ public class PcmProdOwnService extends BaseService<PcmProdOwnMapper, PcmProdOwn>
     }
 
     /**
-     * 修改 PCM_PROD_OWN
+     * 修改 PcmProdOwn
      *
      * @param dto 修改DTO，一定要传主键
      */
     public void updatePcmProdOwn(PcmProdOwnDTO4Update dto) {
-        log.info("【修改--PCM_PROD_OWN】" + dto);
+        log.info("【修改--PcmProdOwn】" + dto);
 
         // 从dto中复制属性
         PcmProdOwn pcmProdOwn = new PcmProdOwn();
         MyBeanUtil.copyPropertiesIgnoreNull(dto, pcmProdOwn);
 
-        // 更新 PCM_PROD_OWN 信息
+        // 更新 PcmProdOwn 信息
         if (!this.updateById(pcmProdOwn)) {
             throw new AppException("操作失败，你修改的数据不是最新的，请刷新后重新操作！");
         }
     }
 
     /**
-     * 删除 PCM_PROD_OWN
+     * 删除 PcmProdOwn
      *
      * @param prodOwnIds 多个 prodOwnId 以逗号分隔
      */
     public void deletePcmProdOwn(String prodOwnIds) {
-        log.info("【删除--PCM_PROD_OWN】" + prodOwnIds);
+        log.info("【删除--PcmProdOwn】" + prodOwnIds);
 
-        // 删除 PCM_PROD_OWN
+        // 删除 PcmProdOwn
         String[] prodOwnIdArray = StrUtil.splitToArray(prodOwnIds, ",");
         for (String prodOwnId : prodOwnIdArray) {
             this.removeById(prodOwnId);
         }
-
     }
 
     /**

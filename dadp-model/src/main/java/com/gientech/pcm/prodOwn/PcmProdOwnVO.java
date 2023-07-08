@@ -9,16 +9,16 @@ public class PcmProdOwnVO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "产品持有ID", position = 1)
+    @ApiModelProperty(value = "持有产品编号", position = 1)
     private String prodOwnId;
 
-    @ApiModelProperty(value = "客户ID", position = 2)
+    @ApiModelProperty(value = "客户号", position = 2)
     private String custId;
 
     @ApiModelProperty(value = "法人机构号", position = 3)
     private String lawOrgId;
 
-    @ApiModelProperty(value = "ECIF客户ID", position = 4)
+    @ApiModelProperty(value = "ECIF客户号", position = 4)
     private String ecifCustId;
 
     @ApiModelProperty(value = "是否持有活期", position = 5)

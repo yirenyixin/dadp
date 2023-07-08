@@ -8,8 +8,17 @@
     <sql id="pcmProdOwnList_filter">
         <where>
             <trim suffixOverrides="and">
-                <if test="dto.prodOwnId != null and dto.prodOwnId !=''">
+                <if test="dto.prodOwnId != null and dto.prodOwnId != ''">
                     <![CDATA[ a.PROD_OWN_ID = #{dto.prodOwnId} and ]]>
+                </if>
+                <if test="dto.prodName != null and dto.prodName != ''">
+                    <![CDATA[ a.PROD_NAME = #{dto.prodName} and ]]>
+                </if>
+                <if test="dto.kindId != null and dto.kindId != ''">
+                    <![CDATA[ a.KIND_ID = #{dto.kindId} and ]]>
+                </if>
+                <if test="dto.prodStatus != null and dto.prodStatus != ''">
+                    <![CDATA[ a.PROD_STATUS = #{dto.prodStatus} and ]]>
                 </if>
                 <!-- Add more conditions if needed -->
             </trim>
@@ -35,7 +44,7 @@
         ORDER BY a.PROD_OWN_ID
     </select>
 
-    <select id="getPcmProdOwn" resultType="com.gientech.pcm.prodOwn.PcmProdOwnDTO4Get" parameterType="String">
+    <select id="getPcmProdOwn" resultType="com.gientech.pcm.prodOwn.PcmProdOwn" parameterType="String">
         SELECT
             a.PROD_OWN_ID as prodOwnId,
             a.CUST_ID as custId,
@@ -53,25 +62,4 @@
         WHERE a.PROD_OWN_ID = #{prodOwnId}
     </select>
 
-
-<!--    <delete id="deleteById" parameterType="String">-->
-<!--        DELETE FROM T_PCM_PROD_OWN WHERE PROD_OWN_ID = #{id}-->
-<!--    </delete>-->
-
-<!--    <update id="updateById" parameterType="com.gientech.pcm.prodOwn.PcmProdOwnDTO4Update">-->
-<!--        UPDATE T_PCM_PROD_OWN-->
-<!--        SET-->
-<!--            CUST_ID = #{custId},-->
-<!--            LAW_ORG_ID = #{lawOrgId},-->
-<!--            ECIF_CUST_ID = #{ecifCustId},-->
-<!--            IS_DEP = #{isDep},-->
-<!--            IS_FIXED_DEP = #{isFixedDep},-->
-<!--            IS_LOAN = #{isLoan},-->
-<!--            IS_WEALTH = #{isWealth},-->
-<!--            DEP_BAL = #{depBal},-->
-<!--            FIXED_DEP_BAL = #{fixedDepBal},-->
-<!--            LOAN_BAL = #{loanBal},-->
-<!--            WEALTH_BAL = #{wealthBal}-->
-<!--        WHERE PROD_OWN_ID = #{prodOwnId}-->
-<!--    </update>-->
 </mapper>

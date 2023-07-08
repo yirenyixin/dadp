@@ -15,7 +15,6 @@ public interface PcmDepFixedMapper extends BaseMapper<PcmDepFixed> {
 
 
     List<PcmDepFixedVO> getPcmDepFixedList(Page<PcmDepFixedVO> page, @Param("dto") PcmDepFixedDTO4List dto);
-//    List<SysBookVO> getSysBookList(Page<SysBookVO> page, @Param("dto") SysBookDTO4List dto);
     /**
      * 根据存款ID获取存款信息
      *

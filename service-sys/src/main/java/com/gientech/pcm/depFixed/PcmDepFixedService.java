@@ -33,20 +33,6 @@ public class PcmDepFixedService extends BaseService<PcmDepFixedMapper, PcmDepFix
      * @param dto 查询DTO
      * @return 分页结果
      */
-//    public DataGrid<SysBookVO> listBooks(SysBookDTO4List dto) {
-//        log.info("【list查询条件--图书】" + dto);
-//
-//        // 处理模糊查询条件的like
-//        MyStringUtil.addObjectLike(dto, "bookName,author,publisher");
-//
-//        // 处理排序条件
-//        dto.setOrderBy(MyStringUtil.getOrderBy(dto.getSort(), dto.getOrder(), "a.CREATE_TIME desc"));
-//
-//        // 构造分页参数
-//        Page<SysBookVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
-//
-//        return new DataGrid<>(this.getBaseMapper().getSysBookList(page, dto), page.getTotal());
-//    }
     public DataGrid<PcmDepFixedVO> listPcmDepFixed(PcmDepFixedDTO4List dto) {
         log.info("【list查询条件--PCM_DEP_FIXED】" + dto);
 

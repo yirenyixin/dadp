@@ -16,33 +16,33 @@
         </where>
     </sql>
 
-<!--    <select id="getPpmProdList" resultType="com.gientech.ppm.prod.PpmProd" parameterType="com.gientech.ppm.prod.PpmProdDTO4List">-->
-<!--        SELECT-->
-<!--        a.PROD_ID as prodId,-->
-<!--        a.PROD_NAME as prodName,-->
-<!--        a.KIND_ID as kindId,-->
-<!--        a.PROD_STATUS as prodStatus,-->
-<!--        a.PRO_DESCRIBE as proDescribe,-->
-<!--        a.DO_FLOW as doFlow,-->
-<!--        a.MARKET_DISCOURSE as marketDiscourse,-->
-<!--        a.PROD_FEATURE as prodFeature-->
-<!--        FROM T_PPM_PROD a-->
-<!--        <include refid="ppmProdList_filter" />-->
-<!--        ORDER BY a.PROD_ID-->
-<!--    </select>-->
+    <select id="getPpmProdList" resultType="com.gientech.ppm.prod.PpmProd" parameterType="com.gientech.ppm.prod.PpmProdDTO4List">
+        SELECT
+        a.PROD_ID as prodId,
+        a.PROD_NAME as prodName,
+        a.KIND_ID as kindId,
+        a.PROD_STATUS as prodStatus,
+        a.PRO_DESCRIBE as proDescribe,
+        a.DO_FLOW as doFlow,
+        a.MARKET_DISCOURSE as marketDiscourse,
+        a.PROD_FEATURE as prodFeature
+        FROM T_PPM_PROD a
+        <include refid="ppmProdList_filter" />
+        ORDER BY a.PROD_ID
+    </select>
 
-<!--    <select id="getPpmProd" resultType="com.gientech.ppm.prod.PpmProd" parameterType="String">-->
-<!--        SELECT-->
-<!--            a.PROD_ID as prodId,-->
-<!--            a.PROD_NAME as prodName,-->
-<!--            a.KIND_ID as kindId,-->
-<!--            a.PROD_STATUS as prodStatus,-->
-<!--            a.PRO_DESCRIBE as proDescribe,-->
-<!--            a.DO_FLOW as doFlow,-->
-<!--            a.MARKET_DISCOURSE as marketDiscourse,-->
-<!--            a.PROD_FEATURE as prodFeature-->
-<!--        FROM T_PPM_PROD a-->
-<!--        WHERE a.PROD_ID = #{prodId}-->
-<!--    </select>-->
+    <select id="getPpmProd" resultType="com.gientech.ppm.prod.PpmProd" parameterType="String">
+        SELECT
+            a.PROD_ID as prodId,
+            a.PROD_NAME as prodName,
+            a.KIND_ID as kindId,
+            a.PROD_STATUS as prodStatus,
+            a.PRO_DESCRIBE as proDescribe,
+            a.DO_FLOW as doFlow,
+            a.MARKET_DISCOURSE as marketDiscourse,
+            a.PROD_FEATURE as prodFeature
+        FROM T_PPM_PROD a
+        WHERE a.PROD_ID = #{prodId}
+    </select>
 
 </mapper>

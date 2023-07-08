@@ -1,20 +1,25 @@
 package com.gientech.sys.user;
 
-import java.util.List;
-
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import java.util.List;
 
 /**
- * 用户--的Mapper类
- * 
- * @author 胡砥峰
+ * SYS_USER Mapper 接口
  */
 @Mapper
 public interface SysUserMapper extends BaseMapper<SysUser> {
 
-	public List<SysUserVO> getSysUserList(Page<SysUserVO> page, @Param("dto") SysUserDTO4List dto);
+	List<SysUserVO> getSysUserList(Page<SysUserVO> page, @Param("dto") SysUserDTO4List dto);
+
+	/**
+	 * 根据用户ID获取用户信息
+	 *
+	 * @param userId 用户ID
+	 * @return 用户信息
+	 */
+	SysUser getSysUser(@Param("userId") String userId);
 }

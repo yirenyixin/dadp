@@ -8,37 +8,16 @@
 	<sql id="sysUserList_filter">
 		<where>
 			<trim suffixOverrides="and">
-				<if test="dto.userId != null and dto.userId !=''">
-					<![CDATA[	a.USER_ID like #{dto.userId} and	]]>
+				<if test="dto.userId != null and dto.userId != ''">
+					<![CDATA[ a.USER_ID = #{dto.userId} and ]]>
 				</if>
-				<if test="dto.userName != null and dto.userName !=''">
-					<![CDATA[	a.USER_NAME like #{dto.userName} and	]]>
-				</if>
-				<if test="dto.loginName != null and dto.loginName !=''">
-					<![CDATA[	a.LOGIN_NAME like #{dto.loginName} and	]]>
-				</if>
-				<if test="dto.tel != null and dto.tel !=''">
-					<![CDATA[	a.TEL like #{dto.tel} and	]]>
-				</if>
-				<if test="dto.sex != null and dto.sex !=''">
-					<![CDATA[	a.SEX = #{dto.sex} and	]]>
-				</if>
-				<if test="dto.orgId != null and dto.orgId !=''">
-					<![CDATA[	a.ORG_ID = #{dto.orgId} and	]]>
-				</if>
-				<if test="dto.roleId != null and dto.roleId !=''">
-					<![CDATA[	a.ROLE_ID = #{dto.roleId} and	]]>
-				</if>
-				<if test="dto.status != null and dto.status !=''">
-					<![CDATA[	a.STATUS = #{dto.status} and	]]>
-				</if>
+				<!-- Add more conditions if needed -->
 			</trim>
 		</where>
 	</sql>
 
-	<select id="getSysUserList" resultType="com.gientech.sys.user.SysUserVO" parameterType="com.gientech.sys.user.SysUserDTO4List">
-		select
-
+	<select id="getSysUserList" resultType="com.gientech.sys.user.SysUser" parameterType="com.gientech.sys.user.SysUserDTO4List">
+		SELECT
 		a.USER_ID as userId,
 		a.USER_NAME as userName,
 		a.LOGIN_NAME as loginName,
@@ -46,67 +25,50 @@
 		a.PASSWORD as password,
 		a.SEX as sex,
 		a.ORG_ID as orgId,
+		a.ORG_ADDR as orgAddr,
+		a.LAW_ORG_ID as lawOrgId,
+		a.ID_CARD_NO as idCardNo,
+		a.ADDR as addr,
+		a.EMAIL as email,
+		a.TELLER_NO as tellerNo,
+		a.WORKING_YEARS as workingYears,
+		a.WECHAT_NO as wechatNo,
 		a.ROLE_ID as roleId,
 		a.ROLE_IDS as roleIds,
 		a.STATUS as status,
 		a.SORT_NO as sortNo,
 		a.REMARK as remark,
-		a.VER as ver,
-		b.ORG_NAME as orgName,
-		c.ROLE_NAME as roleName
-
-		from T_SYS_USER a
-
-		left join T_SYS_ORG b on a.ORG_ID = b.ORG_ID
-		left join T_SYS_ROLE c on a.ROLE_ID = c.ROLE_ID
-
+		a.VER as ver
+		FROM T_SYS_USER a
 		<include refid="sysUserList_filter" />
-
-		order by <![CDATA[	${dto.orderBy}	]]>
+		ORDER BY a.USER_ID
 	</select>
-	<insert id="insertPcmDepFixed" parameterType="com.gientech.pcm.depFixed.PcmDepFixedDTO4Save">
-		INSERT INTO T_PCM_DEP_FIXED (
-			DEP_FIXED_ID,
-			CUST_ID,
-			ECIF_CUST_ID,
-			CUST_NAME,
-			LAW_ORG_ID,
-			PROD_CODE,
-			PROD_NAME,
-			ACCT_NO,
-			SUB_ACCT_NO,
-			ACCT_TYPE,
-			FLOAT_RATE,
-			RATE,
-			CURR_NO,
-			BAL,
-			TERM,
-			END_DATE,
-			ACCT_STS,
-			OPEN_ORG_NO,
-			START_DT,
-			VOUCHER_NO
-		) VALUES (
-					 #{depFixedId},
-					 #{custId},
-					 #{ecifCustId},
-					 #{custName},
-					 #{lawOrgId},
-					 #{prodCode},
-					 #{prodName},
-					 #{acctNo},
-					 #{subAcctNo},
-					 #{acctType},
-					 #{floatRate},
-					 #{rate},
-					 #{currNo},
-					 #{bal},
-					 #{term},
-					 #{endDate},
-					 #{acctSts},
-					 #{openOrgNo},
-					 #{startDt},
-					 #{voucherNo}
-				 )
-	</insert>
+
+	<select id="getSysUser" resultType="com.gientech.sys.user.SysUser" parameterType="String">
+		SELECT
+			a.USER_ID as userId,
+			a.USER_NAME as userName,
+			a.LOGIN_NAME as loginName,
+			a.TEL as tel,
+			a.PASSWORD as password,
+			a.SEX as sex,
+			a.ORG_ID as orgId,
+			a.ORG_ADDR as orgAddr,
+			a.LAW_ORG_ID as lawOrgId,
+			a.ID_CARD_NO as idCardNo,
+			a.ADDR as addr,
+			a.EMAIL as email,
+			a.TELLER_NO as tellerNo,
+			a.WORKING_YEARS as workingYears,
+			a.WECHAT_NO as wechatNo,
+			a.ROLE_ID as roleId,
+			a.ROLE_IDS as roleIds,
+			a.STATUS as status,
+			a.SORT_NO as sortNo,
+			a.REMARK as remark,
+			a.VER as ver
+		FROM T_SYS_USER a
+		WHERE a.USER_ID = #{userId}
+	</select>
+
 </mapper>
