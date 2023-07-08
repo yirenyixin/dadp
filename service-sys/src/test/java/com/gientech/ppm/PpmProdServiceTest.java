@@ -64,7 +64,7 @@ public class PpmProdServiceTest {
     public void update() {
         PpmProdDTO4Update dto = new PpmProdDTO4Update();
         dto.setProdId("Test");
-        dto.setProdName("Updated ProdName");
+        dto.setProdName("Updated ProdName1");
         dto.setKindId("Updated KindId");
         dto.setProdStatus("Updated ProdStatus");
         // Set other properties
