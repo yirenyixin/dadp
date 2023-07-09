@@ -118,5 +118,4 @@ public class PcmDepFixedDTO4Save implements Serializable {
     private String voucherNo; // 凭证号
 
 
-    // Getters and setters
 }

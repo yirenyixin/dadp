@@ -21,5 +21,4 @@ public class PcmDepFixedDTO4Get implements Serializable {
     private String depFixedId; // ID
 
 
-    // Getters and setters
 }
