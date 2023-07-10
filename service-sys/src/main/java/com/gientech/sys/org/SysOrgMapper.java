@@ -1,13 +1,11 @@
 package com.gientech.sys.org;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-
 /**
- * 机构--的Mapper类
- * 
- * @author 胡砥峰
+ * @author cjm
+ * @date 2023/7/8 20:41
  */
 @Mapper
 public interface SysOrgMapper extends BaseMapper<SysOrg> {
