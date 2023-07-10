@@ -1217,3 +1217,33 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
 	... 40 common frames omitted
+22:13:35.820 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:13:35.821 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+22:13:35.822 [http-nio-9801-exec-1] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】不存在或该账户不能登录!
+22:21:37.881 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:21:37.882 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+22:21:37.884 [http-nio-9801-exec-1] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】不存在或该账户不能登录!
+22:34:34.659 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:34:34.659 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+22:34:34.661 [http-nio-9801-exec-1] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】不存在或该账户不能登录!
+22:36:54.028 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:36:54.029 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+22:36:54.031 [http-nio-9801-exec-1] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】不存在或该账户不能登录!
+22:54:50.097 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:54:50.097 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+22:54:50.099 [http-nio-9801-exec-1] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】不存在或该账户不能登录!
+22:54:53.351 [http-nio-9801-exec-2] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:54:53.352 [http-nio-9801-exec-2] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+22:54:53.352 [http-nio-9801-exec-2] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】不存在或该账户不能登录!
+22:54:54.274 [http-nio-9801-exec-3] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:54:54.274 [http-nio-9801-exec-3] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+22:54:54.275 [http-nio-9801-exec-3] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】不存在或该账户不能登录!
+22:54:55.098 [http-nio-9801-exec-4] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:54:55.098 [http-nio-9801-exec-4] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+22:54:55.099 [http-nio-9801-exec-4] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】不存在或该账户不能登录!
+22:54:55.863 [http-nio-9801-exec-5] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:54:55.864 [http-nio-9801-exec-5] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+22:54:55.864 [http-nio-9801-exec-5] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】不存在或该账户不能登录!
+22:54:56.503 [http-nio-9801-exec-6] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:54:56.504 [http-nio-9801-exec-6] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+22:54:56.504 [http-nio-9801-exec-6] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】不存在或该账户不能登录!

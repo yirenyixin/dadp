@@ -1,15 +1,21 @@
 package com.gientech.sys.user;
 
+import java.io.Serializable;
+
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import lombok.Data;
 
 @Data
 @TableName(value = "T_SYS_USER")
-public class SysUser {
+public class SysUser implements Serializable {
 
-	@TableId(value = "USER_ID")
+	private static final long serialVersionUID = 1L;
+
+	@TableId(value = "USER_ID", type = IdType.INPUT)
 	private String userId; // 用户ID
 
 	@TableField(value = "USER_NAME")
@@ -40,7 +46,7 @@ public class SysUser {
 	private String idCardNo; // 身份证号码
 
 	@TableField(value = "ADDR")
-	private String addr; // 联系地址
+	private String address; // 联系地址
 
 	@TableField(value = "EMAIL")
 	private String email; // 邮箱
@@ -71,4 +77,6 @@ public class SysUser {
 
 	@TableField(value = "VER")
 	private Integer ver; // 数据版本
+
+	// Getter and Setter methods
 }

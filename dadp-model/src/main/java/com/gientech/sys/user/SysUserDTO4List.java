@@ -1,18 +1,20 @@
 package com.gientech.sys.user;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import java.io.Serializable;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-import java.io.Serializable;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 @Data
-@ApiModel(value = "用户表--查询条件的DTO类")
+@ApiModel(value = "系统用户--查询条件的DTO类")
 @JsonIgnoreProperties(value = { "orderBy" }) // 字段不接受前台传参，防止sql注入
 public class SysUserDTO4List implements Serializable {
 
@@ -47,63 +49,52 @@ public class SysUserDTO4List implements Serializable {
 	@ApiModelProperty(value = "用户姓名", position = 14)
 	private String userName; // 用户姓名
 
-	@ApiModelProperty(value = "登陆名", position = 15)
-	private String loginName; // 登陆名
+	@ApiModelProperty(value = "登录名", position = 15)
+	private String loginName; // 登录名
 
 	@ApiModelProperty(value = "手机号", position = 16)
 	private String tel; // 手机号
 
-	@ApiModelProperty(value = "密码", position = 17)
-	private String password; // 密码
-
-	@ApiModelProperty(value = "性别", position = 18)
+	@ApiModelProperty(value = "性别", position = 17)
 	private String sex; // 性别
 
-	@ApiModelProperty(value = "所属机构", position = 19)
+	@ApiModelProperty(value = "所属机构", position = 18)
 	private String orgId; // 所属机构
 
-	@ApiModelProperty(value = "所属机构地址", position = 20)
-	private String orgAddr; // 所属机构地址
-
-	@ApiModelProperty(value = "法人机构号", position = 21)
+	@ApiModelProperty(value = "法人机构号", position = 19)
 	private String lawOrgId; // 法人机构号
 
-	@ApiModelProperty(value = "身份证号码", position = 22)
+	@ApiModelProperty(value = "身份证号码", position = 20)
 	private String idCardNo; // 身份证号码
 
-	@ApiModelProperty(value = "联系地址", position = 23)
-	private String addr; // 联系地址
+	@ApiModelProperty(value = "联系地址", position = 21)
+	private String address; // 联系地址
 
-	@ApiModelProperty(value = "邮箱", position = 24)
+	@ApiModelProperty(value = "邮箱", position = 22)
 	private String email; // 邮箱
 
-	@ApiModelProperty(value = "柜员号", position = 25)
+	@ApiModelProperty(value = "柜员号", position = 23)
 	private String tellerNo; // 柜员号
 
-	@ApiModelProperty(value = "从业年限", position = 26)
+	@ApiModelProperty(value = "从业年限", position = 24)
 	private Integer workingYears; // 从业年限
 
-	@ApiModelProperty(value = "微信号", position = 27)
+	@ApiModelProperty(value = "微信号", position = 25)
 	private String wechatNo; // 微信号
 
-	@ApiModelProperty(value = "当前角色", position = 28)
+	@ApiModelProperty(value = "当前角色", position = 26)
 	private String roleId; // 当前角色
 
-	@ApiModelProperty(value = "拥有的全部角色", position = 29)
-	private String roleIds; // 拥有的全部角色
-
-	@ApiModelProperty(value = "用户状态", position = 30)
+	@ApiModelProperty(value = "用户状态", position = 27)
 	private String status; // 用户状态
 
-	@ApiModelProperty(value = "排序号", position = 31)
+	@ApiModelProperty(value = "排序号", position = 28)
 	private Integer sortNo; // 排序号
 
-	@ApiModelProperty(value = "备注", position = 32)
-	private String remark; // 备注
-
-	@ApiModelProperty(value = "数据版本", position = 33)
-	private Integer ver; // 数据版本
-
-	// 添加其他属性或方法，根据需要自行扩展
+	// -----------------分割线---------------------------------------
 
 }
+
+
+
+

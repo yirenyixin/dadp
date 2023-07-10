@@ -17,8 +17,8 @@ public class SysUserDTO4Pwd implements Serializable {
 
 	// -----------------分割线---------------------------------------
 
-	@ApiModelProperty(value = "用户ID", position = 1)
-	private String userId;// 用户ID
+	@ApiModelProperty(value = "登陆名", position = 1)
+	private String loginName;// 登陆名
 
 	@ApiModelProperty(value = "密码", position = 2)
 	private String password;// 密码

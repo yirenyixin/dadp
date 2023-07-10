@@ -1,9 +1,9 @@
 package com.gientech.sys.user;
 
+import java.io.Serializable;
+
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-
-import java.io.Serializable;
 
 @Data
 public class SysUserVO implements Serializable {
@@ -16,7 +16,7 @@ public class SysUserVO implements Serializable {
 	@ApiModelProperty(value = "用户姓名", position = 2)
 	private String userName;
 
-	@ApiModelProperty(value = "登陆名", position = 3)
+	@ApiModelProperty(value = "登录名", position = 3)
 	private String loginName;
 
 	@ApiModelProperty(value = "手机号", position = 4)
@@ -70,7 +70,7 @@ public class SysUserVO implements Serializable {
 	@ApiModelProperty(value = "备注", position = 20)
 	private String remark;
 
-	@ApiModelProperty(value = "数据版本", position = 21)
+	@ApiModelProperty(value = "版本号", position = 21)
 	private Integer ver;
 
 	// Getters and setters

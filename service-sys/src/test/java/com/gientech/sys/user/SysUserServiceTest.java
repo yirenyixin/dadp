@@ -1,7 +1,9 @@
 package com.gientech.sys.user;
 
 import com.gientech.common.view.DataGrid;
-import com.gientech.sys.user.*;
+import com.gientech.sys.user.SysUser;
+import com.gientech.sys.user.SysUserDTO4List;
+import com.gientech.sys.user.SysUserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +28,8 @@ public class SysUserServiceTest {
 		SysUserDTO4List dto = new SysUserDTO4List();
 		dto.setPageNo(1);
 		dto.setPageSize(10);
-		dto.setUserId("0001");
-		dto.setPassword("11223344");
+//		dto.setLoginName("admin");
+		// Set other properties for filtering
 
 		DataGrid<SysUserVO> dataGrid = sysUserService.listSysUser(dto);
 		if (dataGrid != null && dataGrid.getRows() != null) {
@@ -42,30 +44,31 @@ public class SysUserServiceTest {
 	 */
 	@Test
 	public void save() {
-		SysUserDTO4Save dto = new SysUserDTO4Save();
-		dto.setUserId("Test");
-		dto.setUserName("Test UserName");
-		dto.setLoginName("Test LoginName");
-		dto.setTel("Test Tel");
-		dto.setPassword("Test Password");
-		dto.setSex("M");
-		dto.setOrgId("Test OrgId");
-		dto.setOrgAddr("Test OrgAddr");
-		dto.setLawOrgId("Test LawOrgId");
-		dto.setIdCardNo("Test IDCardNo");
-		dto.setAddr("Test Addr");
-		dto.setEmail("Test Email");
-		dto.setTellerNo("Test TellerNo");
-		dto.setWorkingYears(5);
-		dto.setWechatNo("Test WechatNo");
-		dto.setRoleId("Test RoleId");
-		dto.setRoleIds("Test RoleIds");
-		dto.setStatus("1");
-		dto.setSortNo(1);
-		dto.setRemark("Test Remark");
-		dto.setVer(1);
+		SysUserDTO4Save sysUser = new SysUserDTO4Save();
+		sysUser.setUserId("Test");
+		sysUser.setUserName("Test User");
+		sysUser.setLoginName("testuser");
+		sysUser.setTel("1234567890");
+		sysUser.setPassword("testpassword");
+		sysUser.setSex("M");
+		sysUser.setOrgId("TestOrgId");
+		sysUser.setOrgAddr("Test OrgAddr");
+		sysUser.setLawOrgId("TestLawOrgId");
+		sysUser.setIdCardNo("TestIDCardNo");
+//		sysUser.setAddr("Test Addr");
+		sysUser.setEmail("test@example.com");
+		sysUser.setTellerNo("TestTellerNo");
+		sysUser.setWorkingYears(5);
+		sysUser.setWechatNo("TestWechatNo");
+		sysUser.setRoleId("TestRoleId");
+		sysUser.setRoleIds("TestRoleIds");
+		sysUser.setStatus("1");
+		sysUser.setSortNo(1);
+		sysUser.setRemark("Test Remark");
+		sysUser.setVer(1);
+		// Set other properties
 
-		sysUserService.saveSysUser(dto);
+		sysUserService.saveSysUser(sysUser);
 	}
 
 	/**
@@ -73,13 +76,13 @@ public class SysUserServiceTest {
 	 */
 	@Test
 	public void update() {
-		SysUserDTO4Update dto = new SysUserDTO4Update();
-		dto.setUserId("Test");
-		dto.setUserName("Updated UserName");
-		dto.setLoginName("Updated LoginName");
+		SysUserDTO4Update sysUser = new SysUserDTO4Update();
+		sysUser.setUserId("Test");
+		sysUser.setUserName("Updated User");
+		sysUser.setLoginName("updateduser");
 		// Set other properties
 
-		sysUserService.updateSysUser(dto);
+		sysUserService.updateSysUser(sysUser);
 	}
 
 	/**

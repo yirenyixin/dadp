@@ -23,7 +23,7 @@ import javax.validation.Valid;
 /**
  * SysUser 控制器
  */
-@Api(tags = "【1-20】用户表")
+@Api(tags = "SYS_USER")
 @ApiSort(value = 0)
 @Validated
 @RestController
@@ -46,7 +46,7 @@ public class SysUserController extends BaseController {
 	@PreAuthorize(hasAuth = "sysUser")
 	@PostMapping(value = "/list")
 	public Result<DataGrid<SysUserVO>> list(@Valid @RequestBody SysUserDTO4List sysUserDTO4List, BindingResult bindingResult) {
-		return Result.success(this.sysUserService.listSysUser(sysUserDTO4List));
+		return Result.success(sysUserService.listSysUser(sysUserDTO4List));
 	}
 
 	/**
@@ -62,7 +62,7 @@ public class SysUserController extends BaseController {
 	@PreAuthorize(hasAuth = "sysUser")
 	@PostMapping("/save")
 	public Result<Object> save(@Valid @RequestBody SysUserDTO4Save sysUserDTO4Save, BindingResult bindingResult) {
-		this.sysUserService.saveSysUser(sysUserDTO4Save);
+		sysUserService.saveSysUser(sysUserDTO4Save);
 		return Result.success();
 	}
 
@@ -79,7 +79,7 @@ public class SysUserController extends BaseController {
 	@PreAuthorize(hasAuth = "sysUser")
 	@PostMapping("/update")
 	public Result<Object> update(@Valid @RequestBody SysUserDTO4Update sysUserDTO4Update, BindingResult bindingResult) {
-		this.sysUserService.updateSysUser(sysUserDTO4Update);
+		sysUserService.updateSysUser(sysUserDTO4Update);
 		return Result.success();
 	}
 
@@ -96,7 +96,7 @@ public class SysUserController extends BaseController {
 	@PreAuthorize(hasAuth = "sysUser")
 	@PostMapping("/delete")
 	public Result<Object> delete(@Valid @RequestBody SysUserDTO4Delete sysUserDTO4Delete, BindingResult bindingResult) {
-		this.sysUserService.deleteSysUser(sysUserDTO4Delete.getUserIds());
+		sysUserService.deleteSysUser(sysUserDTO4Delete.getUserIds());
 		return Result.success();
 	}
 

@@ -1,5 +1,6 @@
 package com.gientech.sys.user;
 
+import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.gientech.common.exception.AppException;
@@ -30,10 +31,10 @@ public class SysUserService extends BaseService<SysUserMapper, SysUser> {
 		log.info("【list查询条件--SYS_USER】" + dto);
 
 		// 处理模糊查询条件的like
-		MyStringUtil.addObjectLike(dto, "userName,loginName,tel");
+		MyStringUtil.addObjectLike(dto, "userName,loginName");
 
 		// 处理排序条件
-		dto.setOrderBy(MyStringUtil.getOrderBy(dto.getSort(), dto.getOrder(), "USER_ID asc"));
+		dto.setOrderBy(MyStringUtil.getOrderBy(dto.getSort(), dto.getOrder(), "CREATE_TIME desc"));
 
 		// 构造分页参数
 		Page<SysUserVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
@@ -82,19 +83,22 @@ public class SysUserService extends BaseService<SysUserMapper, SysUser> {
 	/**
 	 * 删除 SYS_USER
 	 *
-	 * @param userId 用户ID
+	 * @param userIds 多个 userId 以逗号分隔
 	 */
-	public void deleteSysUser(String userId) {
-		log.info("【删除--SYS_USER】" + userId);
+	public void deleteSysUser(String userIds) {
+		log.info("【删除--SYS_USER】" + userIds);
 
 		// 删除 SYS_USER
-		this.removeById(userId);
+		String[] userIdArray = StrUtil.splitToArray(userIds, ",");
+		for (String userId : userIdArray) {
+			this.removeById(userId);
+		}
 	}
 
 	/**
 	 * 检查 userId 是否存在
 	 *
-	 * @param userId 用户ID
+	 * @param userId userId
 	 * @return 是否存在
 	 */
 	private boolean isExistUserId(String userId) {

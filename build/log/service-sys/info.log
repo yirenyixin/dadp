@@ -3081,3 +3081,549 @@
 22:11:19.132 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
 22:11:19.151 [restartedMain] INFO  c.gientech.StartSys - [logStarted,61] - Started StartSys in 18.123 seconds (JVM running for 19.818)
 22:11:20.412 [RMI TCP Connection(15)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:14:00.364 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+22:14:00.368 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+22:14:00.689 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+22:14:00.701 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+22:16:24.888 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 22 ms to scan 1 urls, producing 3 keys and 6 values 
+22:16:24.907 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 4 keys and 9 values 
+22:16:24.916 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+22:16:24.941 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 22 ms to scan 5 urls, producing 0 keys and 0 values 
+22:16:24.951 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 1 keys and 5 values 
+22:16:24.963 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 1 keys and 7 values 
+22:16:24.978 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 11 ms to scan 1 urls, producing 2 keys and 8 values 
+22:16:24.999 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 18 ms to scan 5 urls, producing 0 keys and 0 values 
+22:16:26.685 [restartedMain] INFO  c.gientech.StartSys - [logStartupProfileInfo,652] - The following profiles are active: dev
+22:16:28.220 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+22:16:28.229 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:16:28.230 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:16:28.230 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:16:28.230 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+22:16:28.230 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:16:28.230 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:16:28.230 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+22:16:28.230 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+22:16:28.231 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+22:16:28.231 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:16:28.231 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:16:28.231 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:16:28.231 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:16:28.231 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:16:28.232 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+22:16:28.276 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+22:16:28.500 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+22:16:28.500 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+22:16:29.043 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9801"]
+22:16:29.044 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:16:29.044 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+22:16:29.225 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:16:31.319 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+22:16:31.448 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+22:16:32.459 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadConfigToRedis,94] - -------------------【1】系统参数sysConfig，加载到redis完成-------------------
+22:16:32.512 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadCodeTypeToRedis,113] - -------------------【2】代码类别sysCodeType，加载到redis完成-------------------
+22:16:32.536 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleDataToRedis,211] - -------------------【6】数据权限SysRoleData，加载到redis完成-------------------
+22:16:32.552 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadOrgToRedis,162] - -------------------【3】机构sysOrg，加载到redis完成-------------------
+22:16:32.559 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadUserToRedis,180] - -------------------【4】用户sysUser，加载到redis完成-------------------
+22:16:32.564 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleToRedis,199] - -------------------【5】用户sysRole，加载到redis完成-------------------
+22:16:33.050 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:16:35.303 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:16:35.345 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:16:35.350 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:16:37.947 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9801"]
+22:16:37.970 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-sys 192.168.76.1:9801 register finished
+22:16:39.781 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+22:16:39.787 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+22:16:39.835 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+22:16:40.042 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+22:16:40.049 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+22:16:40.054 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+22:16:40.060 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+22:16:40.073 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+22:16:40.075 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+22:16:40.079 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+22:16:40.083 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+22:16:40.093 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+22:16:40.096 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+22:16:40.101 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+22:16:40.107 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+22:16:40.116 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+22:16:40.149 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+22:16:40.159 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+22:16:40.166 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+22:16:40.173 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+22:16:40.189 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+22:16:40.195 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+22:16:40.198 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: getUsingPOST_1
+22:16:40.203 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+22:16:40.213 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+22:16:40.218 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_7
+22:16:40.226 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+22:16:40.230 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_8
+22:16:40.240 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_9
+22:16:40.244 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+22:16:40.252 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_7
+22:16:40.261 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+22:16:40.277 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_10
+22:16:40.289 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_7
+22:16:40.303 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_8
+22:16:40.309 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_7
+22:16:40.327 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_11
+22:16:40.331 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_8
+22:16:40.338 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_9
+22:16:40.347 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
+22:16:40.380 [restartedMain] INFO  c.gientech.StartSys - [logStarted,61] - Started StartSys in 19.088 seconds (JVM running for 20.398)
+22:16:41.944 [RMI TCP Connection(27)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:17:23.789 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+22:17:23.793 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+22:17:24.136 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+22:17:24.148 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+22:17:36.094 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 25 ms to scan 1 urls, producing 3 keys and 6 values 
+22:17:36.119 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 13 ms to scan 1 urls, producing 4 keys and 9 values 
+22:17:36.130 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 3 keys and 10 values 
+22:17:36.157 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 24 ms to scan 5 urls, producing 0 keys and 0 values 
+22:17:36.166 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 1 keys and 5 values 
+22:17:36.181 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+22:17:36.189 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+22:17:36.208 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 16 ms to scan 5 urls, producing 0 keys and 0 values 
+22:17:37.959 [restartedMain] INFO  c.gientech.StartSys - [logStartupProfileInfo,652] - The following profiles are active: dev
+22:17:39.244 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+22:17:39.253 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:17:39.253 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:17:39.254 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:17:39.254 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+22:17:39.254 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:17:39.254 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:17:39.254 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+22:17:39.254 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+22:17:39.254 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+22:17:39.254 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:17:39.255 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:17:39.255 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:17:39.255 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:17:39.255 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:17:39.255 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+22:17:39.294 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+22:17:39.465 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+22:17:39.465 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+22:17:39.929 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9801"]
+22:17:39.930 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:17:39.930 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+22:17:40.134 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:17:42.087 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+22:17:42.229 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+22:17:43.015 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadConfigToRedis,94] - -------------------【1】系统参数sysConfig，加载到redis完成-------------------
+22:17:43.061 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadCodeTypeToRedis,113] - -------------------【2】代码类别sysCodeType，加载到redis完成-------------------
+22:17:43.080 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleDataToRedis,211] - -------------------【6】数据权限SysRoleData，加载到redis完成-------------------
+22:17:43.092 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadOrgToRedis,162] - -------------------【3】机构sysOrg，加载到redis完成-------------------
+22:17:43.101 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadUserToRedis,180] - -------------------【4】用户sysUser，加载到redis完成-------------------
+22:17:43.105 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleToRedis,199] - -------------------【5】用户sysRole，加载到redis完成-------------------
+22:17:43.642 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:17:45.499 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:17:45.526 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:17:45.529 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:17:47.548 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9801"]
+22:17:47.567 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-sys 192.168.76.1:9801 register finished
+22:17:48.991 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+22:17:48.994 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+22:17:49.020 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+22:17:49.100 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+22:17:49.102 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+22:17:49.104 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+22:17:49.107 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+22:17:49.112 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+22:17:49.114 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+22:17:49.116 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+22:17:49.119 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+22:17:49.123 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+22:17:49.125 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+22:17:49.127 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+22:17:49.129 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+22:17:49.135 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+22:17:49.153 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+22:17:49.156 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+22:17:49.159 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+22:17:49.162 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+22:17:49.171 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+22:17:49.174 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+22:17:49.176 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: getUsingPOST_1
+22:17:49.178 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+22:17:49.180 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+22:17:49.182 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_7
+22:17:49.184 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+22:17:49.186 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_8
+22:17:49.190 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_9
+22:17:49.191 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+22:17:49.193 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_7
+22:17:49.195 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+22:17:49.200 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_10
+22:17:49.202 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_7
+22:17:49.204 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_8
+22:17:49.206 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_7
+22:17:49.217 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_11
+22:17:49.220 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_8
+22:17:49.223 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_9
+22:17:49.228 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
+22:17:49.245 [restartedMain] INFO  c.gientech.StartSys - [logStarted,61] - Started StartSys in 16.851 seconds (JVM running for 18.672)
+22:17:49.921 [RMI TCP Connection(15)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:21:49.722 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+22:21:49.731 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+22:21:50.056 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+22:21:50.068 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+22:21:59.488 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 25 ms to scan 1 urls, producing 3 keys and 6 values 
+22:21:59.510 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 10 ms to scan 1 urls, producing 4 keys and 9 values 
+22:21:59.520 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 3 keys and 10 values 
+22:21:59.542 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 19 ms to scan 5 urls, producing 0 keys and 0 values 
+22:21:59.551 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 1 keys and 5 values 
+22:21:59.567 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+22:21:59.578 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 2 keys and 8 values 
+22:21:59.598 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 18 ms to scan 5 urls, producing 0 keys and 0 values 
+22:22:01.296 [restartedMain] INFO  c.gientech.StartSys - [logStartupProfileInfo,652] - The following profiles are active: dev
+22:22:02.527 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+22:22:02.536 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:22:02.536 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:22:02.536 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:22:02.536 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+22:22:02.536 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:22:02.537 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:22:02.537 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+22:22:02.537 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+22:22:02.537 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+22:22:02.537 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:22:02.537 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:22:02.537 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:22:02.537 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:22:02.537 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:22:02.538 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+22:22:02.576 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+22:22:02.746 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+22:22:02.747 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+22:22:03.216 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9801"]
+22:22:03.216 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:22:03.216 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+22:22:03.431 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:22:05.469 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+22:22:05.586 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+22:22:06.437 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadConfigToRedis,94] - -------------------【1】系统参数sysConfig，加载到redis完成-------------------
+22:22:06.480 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadCodeTypeToRedis,113] - -------------------【2】代码类别sysCodeType，加载到redis完成-------------------
+22:22:06.500 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleDataToRedis,211] - -------------------【6】数据权限SysRoleData，加载到redis完成-------------------
+22:22:06.512 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadOrgToRedis,162] - -------------------【3】机构sysOrg，加载到redis完成-------------------
+22:22:06.519 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadUserToRedis,180] - -------------------【4】用户sysUser，加载到redis完成-------------------
+22:22:06.525 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleToRedis,199] - -------------------【5】用户sysRole，加载到redis完成-------------------
+22:22:06.986 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:22:08.846 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:22:08.874 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:22:08.877 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:22:11.016 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9801"]
+22:22:11.078 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-sys 192.168.76.1:9801 register finished
+22:22:12.702 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+22:22:12.705 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+22:22:12.730 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+22:22:12.808 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+22:22:12.810 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+22:22:12.812 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+22:22:12.815 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+22:22:12.821 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+22:22:12.822 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+22:22:12.824 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+22:22:12.827 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+22:22:12.832 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+22:22:12.833 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+22:22:12.835 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+22:22:12.837 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+22:22:12.843 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+22:22:12.880 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+22:22:12.884 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+22:22:12.886 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+22:22:12.890 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+22:22:12.899 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+22:22:12.902 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+22:22:12.903 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: getUsingPOST_1
+22:22:12.906 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+22:22:12.908 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+22:22:12.909 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_7
+22:22:12.912 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+22:22:12.913 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_8
+22:22:12.918 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_9
+22:22:12.919 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+22:22:12.922 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_7
+22:22:12.924 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+22:22:12.928 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_10
+22:22:12.929 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_7
+22:22:12.931 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_8
+22:22:12.935 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_7
+22:22:12.946 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_11
+22:22:12.947 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_8
+22:22:12.951 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_9
+22:22:12.955 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
+22:22:12.972 [restartedMain] INFO  c.gientech.StartSys - [logStarted,61] - Started StartSys in 17.376 seconds (JVM running for 18.933)
+22:22:13.550 [RMI TCP Connection(19)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:34:34.983 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+22:34:34.987 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+22:34:35.309 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+22:34:35.323 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+22:35:52.677 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 22 ms to scan 1 urls, producing 3 keys and 6 values 
+22:35:52.698 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 4 keys and 9 values 
+22:35:52.708 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 3 keys and 10 values 
+22:35:52.732 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 20 ms to scan 5 urls, producing 0 keys and 0 values 
+22:35:52.739 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 1 keys and 5 values 
+22:35:52.753 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 11 ms to scan 1 urls, producing 1 keys and 7 values 
+22:35:52.761 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+22:35:52.781 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 17 ms to scan 5 urls, producing 0 keys and 0 values 
+22:35:54.690 [restartedMain] INFO  c.gientech.StartSys - [logStartupProfileInfo,652] - The following profiles are active: dev
+22:35:56.105 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+22:35:56.115 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:35:56.115 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:35:56.115 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:35:56.115 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+22:35:56.115 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:35:56.115 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:35:56.116 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+22:35:56.116 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+22:35:56.116 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+22:35:56.116 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:35:56.116 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:35:56.116 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:35:56.116 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:35:56.116 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:35:56.117 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+22:35:56.155 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+22:35:56.330 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+22:35:56.331 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+22:35:56.851 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9801"]
+22:35:56.852 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:35:56.852 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+22:35:57.090 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:35:59.736 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+22:35:59.882 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+22:36:00.688 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadConfigToRedis,94] - -------------------【1】系统参数sysConfig，加载到redis完成-------------------
+22:36:00.734 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadCodeTypeToRedis,113] - -------------------【2】代码类别sysCodeType，加载到redis完成-------------------
+22:36:00.754 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleDataToRedis,211] - -------------------【6】数据权限SysRoleData，加载到redis完成-------------------
+22:36:00.768 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadOrgToRedis,162] - -------------------【3】机构sysOrg，加载到redis完成-------------------
+22:36:00.775 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadUserToRedis,180] - -------------------【4】用户sysUser，加载到redis完成-------------------
+22:36:00.780 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleToRedis,199] - -------------------【5】用户sysRole，加载到redis完成-------------------
+22:36:01.282 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:36:03.187 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:36:03.225 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:36:03.231 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:36:05.403 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9801"]
+22:36:05.423 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-sys 192.168.76.1:9801 register finished
+22:36:06.869 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+22:36:06.872 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+22:36:06.900 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+22:36:07.000 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+22:36:07.002 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+22:36:07.005 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+22:36:07.009 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+22:36:07.016 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+22:36:07.018 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+22:36:07.021 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+22:36:07.025 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+22:36:07.032 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+22:36:07.034 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+22:36:07.036 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+22:36:07.040 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+22:36:07.047 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+22:36:07.068 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+22:36:07.073 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+22:36:07.076 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+22:36:07.080 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+22:36:07.093 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+22:36:07.097 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+22:36:07.098 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: getUsingPOST_1
+22:36:07.102 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+22:36:07.106 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+22:36:07.108 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_7
+22:36:07.113 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+22:36:07.116 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_8
+22:36:07.123 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_9
+22:36:07.125 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+22:36:07.128 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_7
+22:36:07.130 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+22:36:07.137 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_10
+22:36:07.139 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_7
+22:36:07.142 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_8
+22:36:07.146 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_7
+22:36:07.157 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_11
+22:36:07.159 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_8
+22:36:07.163 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_9
+22:36:07.168 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
+22:36:07.185 [restartedMain] INFO  c.gientech.StartSys - [logStarted,61] - Started StartSys in 18.596 seconds (JVM running for 20.121)
+22:36:08.023 [RMI TCP Connection(9)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:36:54.321 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+22:36:54.324 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+22:36:54.655 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+22:36:54.672 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+22:53:42.162 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 20 ms to scan 1 urls, producing 3 keys and 6 values 
+22:53:42.179 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 4 keys and 9 values 
+22:53:42.187 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+22:53:42.208 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 18 ms to scan 5 urls, producing 0 keys and 0 values 
+22:53:42.214 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+22:53:42.223 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 1 keys and 7 values 
+22:53:42.233 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 2 keys and 8 values 
+22:53:42.254 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 18 ms to scan 5 urls, producing 0 keys and 0 values 
+22:53:43.789 [restartedMain] INFO  c.gientech.StartSys - [logStartupProfileInfo,652] - The following profiles are active: dev
+22:53:44.931 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+22:53:44.940 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:53:44.940 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:53:44.940 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:53:44.941 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+22:53:44.941 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:53:44.941 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:53:44.941 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+22:53:44.941 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+22:53:44.941 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+22:53:44.941 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:53:44.941 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:53:44.942 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:53:44.942 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:53:44.942 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:53:44.942 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+22:53:44.974 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+22:53:45.127 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+22:53:45.127 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+22:53:45.556 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9801"]
+22:53:45.557 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:53:45.557 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+22:53:45.724 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:53:47.622 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+22:53:47.733 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+22:53:48.487 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadConfigToRedis,94] - -------------------【1】系统参数sysConfig，加载到redis完成-------------------
+22:53:48.532 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadCodeTypeToRedis,113] - -------------------【2】代码类别sysCodeType，加载到redis完成-------------------
+22:53:48.549 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleDataToRedis,211] - -------------------【6】数据权限SysRoleData，加载到redis完成-------------------
+22:53:48.561 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadOrgToRedis,162] - -------------------【3】机构sysOrg，加载到redis完成-------------------
+22:53:48.566 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadUserToRedis,180] - -------------------【4】用户sysUser，加载到redis完成-------------------
+22:53:48.570 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleToRedis,199] - -------------------【5】用户sysRole，加载到redis完成-------------------
+22:53:48.967 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:53:50.827 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:53:50.853 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:53:50.856 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:53:52.833 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9801"]
+22:53:52.850 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-sys 192.168.76.1:9801 register finished
+22:53:54.291 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+22:53:54.294 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+22:53:54.318 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+22:53:54.397 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+22:53:54.399 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+22:53:54.401 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+22:53:54.403 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+22:53:54.409 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+22:53:54.410 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+22:53:54.413 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+22:53:54.415 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+22:53:54.420 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+22:53:54.422 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+22:53:54.424 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+22:53:54.426 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+22:53:54.432 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+22:53:54.450 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+22:53:54.453 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+22:53:54.455 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+22:53:54.458 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+22:53:54.467 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+22:53:54.470 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+22:53:54.471 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: getUsingPOST_1
+22:53:54.473 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+22:53:54.477 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+22:53:54.478 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_7
+22:53:54.480 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+22:53:54.482 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_8
+22:53:54.486 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_9
+22:53:54.487 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+22:53:54.489 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_7
+22:53:54.490 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+22:53:54.495 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_10
+22:53:54.497 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_7
+22:53:54.499 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_8
+22:53:54.501 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_7
+22:53:54.510 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_11
+22:53:54.512 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_8
+22:53:54.516 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_9
+22:53:54.519 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
+22:53:54.535 [restartedMain] INFO  c.gientech.StartSys - [logStarted,61] - Started StartSys in 15.978 seconds (JVM running for 17.556)
+22:53:55.460 [RMI TCP Connection(3)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:55:10.328 [Thread-1] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+22:55:10.331 [Thread-1] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+22:55:10.656 [Thread-1] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+22:55:10.671 [Thread-1] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+22:55:14.100 [restartedMain] INFO  c.gientech.StartSys - [logStartupProfileInfo,652] - The following profiles are active: dev
+22:55:14.816 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+22:55:14.823 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:55:14.823 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:55:14.823 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+22:55:14.823 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+22:55:14.823 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:55:14.823 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:55:14.824 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+22:55:14.824 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+22:55:14.824 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+22:55:14.824 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:55:14.824 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:55:14.824 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:55:14.824 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:55:14.824 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:55:14.824 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+22:55:14.831 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+22:55:14.864 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+22:55:14.864 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+22:55:14.995 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9801"]
+22:55:14.995 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:55:14.995 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+22:55:15.069 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:55:16.672 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-2 - Starting...
+22:55:16.676 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-2 - Start completed.
+22:55:16.688 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadConfigToRedis,94] - -------------------【1】系统参数sysConfig，加载到redis完成-------------------
+22:55:16.716 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadCodeTypeToRedis,113] - -------------------【2】代码类别sysCodeType，加载到redis完成-------------------
+22:55:16.732 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleDataToRedis,211] - -------------------【6】数据权限SysRoleData，加载到redis完成-------------------
+22:55:16.750 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadOrgToRedis,162] - -------------------【3】机构sysOrg，加载到redis完成-------------------
+22:55:16.756 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadUserToRedis,180] - -------------------【4】用户sysUser，加载到redis完成-------------------
+22:55:16.759 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleToRedis,199] - -------------------【5】用户sysRole，加载到redis完成-------------------
+22:55:17.036 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:55:18.773 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:55:18.791 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:55:20.793 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9801"]
+22:55:20.799 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-sys 192.168.76.1:9801 register finished
+22:55:22.436 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+22:55:22.437 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+22:55:22.455 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+22:55:22.493 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+22:55:22.496 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+22:55:22.498 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+22:55:22.501 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+22:55:22.506 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+22:55:22.508 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+22:55:22.510 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+22:55:22.512 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+22:55:22.517 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+22:55:22.519 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+22:55:22.521 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+22:55:22.524 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+22:55:22.531 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+22:55:22.550 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+22:55:22.553 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+22:55:22.556 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+22:55:22.559 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+22:55:22.567 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+22:55:22.571 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+22:55:22.572 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: getUsingPOST_1
+22:55:22.575 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+22:55:22.579 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+22:55:22.582 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_7
+22:55:22.587 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+22:55:22.590 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_8
+22:55:22.599 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_9
+22:55:22.602 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+22:55:22.604 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_7
+22:55:22.607 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+22:55:22.614 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_10
+22:55:22.617 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_7
+22:55:22.619 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_8
+22:55:22.622 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_7
+22:55:22.632 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_11
+22:55:22.634 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_8
+22:55:22.639 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_9
+22:55:22.650 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
+22:55:22.661 [restartedMain] INFO  c.gientech.StartSys - [logStarted,61] - Started StartSys in 11.792 seconds (JVM running for 105.682)
+22:56:46.224 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+22:56:46.227 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+22:56:46.537 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-2 - Shutdown initiated...
+22:56:46.547 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-2 - Shutdown completed.

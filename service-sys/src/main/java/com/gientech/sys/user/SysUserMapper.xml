@@ -1,42 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
 <mapper namespace="com.gientech.sys.user.SysUserMapper">
 
 	<!-- 查询条件置顶 -->
 	<sql id="sysUserList_filter">
 		<where>
 			<trim suffixOverrides="and">
-				<if test="dto.userId != null and dto.userId != ''">
-					<![CDATA[ a.USER_ID = #{dto.userId} and ]]>
-				</if>
-				<if test="dto.userName != null and dto.userName != ''">
-					<![CDATA[ a.USER_NAME = #{dto.userName} and ]]>
-				</if>
 				<if test="dto.loginName != null and dto.loginName != ''">
-					<![CDATA[ a.LOGIN_NAME = #{dto.loginName} and ]]>
+					<![CDATA[ LOGIN_NAME = #{dto.loginName} and ]]>
 				</if>
 				<if test="dto.tel != null and dto.tel != ''">
-					<![CDATA[ a.TEL = #{dto.tel} and ]]>
-				</if>
-				<if test="dto.sex != null and dto.sex != ''">
-					<![CDATA[ a.SEX = #{dto.sex} and ]]>
+					<![CDATA[ TEL = #{dto.tel} and ]]>
 				</if>
 				<if test="dto.orgId != null and dto.orgId != ''">
-					<![CDATA[ a.ORG_ID = #{dto.orgId} and ]]>
+					<![CDATA[ ORG_ID = #{dto.orgId} and ]]>
 				</if>
 				<if test="dto.lawOrgId != null and dto.lawOrgId != ''">
-					<![CDATA[ a.LAW_ORG_ID = #{dto.lawOrgId} and ]]>
+					<![CDATA[ LAW_ORG_ID = #{dto.lawOrgId} and ]]>
 				</if>
-				<if test="dto.idCardNo != null and dto.idCardNo!= ''">
-					<![CDATA[ a.ID_CARD_NO = #{dto.idCardNo} and ]]>
+				<if test="dto.idCardNo != null and dto.idCardNo != ''">
+					<![CDATA[ ID_CARD_NO = #{dto.idCardNo} and ]]>
 				</if>
-				<if test="dto.roleId != null and dto.roleId!= ''">
-					<![CDATA[ a.ROLE_ID  = #{dto.roleId} and ]]>
+				<if test="dto.roleId != null and dto.roleId != ''">
+					<![CDATA[ ROLE_ID = #{dto.roleId} and ]]>
 				</if>
-				<if test="dto.status != null and dto.status!= ''">
-					<![CDATA[ a.STATUS = #{dto.status} and ]]>
+				<if test="dto.status != null and dto.status != ''">
+					<![CDATA[ STATUS = #{dto.status} and ]]>
 				</if>
 				<!-- Add more conditions if needed -->
 			</trim>
@@ -45,57 +35,30 @@
 
 	<select id="getSysUserList" resultType="com.gientech.sys.user.SysUser" parameterType="com.gientech.sys.user.SysUserDTO4List">
 		SELECT
-		a.USER_ID as userId,
-		a.USER_NAME as userName,
-		a.LOGIN_NAME as loginName,
-		a.TEL as tel,
-		a.PASSWORD as password,
-		a.SEX as sex,
-		a.ORG_ID as orgId,
-		a.ORG_ADDR as orgAddr,
-		a.LAW_ORG_ID as lawOrgId,
-		a.ID_CARD_NO as idCardNo,
-		a.ADDR as addr,
-		a.EMAIL as email,
-		a.TELLER_NO as tellerNo,
-		a.WORKING_YEARS as workingYears,
-		a.WECHAT_NO as wechatNo,
-		a.ROLE_ID as roleId,
-		a.ROLE_IDS as roleIds,
-		a.STATUS as status,
-		a.SORT_NO as sortNo,
-		a.REMARK as remark,
-		a.VER as ver
-		FROM T_SYS_USER a
+		USER_ID as userId,
+		USER_NAME as userName,
+		LOGIN_NAME as loginName,
+		TEL as tel,
+		PASSWORD as password,
+		SEX as sex,
+		ORG_ID as orgId,
+		ORG_ADDR as orgAddr,
+		LAW_ORG_ID as lawOrgId,
+		ID_CARD_NO as idCardNo,
+		ADDR as addr,
+		EMAIL as email,
+		TELLER_NO as tellerNo,
+		WORKING_YEARS as workingYears,
+		WECHAT_NO as wechatNo,
+		ROLE_ID as roleId,
+		ROLE_IDS as roleIds,
+		STATUS as status,
+		SORT_NO as sortNo,
+		REMARK as remark,
+		VER as ver
+		FROM T_SYS_USER
 		<include refid="sysUserList_filter" />
-		ORDER BY a.USER_ID
-	</select>
-
-	<select id="getSysUser" resultType="com.gientech.sys.user.SysUser" parameterType="String">
-		SELECT
-			a.USER_ID as userId,
-			a.USER_NAME as userName,
-			a.LOGIN_NAME as loginName,
-			a.TEL as tel,
-			a.PASSWORD as password,
-			a.SEX as sex,
-			a.ORG_ID as orgId,
-			a.ORG_ADDR as orgAddr,
-			a.LAW_ORG_ID as lawOrgId,
-			a.ID_CARD_NO as idCardNo,
-			a.ADDR as addr,
-			a.EMAIL as email,
-			a.TELLER_NO as tellerNo,
-			a.WORKING_YEARS as workingYears,
-			a.WECHAT_NO as wechatNo,
-			a.ROLE_ID as roleId,
-			a.ROLE_IDS as roleIds,
-			a.STATUS as status,
-			a.SORT_NO as sortNo,
-			a.REMARK as remark,
-			a.VER as ver
-		FROM T_SYS_USER a
-		WHERE a.USER_ID = #{userId}
+		ORDER BY USER_ID
 	</select>
 
 </mapper>
