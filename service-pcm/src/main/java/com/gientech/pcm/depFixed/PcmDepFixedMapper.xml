@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.pcm.depFixed.PcmDepFixedMapper">
+
+    <!-- 查询条件置顶 -->
+    <sql id="pcmDepFixedList_filter">
+        <where>
+            <trim suffixOverrides="and">
+                <if test="dto.custId != null and dto.custId !=''">
+                    <![CDATA[ a.CUST_ID = #{dto.custId} and ]]>
+                </if>
+                <!-- Add more conditions if needed -->
+            </trim>
+        </where>
+    </sql>
+
+    <select id="getPcmDepFixedList" resultType="com.gientech.pcm.depFixed.PcmDepFixed" parameterType="com.gientech.pcm.depFixed.PcmDepFixedDTO4List">
+        SELECT
+        a.DEP_FIXED_ID as depFixedId,
+        a.CUST_ID as custId,
+        a.ECIF_CUST_ID as ecifCustId,
+        a.CUST_NAME as custName,
+        a.LAW_ORG_ID as lawOrgId,
+        a.PROD_CODE as prodCode,
+        a.PROD_NAME as prodName,
+        a.ACCT_NO as acctNo,
+        a.SUB_ACCT_NO as subAcctNo,
+        a.ACCT_TYPE as acctType,
+        a.FLOAT_RATE as floatRate,
+        a.RATE as rate,
+        a.CURR_NO as currNo,
+        a.BAL as bal,
+        a.TERM as term,
+        a.END_DATE as endDate,
+        a.ACCT_STS as acctSts,
+        a.OPEN_ORG_NO as openOrgNo,
+        a.START_DT as startDt,
+        a.VOUCHER_NO as voucherNo
+        FROM T_PCM_DEP_FIXED a
+        <include refid="pcmDepFixedList_filter" />
+        ORDER BY a.DEP_FIXED_ID
+    </select>
+
+    <select id="getPcmDepFixed" resultType="com.gientech.pcm.depFixed.PcmDepFixed" parameterType="String">
+        SELECT
+            a.DEP_FIXED_ID as depFixedId,
+            a.CUST_ID as custId,
+            a.ECIF_CUST_ID as ecifCustId,
+            a.CUST_NAME as custName,
+            a.LAW_ORG_ID as lawOrgId,
+            a.PROD_CODE as prodCode,
+            a.PROD_NAME as prodName,
+            a.ACCT_NO as acctNo,
+            a.SUB_ACCT_NO as subAcctNo,
+            a.ACCT_TYPE as acctType,
+            a.FLOAT_RATE as floatRate,
+            a.RATE as rate,
+            a.CURR_NO as currNo,
+            a.BAL as bal,
+            a.TERM as term,
+            a.END_DATE as endDate,
+            a.ACCT_STS as acctSts,
+            a.OPEN_ORG_NO as openOrgNo,
+            a.START_DT as startDt,
+            a.VOUCHER_NO as voucherNo
+        FROM T_PCM_DEP_FIXED a
+        WHERE a.DEP_FIXED_ID = #{depFixedId}
+    </select>
+
+</mapper>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.pcm.cust.PcmCustMapper">
+
+    <!-- 查询条件置顶 -->
+    <sql id="pcmCustList_filter">
+        <where>
+            <trim suffixOverrides="and">
+                <if test="dto.custName != null and dto.custName !=''">
+                    <![CDATA[CUST_NAME like #{dto.custName} and	]]>
+                </if>
+                <if test="dto.custState != null and dto.custState !=''">
+                    <![CDATA[CUST_STATE like #{dto.custState} and	]]>
+                </if>
+                <if test="dto.certType != null and dto.certType !=''">
+                    <![CDATA[CERT_TYPE like #{dto.certType} and	]]>
+                </if>
+                <if test="dto.certNo != null and dto.certNo !=''">
+                    <![CDATA[CERT_NO like #{dto.certNo} and	]]>
+                </if>
+                <if test="dto.isEmployee != null and dto.isEmployee !=''">
+                    <![CDATA[IS_EMPLOYEE like #{dto.isEmployee} and	]]>
+                </if>
+            </trim>
+        </where>
+    </sql>
+
+    <select id="getPcmCustList" resultType="com.gientech.pcm.cust.PcmCustVO" parameterType="com.gientech.pcm.cust.PcmCustDTO4List">
+        SELECT
+        a.CUST_ID AS custId,
+        a.ECIF_CUST_ID AS ecifCustId,
+        a.CUST_NAME AS custName,
+        a.LAW_ORG_ID AS lawOrgId,
+        a.LAW_ORG_NAME AS lawOrgName,
+        a.CUST_STATE AS custState,
+        a.CERT_TYPE AS certType,
+        a.CERT_NO AS certNo,
+        a.CERT_ADDR AS certAddr,
+        a.MOBILE AS mobile,
+        a.TEL AS tel,
+        a.ADDRESS AS address,
+        a.SEX AS sex,
+        a.MAR_STAT AS marStat,
+        a.BIRTHDAY AS birthday,
+        a.NATION AS nation,
+        a.COUNTRY AS country,
+        a.LIVING_TYPE AS livingType,
+        a.IS_OWN_CAR AS isOwnCar,
+        a.IS_OWN_HOUSE AS isOwnHouse,
+        a.HOME_INT_TOTAL AS homeIntTotal,
+        a.HIGHEST_EDU AS highestEdu,
+        a.HOBBY AS hobby,
+        a.TRADE AS trade,
+        a.PROFESSION AS profession,
+        a.POSITION AS position,
+        a.UNIT_NM AS unitNm,
+        a.IS_BLACKLIST AS isBlacklist,
+        a.BLACKLIST_SOURCE AS blacklistSource,
+        a.REMARK AS remark,
+        a.REMARK_USER AS remarkUser,
+        a.AGE AS age,
+        a.AGE_AREA AS ageArea,
+        a.AREA_NO AS areaNo,
+        a.IS_MERCHANT AS isMerchant,
+        a.IS_STOCK AS isStock,
+        a.UNIT_ADDR AS unitAddr,
+        a.UNIT_TEL AS unitTel,
+        a.IS_EMPLOYEE AS isEmployee
+        FROM
+        T_PCM_CUST AS a
+        <include refid="pcmCustList_filter" />
+    </select>
+
+</mapper>

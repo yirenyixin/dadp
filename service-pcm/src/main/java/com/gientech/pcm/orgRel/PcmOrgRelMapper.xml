@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.pcm.orgRel.PcmOrgRelMapper">
+
+
+    <select id="getPcmOrgRelList" resultType="com.gientech.pcm.orgRel.PcmOrgRelVO" parameterType="com.gientech.pcm.orgRel.PcmOrgRelDTO4List">
+        SELECT
+            a.ORG_REL_ID AS orgRelId,
+            a.CUST_ID AS custId,
+            a.LAW_ORG_ID AS lawOrgId,
+            a.ECIF_CUST_ID AS ecifCustId,
+            a.CUST_NAME AS custName,
+            a.BELONG_ORG_ID AS belongOrgId,
+            a.BELONG_ORG_NAME AS belongOrgName,
+            a.MAIN_ORG_TYPE AS mainOrgType,
+            a.ASSIGN_TYPE AS assignType,
+            a.ASSIGN_USER_ID AS assignUserId,
+            a.ASSIGN_DATE AS assignDate
+        FROM
+            T_PCM_ORG_REL AS a
+    </select>
+
+</mapper>
