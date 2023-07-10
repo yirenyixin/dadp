@@ -77,7 +77,6 @@ public class SysCacheController {
             map.put(MyConstants.COMBO_ORG_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_ORG));
             map.put(MyConstants.COMBO_USER_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_USER));
             map.put(MyConstants.COMBO_ROLE_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_ROLE));
-            map.put(MyConstants.COMBO_BOOK_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_BOOK));
 //            map.put(MyConstants.DEP_FIXED_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_DEP_FIXED));
         } else {
             // 【2】根据前端参数，获取相应的下拉框
@@ -92,8 +91,6 @@ public class SysCacheController {
                 } else if (MyConstants.COMBO_ROLE_ID.equals(codeTypeId)) {// roleId
                     map.put(MyConstants.COMBO_ROLE_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_ROLE));
 
-                } else if (MyConstants.COMBO_BOOK_ID.equals(codeTypeId)) {// bookId
-                    map.put(MyConstants.COMBO_BOOK_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_COMBO_BOOK));
                 }
 //                else if (MyConstants.DEP_FIXED_ID.equals(codeTypeId)) {// DEP_FIXED_ID
 //                    map.put(MyConstants.DEP_FIXED_ID, (List<Combo>) this.redisService.get(MyConstants.REDIS_DEP_FIXED));

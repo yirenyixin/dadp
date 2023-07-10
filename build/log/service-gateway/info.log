@@ -158,3 +158,18 @@
 15:38:56.799 [restartedMain] INFO  c.g.g.StartGateway - [logStarted,61] - Started StartGateway in 14.165 seconds (JVM running for 15.349)
 15:39:19.018 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
 15:39:19.037 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+15:41:46.939 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 16 ms to scan 1 urls, producing 3 keys and 6 values 
+15:41:46.954 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 4 keys and 9 values 
+15:41:46.961 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+15:41:46.965 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 2 ms to scan 1 urls, producing 0 keys and 0 values 
+15:41:46.970 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+15:41:46.977 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+15:41:46.983 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
+15:41:46.986 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 1 ms to scan 1 urls, producing 0 keys and 0 values 
+15:41:48.691 [restartedMain] INFO  c.g.g.StartGateway - [logStartupProfileInfo,652] - The following profiles are active: dev
+15:41:49.276 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:41:49.278 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:41:58.085 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-gateway 192.168.76.1:9999 register finished
+15:41:58.097 [restartedMain] INFO  c.g.g.StartGateway - [logStarted,61] - Started StartGateway in 14.582 seconds (JVM running for 15.862)
+20:24:38.384 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+20:24:38.387 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.

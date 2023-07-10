@@ -19,6 +19,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="service-pmm (1)" target="1.8" />
       <module name="service-ppm (1)" target="1.8" />
     </bytecodeTargetLevel>
   </component>

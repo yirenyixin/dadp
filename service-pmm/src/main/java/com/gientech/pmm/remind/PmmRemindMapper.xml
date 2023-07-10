@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.pmm.remind.PmmRemindMapper">
+
+    <!-- 查询条件置顶 -->
+    <sql id="pmmRemindList_filter">
+        <where>
+            <trim suffixOverrides="and">
+                <if test="dto.eventType != null and dto.eventType !=''">
+                    <![CDATA[	a.EVENT_TYPE like #{dto.eventType} and	]]>
+                </if>
+                <if test="dto.eventSmallType != null and dto.eventSmallType !=''">
+                    <![CDATA[	a.EVENT_SMALL_TYPE like #{dto.eventSmallType} and	]]>
+                </if>
+            </trim>
+        </where>
+    </sql>
+
+    <select id="getPmmRemindList" resultType="com.gientech.pmm.remind.PmmRemindVO" parameterType="com.gientech.pmm.remind.PmmRemindDTO4List">
+
+        select
+		a.REMIND_ID as remindId,
+		a.REMIND_CONTENT as remindContent,
+		a.VALID_DAY as validDay,
+		a.CREATE_DATE as createDate,
+		a.RECEIVER_USER_ID as receiverUserId,
+		a.CUST_ID as custId,
+		a.LAW_ORG_ID as lawOrgId,
+		a.EVENT_TYPE as eventType,
+		a.EVENT_SMALL_TYPE as eventSmallType
+
+		from T_PMM_REMIND a
+
+        <include refid="pmmRemindList_filter" />
+
+        order by <![CDATA[	${dto.orderBy}	]]>
+    </select>
+
+</mapper>

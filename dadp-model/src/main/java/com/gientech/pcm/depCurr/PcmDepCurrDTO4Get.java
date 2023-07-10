@@ -16,10 +16,10 @@ public class PcmDepCurrDTO4Get implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "主键id", required = true, position = 1)
-    @NotBlank(message = "[depCurrId]主键id，不能为空")
+    @NotBlank(message = "[depCurrId] 主键id不能为空")
     @Size(max = 32, message = "主键id的长度必须小于等于32")
     private String depCurrId; // 主键id
 
-    // -----------------分割线---------------------------------------
+    // 添加其他属性或方法，根据需要自行扩展
 
 }

@@ -2,7 +2,6 @@ package com.gientech.pcm.depCurr;
 
 import java.io.Serializable;
 
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -15,7 +14,7 @@ public class PcmDepCurr implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "DEP_CURR_ID", type = IdType.INPUT)
+    @TableId(value = "DEP_CURR_ID")
     private String depCurrId; // ID
 
     @TableField(value = "CUST_ID")
@@ -63,4 +62,5 @@ public class PcmDepCurr implements Serializable {
     @TableField(value = "CURRENT_BAL")
     private Float currentBal; // 当前余额
 
+    // Getters and setters
 }

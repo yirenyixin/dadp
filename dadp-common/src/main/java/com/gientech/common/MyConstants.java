@@ -28,17 +28,13 @@ public class MyConstants {
     public static final String REDIS_COMBO_ORG = "comboOrg";
     public static final String REDIS_COMBO_USER = "comboUser";
     public static final String REDIS_COMBO_ROLE = "comboRole";
-    //新增bookState
-    public static final String REDIS_SYS_BOOK_STATE_INFO = "sysBookStateInfo:";
-    public static final String REDIS_COMBO_BOOK_STATE = "comboBookState";
+
 
     public static final String COMBO_ORG_ID = "orgId";// 机构下拉框key
     public static final String COMBO_USER_ID = "userId";// 用户下拉框key
     public static final String COMBO_ROLE_ID = "roleId";// 角色下拉框key
 
-    //新增book
-    public static final String REDIS_COMBO_BOOK = "comboBook";
-    public static final String COMBO_BOOK_ID = "bookId"; // 图书下拉框key
+
 
     //新增DEP_FIXED
     public static final String REDIS_DEP_FIXED = "depFixed";

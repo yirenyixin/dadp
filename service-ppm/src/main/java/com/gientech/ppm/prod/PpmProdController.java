@@ -1,28 +1,29 @@
 package com.gientech.ppm.prod;
 
-import javax.validation.Valid;
-
 import com.gientech.common.Result;
+import com.gientech.common.enums.OperType;
 import com.gientech.common.view.DataGrid;
 import com.gientech.core.base.BaseController;
 import com.gientech.core.log.annotation.OperLog;
 import com.gientech.core.security.annotation.PreAuthorize;
-import com.gientech.common.enums.OperType;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.github.xiaoymin.knife4j.annotations.ApiSort;
-
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import javax.validation.Valid;
 
 /**
  * PpmProd 控制器
  */
-@Api(tags = "PPM_PROD")
+@Api(tags = "【3-1】产品表")
 @ApiSort(value = 0)
 @Validated
 @RestController
