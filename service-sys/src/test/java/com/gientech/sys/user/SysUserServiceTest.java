@@ -26,6 +26,8 @@ public class SysUserServiceTest {
 		SysUserDTO4List dto = new SysUserDTO4List();
 		dto.setPageNo(1);
 		dto.setPageSize(10);
+		dto.setUserId("0001");
+		dto.setPassword("11223344");
 
 		DataGrid<SysUserVO> dataGrid = sysUserService.listSysUser(dto);
 		if (dataGrid != null && dataGrid.getRows() != null) {

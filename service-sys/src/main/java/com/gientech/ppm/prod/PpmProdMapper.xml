@@ -11,6 +11,12 @@
                 <if test="dto.prodId != null and dto.prodId !=''">
                     <![CDATA[ a.PROD_ID = #{dto.prodId} and ]]>
                 </if>
+                <if test="dto.prodName != null and dto.prodName !=''">
+                    <![CDATA[ a.PROD_NAME = #{dto.prodName} and ]]>
+                </if>
+                <if test="dto.prodStatus != null and dto.prodStatus !=''">
+                    <![CDATA[ a.PROD_STATUS = #{dto.prodStatus} and ]]>
+                </if>
                 <!-- Add more conditions if needed -->
             </trim>
         </where>

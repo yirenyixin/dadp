@@ -11,6 +11,33 @@
 				<if test="dto.userId != null and dto.userId != ''">
 					<![CDATA[ a.USER_ID = #{dto.userId} and ]]>
 				</if>
+				<if test="dto.userName != null and dto.userName != ''">
+					<![CDATA[ a.USER_NAME = #{dto.userName} and ]]>
+				</if>
+				<if test="dto.loginName != null and dto.loginName != ''">
+					<![CDATA[ a.LOGIN_NAME = #{dto.loginName} and ]]>
+				</if>
+				<if test="dto.tel != null and dto.tel != ''">
+					<![CDATA[ a.TEL = #{dto.tel} and ]]>
+				</if>
+				<if test="dto.sex != null and dto.sex != ''">
+					<![CDATA[ a.SEX = #{dto.sex} and ]]>
+				</if>
+				<if test="dto.orgId != null and dto.orgId != ''">
+					<![CDATA[ a.ORG_ID = #{dto.orgId} and ]]>
+				</if>
+				<if test="dto.lawOrgId != null and dto.lawOrgId != ''">
+					<![CDATA[ a.LAW_ORG_ID = #{dto.lawOrgId} and ]]>
+				</if>
+				<if test="dto.idCardNo != null and dto.idCardNo!= ''">
+					<![CDATA[ a.ID_CARD_NO = #{dto.idCardNo} and ]]>
+				</if>
+				<if test="dto.roleId != null and dto.roleId!= ''">
+					<![CDATA[ a.ROLE_ID  = #{dto.roleId} and ]]>
+				</if>
+				<if test="dto.status != null and dto.status!= ''">
+					<![CDATA[ a.STATUS = #{dto.status} and ]]>
+				</if>
 				<!-- Add more conditions if needed -->
 			</trim>
 		</where>
