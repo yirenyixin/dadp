@@ -17,7 +17,7 @@ public class PcmDepFixedDTO4Delete implements Serializable {
 
     @ApiModelProperty(value = "主键ids,逗号分隔", required = true, position = 1)
     @NotBlank(message = "[depFixedIds]主键ids，不能为空")
-    @Size(max = 400, message = "主键ids的长度必须小于等于400")
+    @Size(max = 32, message = "主键ids的长度必须小于等于32")
     private String depFixedIds; // 主键ids,逗号分隔
 
     // -----------------分割线---------------------------------------
