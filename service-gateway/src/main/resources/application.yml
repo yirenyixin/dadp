@@ -32,6 +32,21 @@ spring:
           predicates:
             - Path=/demo/**             #断言，路径相匹配的进行路由,多个用逗号分隔
 
+        - id: service-pcm               #路由的ID，没有固定规则但要求唯一，建议配合服务名
+          uri: lb://service-pcm         #匹配后提供服务的路由地址
+          predicates:
+            - Path=/pcm/**              #断言，路径相匹配的进行路由,多个用逗号分隔
+
+        - id: service-ppm               #路由的ID，没有固定规则但要求唯一，建议配合服务名
+          uri: lb://service-ppm         #匹配后提供服务的路由地址
+          predicates:
+            - Path=/ppm/**              #断言，路径相匹配的进行路由,多个用逗号分隔
+
+        - id: service-pmm               #路由的ID，没有固定规则但要求唯一，建议配合服务名
+          uri: lb://service-pmm         #匹配后提供服务的路由地址
+          predicates:
+            - Path=/pmm/**              #断言，路径相匹配的进行路由,多个用逗号分隔
+
 #--------暴露监控端点--------          
 management:
   endpoints:

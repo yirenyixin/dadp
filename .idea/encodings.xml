@@ -2,14 +2,26 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/dadp-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dadp-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dadp-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dadp-core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dadp-feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dadp-feign/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dadp-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dadp-model/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-pcm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-pcm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-pmm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-pmm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-ppm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-ppm/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-study/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-study/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-sys/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-sys/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>

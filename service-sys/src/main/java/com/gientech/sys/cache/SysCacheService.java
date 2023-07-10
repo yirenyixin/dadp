@@ -4,11 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.gientech.common.MyConstants;
 import com.gientech.common.view.Combo;
 import com.gientech.core.redis.RedisService;
-import com.gientech.pcm.depFixed.PcmDepFixedService;
-import com.gientech.sys.book.SysBook;
-import com.gientech.sys.book.SysBookService;
-import com.gientech.sys.bookState.SysBookState;
-import com.gientech.sys.bookState.SysBookStateService;
+
 import com.gientech.sys.codeInfo.SysCodeInfo;
 import com.gientech.sys.codeInfo.SysCodeInfoService;
 import com.gientech.sys.codeType.SysCodeType;
@@ -65,12 +61,7 @@ public class SysCacheService implements InitializingBean {
     @Resource
     SysRoleDataService sysRoleDataService;
 
-    @Resource
-    SysBookService  sysBookService;
-    @Resource
-    SysBookStateService sysBookStateService;
-    @Resource
-    PcmDepFixedService pcmDepFixedService;
+
     @Override
     public void afterPropertiesSet() throws Exception {
         loadConfigToRedis();
@@ -82,8 +73,7 @@ public class SysCacheService implements InitializingBean {
         loadUserToRedis();
         loadRoleToRedis();
 
-        loadBookToRedis();
-        loadBookStateToRedis(); // 添加此行以将图书状态加载到Redis中
+
 
 
 //        loadPcmDepFixedToRedis();
@@ -243,45 +233,7 @@ public class SysCacheService implements InitializingBean {
         redisService.set(MyConstants.REDIS_SYS_ORG_MAP, orgMap);
     }
 
-    /**
-     * 【8】将图书信息加载到redis
-     */
-    public void loadBookToRedis() {
-        List<Combo> comboList = new ArrayList<>();
-        comboList.add(new Combo(null, "请选择", null));
 
-        // 【1】查询所有图书信息
-        List<SysBook> list = sysBookService.list();
-        for (SysBook sysBook : list) {
-            comboList.add(new Combo(sysBook.getBookId(), sysBook.getBookName(), null));
-            redisService.set(MyConstants.REDIS_SYS_BOOK_INFO + sysBook.getBookId(), sysBook);
-        }
-
-        redisService.set(MyConstants.REDIS_COMBO_BOOK, comboList);
-
-        log.info("-------------------【8】图书sysBook，加载到redis完成-------------------");
-    }
-
-
-
-    /**
-     * 【9】将图书信息加载到redis
-     */
-    public void loadBookStateToRedis() {
-        List<Combo> comboList = new ArrayList<>();
-        comboList.add(new Combo(null, "请选择", null));
-
-        // 查询所有图书状态信息
-        List<SysBookState> bookStateList = sysBookStateService.list();
-        for (SysBookState bookState : bookStateList) {
-            comboList.add(new Combo(bookState.getBookId(), bookState.getRoleId(),  bookState.getBookName()));
-            redisService.set(MyConstants.REDIS_SYS_BOOK_STATE_INFO + bookState.getBookId(), bookState.getRoleId());
-        }
-
-        redisService.set(MyConstants.REDIS_COMBO_BOOK_STATE, comboList);
-
-        log.info("-------------------【9】图书状态SysBookState，加载到redis完成-------------------");
-    }
 
 
 

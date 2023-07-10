@@ -8,7 +8,7 @@ import com.gientech.common.view.Combo;
 import com.gientech.core.log.annotation.OperLog;
 import com.gientech.core.redis.RedisService;
 import com.gientech.core.security.annotation.PreAuthorize;
-import com.gientech.sys.book.SysBookService;
+
 import com.gientech.sys.codeType.SysCodeType;
 import com.gientech.sys.codeType.SysCodeTypeService;
 import com.gientech.sys.org.SysOrgService;
@@ -51,8 +51,7 @@ public class SysCacheController {
 
     @Resource
     SysUserService sysUserService;
-    @Resource
-    SysBookService sysBookService;
+
     /**
      * 【1】获取下拉框列表,传codeTypeId,不传返回全部下拉框。。前段登录后，访问这个请求
      *

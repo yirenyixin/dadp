@@ -8,12 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="service-gateway" />
         <module name="service-study" />
+        <module name="service-pmm" />
         <module name="dadp-core" />
         <module name="service-sys" />
+        <module name="service-ppm" />
         <module name="dadp-feign" />
         <module name="dadp-model" />
         <module name="dadp-common" />
+        <module name="service-pcm" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="service-ppm (1)" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

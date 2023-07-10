@@ -14,6 +14,9 @@
         <module>service-gateway</module>        <!-- 网关 -->
         <module>service-sys</module>
         <module>service-study</module>
+        <module>service-pcm</module>
+        <module>service-ppm</module>
+        <module>service-pmm</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->
