@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.ppm.prod.PpmProdMapper">
+
+    <!-- 查询条件置顶 -->
+    <sql id="ppmProdList_filter">
+        <where>
+            <trim suffixOverrides="and">
+                <if test="dto.prodId != null and dto.prodId !=''">
+                    <![CDATA[ a.PROD_ID = #{dto.prodId} and ]]>
+                </if>
+                <if test="dto.prodName != null and dto.prodName !=''">
+                    <![CDATA[ a.PROD_NAME = #{dto.prodName} and ]]>
+                </if>
+                <if test="dto.prodStatus != null and dto.prodStatus !=''">
+                    <![CDATA[ a.PROD_STATUS = #{dto.prodStatus} and ]]>
+                </if>
+                <!-- Add more conditions if needed -->
+            </trim>
+        </where>
+    </sql>
+
+    <select id="getPpmProdList" resultType="com.gientech.ppm.prod.PpmProd" parameterType="com.gientech.ppm.prod.PpmProdDTO4List">
+        SELECT
+        a.PROD_ID as prodId,
+        a.PROD_NAME as prodName,
+        a.KIND_ID as kindId,
+        a.PROD_STATUS as prodStatus,
+        a.PRO_DESCRIBE as proDescribe,
+        a.DO_FLOW as doFlow,
+        a.MARKET_DISCOURSE as marketDiscourse,
+        a.PROD_FEATURE as prodFeature
+        FROM T_PPM_PROD a
+        <include refid="ppmProdList_filter" />
+        ORDER BY a.PROD_ID
+    </select>
+
+    <select id="getPpmProd" resultType="com.gientech.ppm.prod.PpmProd" parameterType="String">
+        SELECT
+            a.PROD_ID as prodId,
+            a.PROD_NAME as prodName,
+            a.KIND_ID as kindId,
+            a.PROD_STATUS as prodStatus,
+            a.PRO_DESCRIBE as proDescribe,
+            a.DO_FLOW as doFlow,
+            a.MARKET_DISCOURSE as marketDiscourse,
+            a.PROD_FEATURE as prodFeature
+        FROM T_PPM_PROD a
+        WHERE a.PROD_ID = #{prodId}
+    </select>
+
+</mapper>
