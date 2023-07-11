@@ -23,11 +23,11 @@ import javax.validation.Valid;
 /**
  * PcmDepCurr 控制器
  */
-@Api(tags = "PCM_DEP_CURR")
-@ApiSort(value = 0)
+@Api(tags = "【2-02】对私活期存款")
+@ApiSort(value = 202)
 @Validated
 @RestController
-@RequestMapping("/sys/depCurr")
+@RequestMapping("/pcm/depCurr")
 public class PcmDepCurrController extends BaseController {
 
     @Autowired

@@ -23,8 +23,8 @@ import javax.validation.Valid;
 /**
  * SysUser 控制器
  */
-@Api(tags = "SYS_USER")
-@ApiSort(value = 0)
+@Api(tags = "【1-20】用户表")
+@ApiSort(value = 120)
 @Validated
 @RestController
 @RequestMapping("/sys/user")

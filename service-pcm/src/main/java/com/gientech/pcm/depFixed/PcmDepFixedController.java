@@ -23,11 +23,11 @@ import javax.validation.Valid;
 /**
  * PCM_DEP_FIXED 控制器
  */
-@Api(tags = "PCM_DEP_FIXED")
-@ApiSort(value = 0)
+@Api(tags = "【2-03】对私定期存款")
+@ApiSort(value = 203)
 @Validated
 @RestController
-@RequestMapping("/sys/depFixed")
+@RequestMapping("/pcm/depFixed")
 public class PcmDepFixedController extends BaseController {
 
     @Autowired

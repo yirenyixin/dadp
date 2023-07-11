@@ -23,11 +23,11 @@ import javax.validation.Valid;
 /**
  * PcmProdOwn 控制器
  */
-@Api(tags = "PPM_PROD_OWN")
-@ApiSort(value = 0)
+@Api(tags = "【2-06】对私客户持有产品表")
+@ApiSort(value = 206)
 @Validated
 @RestController
-@RequestMapping("/sys/prodOwn")
+@RequestMapping("/pcm/prodOwn")
 public class PcmProdOwnController extends BaseController {
 
     @Autowired

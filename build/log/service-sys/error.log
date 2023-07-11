@@ -1247,3 +1247,11 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 22:54:56.503 [http-nio-9801-exec-6] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
 22:54:56.504 [http-nio-9801-exec-6] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
 22:54:56.504 [http-nio-9801-exec-6] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】不存在或该账户不能登录!
+22:57:49.208 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:57:49.209 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+22:57:49.210 [http-nio-9801-exec-1] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】所属的角色编号【06】对应的角色已不存在
+22:57:53.750 [http-nio-9801-exec-2] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:57:53.751 [http-nio-9801-exec-2] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+22:57:53.751 [http-nio-9801-exec-2] ERROR c.g.c.e.GlobalExceptionHandler - [errorHandler,52] - 业务异常信息用户名【admin】所属的角色编号【06】对应的角色已不存在
+22:58:36.070 [http-nio-9801-exec-3] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+22:58:36.070 [http-nio-9801-exec-3] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null

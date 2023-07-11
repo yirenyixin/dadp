@@ -25,8 +25,8 @@ import javax.validation.Valid;
  *
  * @author 吴俊达
  */
-@Api(tags = "【2-02】机构归属关系")
-@ApiSort(value = 202) // 排序号生成后要修改
+@Api(tags = "【2-05】机构归属关系")
+@ApiSort(value = 205) // 排序号生成后要修改
 @Validated
 @RestController
 @RequestMapping("/pcm/orgRel")

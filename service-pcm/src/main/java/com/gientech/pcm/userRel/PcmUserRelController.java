@@ -25,8 +25,8 @@ import javax.validation.Valid;
  *
  * @author 吴俊达
  */
-@Api(tags = "【2-03】客户经理归属关系")
-@ApiSort(value = 203) // 排序号生成后要修改
+@Api(tags = "【2-07】客户经理归属关系")
+@ApiSort(value = 207) // 排序号生成后要修改
 @Validated
 @RestController
 @RequestMapping("/pcm/userRel")

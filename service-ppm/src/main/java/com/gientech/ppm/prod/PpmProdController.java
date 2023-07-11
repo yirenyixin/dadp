@@ -23,8 +23,8 @@ import javax.validation.Valid;
 /**
  * PpmProd 控制器
  */
-@Api(tags = "【3-1】产品表")
-@ApiSort(value = 0)
+@Api(tags = "【4-01】产品表")
+@ApiSort(value = 401)
 @Validated
 @RestController
 @RequestMapping("/ppm/prod")

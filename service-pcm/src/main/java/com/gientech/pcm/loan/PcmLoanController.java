@@ -23,11 +23,11 @@ import javax.validation.Valid;
 /**
  * PcmLoan 控制器
  */
-@Api(tags = "PCM_LOAN")
-@ApiSort(value = 0)
+@Api(tags = "【2-04】对私贷款")
+@ApiSort(value = 204)
 @Validated
 @RestController
-@RequestMapping("/sys/loan")
+@RequestMapping("/pcm/loan")
 public class PcmLoanController extends BaseController {
 
     @Autowired

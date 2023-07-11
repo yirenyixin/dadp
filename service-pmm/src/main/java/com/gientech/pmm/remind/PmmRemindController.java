@@ -23,8 +23,8 @@ import javax.validation.Valid;
  * @author cjm
  * @date 2023/7/8 15:03
  */
-@Api(tags = "【1-26】提醒表")
-@ApiSort(value = 127)
+@Api(tags = "【3-01】提醒表")
+@ApiSort(value = 301)
 @Validated
 @RestController
 @RequestMapping("/pmm/remind")
