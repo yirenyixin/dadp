@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.pcm.wealth.PcmWealthMapper">
+    <sql id="pcmWealthList_filter">
+        <where>
+            <trim suffixOverrides="and">
+                <if test="dto.custId != null and dto.custId !=''">
+                    <![CDATA[	a.CUST_ID like #{dto.custId} and	]]>
+                </if>
+            </trim>
+        </where>
+    </sql>
+    
+    <select id="getPcmWealthList" resultType="com.gientech.pcm.wealth.PcmWealthVO" parameterType="com.gientech.pcm.wealth.PcmWealthDTO4List">
+        select
+
+        a.WEALTH_ID as wealthId,
+        a.CUST_ID as custId,
+        a.ECIF_CUST_ID as ecifCustId,
+        a.CUST_NAME as custName,
+        a.LAW_ORG_ID as lawOrgId,
+        a.OPEN_ORG_ID as openOrgId,
+        a.PROD_CODE as prodCode,
+        a.PROD_NAME as prodName,
+        a.PROD_TYPE as prodType,
+        a.RISK_LEVEL as riskLevel,
+        a.PUBLIC_ORG as publicOrg,
+        a.PERF_COMPARE_BASE as perfCompareBase,
+        a.CURRENT_BAL as currentBal,
+        a.INTEREST_DATE as interestDate,
+        a.END_DATE as endDate,
+        a.HOLD_PROFIT as holdProfit,
+        a.HOLD_PROFIT_RATE as holdProfitRate
+        from T_PCM_WEALTH a
+
+        <include refid="pcmWealthList_filter"></include>
+        order by <![CDATA[	${dto.orderBy}	]]>
+    </select>
+
+</mapper>
