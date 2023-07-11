@@ -39,3 +39,76 @@
 09:08:08.928 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
 09:08:08.966 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-9802"]
 09:08:08.969 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-9802"]
+09:10:15.794 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 23 ms to scan 1 urls, producing 3 keys and 6 values 
+09:10:15.817 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 4 keys and 9 values 
+09:10:15.826 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+09:10:15.847 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 17 ms to scan 5 urls, producing 0 keys and 0 values 
+09:10:15.855 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 1 keys and 5 values 
+09:10:15.866 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 1 keys and 7 values 
+09:10:15.880 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 2 keys and 8 values 
+09:10:15.898 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 15 ms to scan 5 urls, producing 0 keys and 0 values 
+09:10:18.466 [restartedMain] INFO  c.gientech.StartPcm - [logStartupProfileInfo,652] - The following profiles are active: dev
+09:10:20.176 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+09:10:20.185 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pcm-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+09:10:20.186 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pcm.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+09:10:20.186 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pcm,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+09:10:20.186 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+09:10:20.186 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+09:10:20.186 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+09:10:20.186 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+09:10:20.187 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+09:10:20.187 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+09:10:20.187 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+09:10:20.187 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+09:10:20.187 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+09:10:20.187 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+09:10:20.187 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+09:10:20.187 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+09:10:20.225 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+09:10:20.384 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+09:10:20.384 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+09:10:20.892 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9802"]
+09:10:20.892 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+09:10:20.893 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+09:10:21.102 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+09:10:24.134 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+09:10:26.050 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:10:26.077 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+09:10:26.080 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+09:10:28.179 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9802"]
+09:10:28.201 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-pcm 192.168.76.1:9802 register finished
+09:10:29.708 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+09:10:29.711 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+09:10:29.734 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+09:10:29.828 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+09:10:29.830 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+09:10:29.835 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+09:10:29.838 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+09:10:29.849 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+09:10:29.851 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+09:10:29.854 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+09:10:29.858 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+09:10:29.869 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+09:10:29.872 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+09:10:29.878 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+09:10:29.885 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+09:10:29.892 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+09:10:29.894 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+09:10:29.896 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+09:10:29.898 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+09:10:29.904 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+09:10:29.906 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+09:10:29.908 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+09:10:29.910 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+09:10:29.917 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+09:10:29.919 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+09:10:29.921 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+09:10:29.923 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+09:10:29.940 [restartedMain] INFO  c.gientech.StartPcm - [logStarted,61] - Started StartPcm in 18.58 seconds (JVM running for 20.305)
+09:10:30.383 [RMI TCP Connection(14)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:10:30.411 [RMI TCP Connection(13)-192.168.226.1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+09:10:30.536 [RMI TCP Connection(13)-192.168.226.1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+09:41:53.973 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+09:41:53.976 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+09:41:54.323 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+09:41:54.332 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.

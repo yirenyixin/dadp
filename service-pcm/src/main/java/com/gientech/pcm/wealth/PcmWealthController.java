@@ -6,8 +6,7 @@ import com.gientech.common.view.DataGrid;
 import com.gientech.core.base.BaseController;
 import com.gientech.core.log.annotation.OperLog;
 import com.gientech.core.security.annotation.PreAuthorize;
-import com.gientech.sys.product.SysProductDTO4Delete;
-import com.gientech.sys.product.SysProductDTO4Update;
+
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.github.xiaoymin.knife4j.annotations.ApiSort;
 import io.swagger.annotations.Api;
@@ -26,8 +25,8 @@ import javax.validation.Valid;
  * @author cjm
  * @date 2023/7/7 20:59
  */
-@Api(tags = "【1-24】对私理财")
-@ApiSort(value = 125) // 排序号生成后要修改
+@Api(tags = "【2-08】对私理财")
+@ApiSort(value = 208) // 排序号生成后要修改
 @Validated
 @RestController
 @RequestMapping("/pcm/wealth")
@@ -100,7 +99,7 @@ public class PcmWealthController extends BaseController {
     //@PreAuthorize(hasAuth = "pcmWealth") // 菜单id或功能id
     @PostMapping("/delete")
     public Result<Object> delete(@Valid @RequestBody PcmWealthDTO4Delete pcmWealthDTO4Delete, BindingResult bindingResult) {
-        this.pcmWealthService.deleteWealth(pcmWealthDTO4Delete.getId());
+        this.pcmWealthService.deleteWealth(pcmWealthDTO4Delete.getIds());
         return Result.success();
     }
 
