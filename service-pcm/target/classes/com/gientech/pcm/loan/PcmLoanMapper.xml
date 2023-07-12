@@ -9,14 +9,14 @@
         <where>
             <trim suffixOverrides="and">
                 <if test="dto.custId != null and dto.custId !=''">
-                    <![CDATA[ a.CUST_ID = #{dto.custId} and ]]>
+                    <![CDATA[ a.CUST_ID like #{dto.custId} and ]]>
                 </if>
                 <!-- Add more conditions if needed -->
             </trim>
         </where>
     </sql>
 
-    <select id="getPcmLoanList" resultType="com.gientech.pcm.loan.PcmLoan" parameterType="com.gientech.pcm.loan.PcmLoanDTO4List">
+    <select id="getPcmLoanList" resultType="com.gientech.pcm.loan.PcmLoanVO" parameterType="com.gientech.pcm.loan.PcmLoanDTO4List">
         SELECT
         a.LOAN_ID as loanId,
         a.CUST_ID as custId,

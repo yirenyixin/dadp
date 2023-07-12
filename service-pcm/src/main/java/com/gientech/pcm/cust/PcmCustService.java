@@ -71,10 +71,10 @@ public class PcmCustService extends BaseService<PcmCustMapper, PcmCust> {
         PcmCust pcmCust = new PcmCust();
         MyBeanUtil.copyPropertiesIgnoreNull(dto, pcmCust);
 
-        // 【2】校验EcifCustId是否重复.
-        if (isExistEcifCustId(pcmCust)) {
-            throw new AppException("保存失败,EcifCustId【" + pcmCust.getEcifCustId() + "】已经存在!");
-        }
+//        // 【2】校验EcifCustId是否重复.
+//        if (isExistEcifCustId(pcmCust)) {
+//            throw new AppException("保存失败,EcifCustId【" + pcmCust.getEcifCustId() + "】已经存在!");
+//        }
 
         if (!this.updateById(pcmCust)) {
             throw new AppException("操作失败，你修改的数据不是最新的，请刷新后重新操作！");
@@ -98,6 +98,25 @@ public class PcmCustService extends BaseService<PcmCustMapper, PcmCust> {
         Page<PcmCustVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
 
         return new DataGrid<PcmCustVO>(this.getBaseMapper().getPcmCustList(page, dto), page.getTotal());
+    }
+
+    /**
+     * 【5】查询分配客户
+     *
+     * @param dto
+     *
+     * @return
+     */
+    public DataGrid<PcmCustVO> listAssCust(PcmCustDTO4List dto) {
+        log.info("【查询条件--客户】" + dto);
+
+        // 【1】 处理模糊查询条件的like(有3个方法addObjectLike，addObjectLikeLeft，addObjectLikeRight)
+        MyStringUtil.addObjectLike(dto, "custName,custState,custType,certType,certNo,isEmployee");
+
+        // 【2】构造分页参数
+        Page<PcmCustVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
+
+        return new DataGrid<PcmCustVO>(this.getBaseMapper().getPcmAssCustList(page, dto), page.getTotal());
     }
 
 

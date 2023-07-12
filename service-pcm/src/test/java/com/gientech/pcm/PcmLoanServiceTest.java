@@ -1,5 +1,6 @@
 package com.gientech.pcm;
 
+import com.gientech.StartPcm;
 import com.gientech.common.view.DataGrid;
 import com.gientech.pcm.loan.*;
 import org.junit.Test;
@@ -12,7 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  * PcmLoan - Service 层单元测试
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = StartPcm.class)
 public class PcmLoanServiceTest {
 
     @Autowired
@@ -26,6 +27,7 @@ public class PcmLoanServiceTest {
         PcmLoanDTO4List dto = new PcmLoanDTO4List();
         dto.setPageNo(1);
         dto.setPageSize(10);
+        dto.setCustId("9876W_0003");
 
         DataGrid<PcmLoanVO> dataGrid = pcmLoanService.listPcmLoan(dto);
         if (dataGrid != null && dataGrid.getRows() != null) {

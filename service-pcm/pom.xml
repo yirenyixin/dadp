@@ -28,6 +28,12 @@
             <groupId>com.belerweb</groupId>
             <artifactId>pinyin4j</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.gientech</groupId>
+            <artifactId>service-pmm</artifactId>
+            <version>4.3</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>

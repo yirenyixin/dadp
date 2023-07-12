@@ -1,46 +1,39 @@
-09:08:04.543 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 26 ms to scan 1 urls, producing 3 keys and 6 values 
-09:08:04.565 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 4 keys and 9 values 
-09:08:04.574 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 3 keys and 10 values 
-09:08:04.600 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 22 ms to scan 5 urls, producing 0 keys and 0 values 
-09:08:04.613 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
-09:08:04.625 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 1 keys and 7 values 
-09:08:04.637 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 2 keys and 8 values 
-09:08:04.659 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 19 ms to scan 5 urls, producing 0 keys and 0 values 
-09:08:15.638 [restartedMain] INFO  c.gientech.StartSys - [logStartupProfileInfo,652] - The following profiles are active: dev
-09:08:17.301 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
-09:08:17.311 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
-09:08:17.311 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
-09:08:17.311 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
-09:08:17.312 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-09:08:17.312 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-09:08:17.312 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-09:08:17.312 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-09:08:17.312 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-09:08:17.312 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-09:08:17.312 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-09:08:17.312 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-09:08:17.313 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-09:08:17.313 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-09:08:17.313 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-09:08:17.313 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
-09:08:17.371 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-09:08:17.587 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-09:08:17.588 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-09:08:18.090 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9801"]
-09:08:18.091 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-09:08:18.091 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
-09:08:18.258 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-09:08:20.162 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
-09:08:20.333 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
-09:08:25.179 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadConfigToRedis,94] - -------------------【1】系统参数sysConfig，加载到redis完成-------------------
-09:08:41.470 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadCodeTypeToRedis,113] - -------------------【2】代码类别sysCodeType，加载到redis完成-------------------
-09:08:45.579 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleDataToRedis,211] - -------------------【6】数据权限SysRoleData，加载到redis完成-------------------
-09:08:49.678 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadOrgToRedis,162] - -------------------【3】机构sysOrg，加载到redis完成-------------------
-09:08:51.724 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadUserToRedis,180] - -------------------【4】用户sysUser，加载到redis完成-------------------
-09:08:53.290 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleToRedis,199] - -------------------【5】用户sysRole，加载到redis完成-------------------
-09:08:53.708 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-09:09:04.591 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-09:09:04.618 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-09:09:04.621 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-09:09:07.667 [restartedMain] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
-09:09:07.680 [restartedMain] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+00:00:20.665 [http-nio-9801-exec-6] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:01:17.399 [http-nio-9801-exec-1] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:01:56.048 [http-nio-9801-exec-7] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:06:35.996 [http-nio-9801-exec-3] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:07:02.434 [http-nio-9801-exec-1] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:07:27.639 [http-nio-9801-exec-7] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:07:48.087 [http-nio-9801-exec-9] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:07:51.307 [http-nio-9801-exec-6] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:08:43.864 [http-nio-9801-exec-1] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:09:13.882 [http-nio-9801-exec-7] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:09:34.546 [http-nio-9801-exec-3] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:10:38.237 [http-nio-9801-exec-5] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:12:09.109 [http-nio-9801-exec-4] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:12:50.380 [http-nio-9801-exec-3] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:17:34.628 [http-nio-9801-exec-7] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:17:58.235 [http-nio-9801-exec-3] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:23:47.937 [http-nio-9801-exec-7] INFO  c.g.s.l.SysLogService - [saveLog,70] - 【新增--日志】SysLog(logId=1678802276124835842, userId=9658, userName=朱永莉, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Wed Jul 12 00:23:47 CST 2023)
+00:23:53.533 [http-nio-9801-exec-3] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
+00:25:30.002 [lettuce-nioEventLoop-28-1] INFO  i.l.c.p.CommandHandler - [log,217] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+00:25:30.110 [lettuce-eventExecutorLoop-26-11] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was localhost/127.0.0.1:6379

@@ -1,6 +1,7 @@
 package com.gientech.pcm.depFixed;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -74,16 +75,16 @@ public class PcmDepFixedDTO4List implements Serializable {
     private String acctType; // 存款类型
 
     @ApiModelProperty(value = "浮动比率", position = 23)
-    private Double floatRate; // 浮动比率
+    private BigDecimal floatRate; // 浮动比率
 
     @ApiModelProperty(value = "协议利率", position = 24)
-    private Double rate; // 协议利率
+    private BigDecimal rate; // 协议利率
 
     @ApiModelProperty(value = "币种", position = 25)
     private String currNo; // 币种
 
     @ApiModelProperty(value = "上日余额", position = 26)
-    private Double bal; // 上日余额
+    private BigDecimal bal; // 上日余额
 
     @ApiModelProperty(value = "存期", position = 27)
     private String term; // 存期

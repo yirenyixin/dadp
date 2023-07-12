@@ -1,6 +1,7 @@
 package com.gientech.pcm;
 
 
+import com.gientech.StartPcm;
 import com.gientech.common.view.DataGrid;
 import com.gientech.pcm.depFixed.*;
 import org.junit.Test;
@@ -13,7 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  * PcmDepFixed - Service 层单元测试
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = StartPcm.class)
 public class PcmDepFixedServiceTest {
 
     @Autowired
@@ -27,7 +28,7 @@ public class PcmDepFixedServiceTest {
         PcmDepFixedDTO4List dto = new PcmDepFixedDTO4List();
         dto.setPageNo(1);
         dto.setPageSize(10);
-
+        dto.setCustId("9856C_3656");
         DataGrid<PcmDepFixedVO> dataGrid = pcmDepFixedService.listPcmDepFixed(dto);
         if (dataGrid != null && dataGrid.getRows() != null) {
             for (int i = 0; i < dataGrid.getRows().size(); i++) {

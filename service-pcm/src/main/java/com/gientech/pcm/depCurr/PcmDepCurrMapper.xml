@@ -9,31 +9,31 @@
         <where>
             <trim suffixOverrides="and">
                 <if test="dto.custId != null and dto.custId !=''">
-                    <![CDATA[ a.CUST_ID = #{dto.custId} and ]]>
+                    <![CDATA[ a.CUST_ID like #{dto.custId} and ]]>
                 </if>
                 <!-- Add more conditions if needed -->
             </trim>
         </where>
     </sql>
 
-    <select id="getPcmDepCurrList" resultType="com.gientech.pcm.depCurr.PcmDepCurr" parameterType="com.gientech.pcm.depCurr.PcmDepCurrDTO4List">
+    <select id="getPcmDepCurrList" resultType="com.gientech.pcm.depCurr.PcmDepCurrVO" parameterType="com.gientech.pcm.depCurr.PcmDepCurrDTO4List">
         SELECT
         a.DEP_CURR_ID as depCurrId,
-        a.CUST_ID as customerId,
-        a.ECIF_CUST_ID as ecifCustomerId,
-        a.CUST_NAME as customerName,
+        a.CUST_ID as custId,
+        a.ECIF_CUST_ID as ecifCustId,
+        a.CUST_NAME as custName,
         a.LAW_ORG_ID as lawOrgId,
-        a.PROD_CODE as productCode,
-        a.PROD_NAME as productName,
-        a.ACCT_NO as accountNo,
-        a.CURR_NO as currency,
-        a.BAL as previousBalance,
-        a.ACCT_STS as accountStatus,
-        a.OPEN_ORG_NO as subAccountOpeningBank,
-        a.START_DT as accountOpeningDate,
+        a.PROD_CODE as prodCode,
+        a.PROD_NAME as prodName,
+        a.ACCT_NO as acctNo,
+        a.CURR_NO as currNo,
+        a.BAL as bal,
+        a.ACCT_STS as acctSts,
+        a.OPEN_ORG_NO as openOrgNo,
+        a.START_DT as startDt,
         a.VOUCHER_NO as voucherNo,
-        a.SUB_ACCT_NO as currentSubAccount,
-        a.CURRENT_BAL as currentBalance
+        a.SUB_ACCT_NO as subAcctNo,
+        a.CURRENT_BAL as currentBal
         FROM
         T_PCM_DEP_CURR a
         <include refid="pcmDepCurrList_filter" />

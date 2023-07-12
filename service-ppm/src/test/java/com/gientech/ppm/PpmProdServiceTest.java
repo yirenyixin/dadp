@@ -27,7 +27,7 @@ public class PpmProdServiceTest {
         PpmProdDTO4List dto = new PpmProdDTO4List();
         dto.setPageNo(1);
         dto.setPageSize(10);
-
+        dto.setProdId("A0001");
         DataGrid<PpmProdVO> dataGrid = ppmProdService.listPpmProd(dto);
         if (dataGrid != null && dataGrid.getRows() != null) {
             for (int i = 0; i < dataGrid.getRows().size(); i++) {

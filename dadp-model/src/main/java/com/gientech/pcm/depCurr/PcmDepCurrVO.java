@@ -1,6 +1,7 @@
 package com.gientech.pcm.depCurr;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -38,7 +39,7 @@ public class PcmDepCurrVO implements Serializable {
     private String currNo;
 
     @ApiModelProperty(value = "上日余额", position = 10)
-    private Double bal;
+    private BigDecimal bal;
 
     @ApiModelProperty(value = "账户状态", position = 11)
     private String acctSts;
@@ -56,7 +57,7 @@ public class PcmDepCurrVO implements Serializable {
     private String subAcctNo;
 
     @ApiModelProperty(value = "当前余额", position = 16)
-    private Double currentBal;
+    private BigDecimal currentBal;
 
     // Getters and setters
 }

@@ -1,6 +1,7 @@
 package com.gientech.pcm.depFixed;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -41,16 +42,16 @@ public class PcmDepFixedVO implements Serializable {
     private String acctType; // 存款类型
 
     @ApiModelProperty(value = "FLOAT_RATE", position = 11)
-    private Float floatRate; // 浮动比率
+    private BigDecimal floatRate; // 浮动比率
 
     @ApiModelProperty(value = "RATE", position = 12)
-    private Float rate; // 协议利率
+    private BigDecimal rate; // 协议利率
 
     @ApiModelProperty(value = "CURR_NO", position = 13)
     private String currNo; // 币种
 
     @ApiModelProperty(value = "BAL", position = 14)
-    private Float bal; // 上日余额
+    private BigDecimal bal; // 上日余额
 
     @ApiModelProperty(value = "TERM", position = 15)
     private String term; // 存期

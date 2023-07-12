@@ -1,6 +1,7 @@
 package com.gientech.pcm.depFixed;//package com.example.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -46,16 +47,16 @@ public class PcmDepFixed implements Serializable {
     private String acctType; // 存款类型
 
     @TableField(value = "FLOAT_RATE")
-    private Float floatRate; // 浮动比率
+    private BigDecimal floatRate; // 浮动比率
 
     @TableField(value = "RATE")
-    private Float rate; // 协议利率
+    private BigDecimal rate; // 协议利率
 
     @TableField(value = "CURR_NO")
     private String currNo; // 币种
 
     @TableField(value = "BAL")
-    private Float bal; // 上日余额
+    private BigDecimal bal; // 上日余额
 
     @TableField(value = "TERM")
     private String term; // 存期

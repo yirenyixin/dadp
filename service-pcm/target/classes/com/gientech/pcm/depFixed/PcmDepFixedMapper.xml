@@ -16,7 +16,7 @@
         </where>
     </sql>
 
-    <select id="getPcmDepFixedList" resultType="com.gientech.pcm.depFixed.PcmDepFixed" parameterType="com.gientech.pcm.depFixed.PcmDepFixedDTO4List">
+    <select id="getPcmDepFixedList" resultType="com.gientech.pcm.depFixed.PcmDepFixedVO" parameterType="com.gientech.pcm.depFixed.PcmDepFixedDTO4List">
         SELECT
         a.DEP_FIXED_ID as depFixedId,
         a.CUST_ID as custId,

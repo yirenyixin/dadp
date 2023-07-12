@@ -17,7 +17,7 @@ public class PcmDepCurrDTO4Delete implements Serializable {
 
     @ApiModelProperty(value = "主键ids，逗号分隔", required = true, position = 1)
     @NotBlank(message = "[depCurrIds] 主键ids不能为空")
-    @Size(max = 32, message = "主键ids的长度必须小于等于32")
+    @Size(max = 400, message = "主键ids的长度必须小于等于400")
     private String depCurrIds; // 主键ids，逗号分隔
 
     // 添加其他属性或方法，根据需要自行扩展
