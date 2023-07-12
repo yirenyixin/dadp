@@ -42,8 +42,8 @@ public class PcmProdOwnController extends BaseController {
      */
     @ApiOperation(value = "查询和分页")
     @ApiOperationSupport(order = 1)
-    @OperLog(title = "PPM_PROD_OWN", operType = OperType.SEARCH)
-    @PreAuthorize(hasAuth = "ppmProdOwn")
+    @OperLog(title = "PCM_PROD_OWN", operType = OperType.SEARCH)
+//    @PreAuthorize(hasAuth = "ppmProdOwn")
     @PostMapping(value = "/list")
     public Result<DataGrid<PcmProdOwnVO>> list(@Valid @RequestBody PcmProdOwnDTO4List pcmProdOwnDTO4List, BindingResult bindingResult) {
         return Result.success(this.pcmProdOwnService.listPcmProdOwn(pcmProdOwnDTO4List));

@@ -35,7 +35,7 @@ public class StartPcm {
 
 		SpringApplication.run(StartPcm.class, args);
 
-		System.out.println("---------------pmm启动成功---------------");
+		System.out.println("---------------pcm启动成功---------------");
 	}
 
 //	@Component

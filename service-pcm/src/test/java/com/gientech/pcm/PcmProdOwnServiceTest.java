@@ -1,5 +1,6 @@
 package com.gientech.pcm;
 
+import com.gientech.StartPcm;
 import com.gientech.common.view.DataGrid;
 import com.gientech.pcm.prodOwn.*;
 import org.junit.Test;
@@ -8,8 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.math.BigDecimal;
+
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = StartPcm.class)
 public class PcmProdOwnServiceTest {
 
     @Autowired
@@ -23,6 +26,8 @@ public class PcmProdOwnServiceTest {
         PcmProdOwnDTO4List dto = new PcmProdOwnDTO4List();
         dto.setPageNo(1);
         dto.setPageSize(10);
+        dto.setCustId("1689B_0001");
+//        dto.setProdOwnId("536486ab207a11eea53c6c24087ba410");
 //        dto.setLawOrgId("TestLawOrgId");
         // Set other search criteria
 
@@ -48,10 +53,10 @@ public class PcmProdOwnServiceTest {
         dto.setIsFixedDep("1");
         dto.setIsLoan("1");
         dto.setIsWealth("1");
-        dto.setDepBal(1000.0);
-        dto.setFixedDepBal(5000.0);
-        dto.setLoanBal(20000.0);
-        dto.setWealthBal(100000.0);
+        dto.setDepBal(BigDecimal.valueOf(1000.0));
+        dto.setFixedDepBal(BigDecimal.valueOf(5000.0));
+        dto.setLoanBal(BigDecimal.valueOf(20000.0));
+        dto.setWealthBal(BigDecimal.valueOf(100000.0));
         // Set other properties
 
         pcmProdOwnService.savePcmProdOwn(dto);
@@ -71,10 +76,10 @@ public class PcmProdOwnServiceTest {
         dto.setIsFixedDep("1");
         dto.setIsLoan("0");
         dto.setIsWealth("1");
-        dto.setDepBal(0.0);
-        dto.setFixedDepBal(6000.0);
-        dto.setLoanBal(0.0);
-        dto.setWealthBal(150000.0);
+        dto.setDepBal(BigDecimal.valueOf(0.0));
+        dto.setFixedDepBal(BigDecimal.valueOf(6000.0));
+        dto.setLoanBal(BigDecimal.valueOf(0.0));
+        dto.setWealthBal(BigDecimal.valueOf(150000.0));
         // Set other properties
 
         pcmProdOwnService.updatePcmProdOwn(dto);
