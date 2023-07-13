@@ -1,15 +1,14 @@
 package com.gientech.pcm.loan;
 
-import java.io.Serializable;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import java.io.Serializable;
 
 @Data
 @ApiModel(value = "贷款--更新DTO")
@@ -23,7 +22,7 @@ public class PcmLoanDTO4Update implements Serializable {
     private String loanId; // 贷款ID
 
     @ApiModelProperty(value = "CUST_ID", required = true, position = 2)
-//    @NotBlank(message = "[custId] CUST_ID不能为空")
+    @NotBlank(message = "[custId] CUST_ID不能为空")
     @Size(max = 32, message = "CUST_ID的长度必须小于等于32")
     private String custId; // 客户ID
 

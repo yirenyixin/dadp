@@ -1,8 +1,9 @@
 package com.gientech.pcm.prodOwn;
-import java.io.Serializable;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import java.io.Serializable;
 
 @Data
 public class PcmProdOwnVO implements Serializable {

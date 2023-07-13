@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.gientech.common.MyConstants;
 import com.gientech.common.view.Combo;
 import com.gientech.core.redis.RedisService;
-
 import com.gientech.sys.codeInfo.SysCodeInfo;
 import com.gientech.sys.codeInfo.SysCodeInfoService;
 import com.gientech.sys.codeType.SysCodeType;
@@ -61,7 +60,6 @@ public class SysCacheService implements InitializingBean {
     @Resource
     SysRoleDataService sysRoleDataService;
 
-
     @Override
     public void afterPropertiesSet() throws Exception {
         loadConfigToRedis();
@@ -72,14 +70,7 @@ public class SysCacheService implements InitializingBean {
         loadOrgToRedis();
         loadUserToRedis();
         loadRoleToRedis();
-
-
-
-
-//        loadPcmDepFixedToRedis();
     }
-
-
 
     /**
      * 【1】加载sysConfig到redis
@@ -192,7 +183,7 @@ public class SysCacheService implements InitializingBean {
         for (SysRole sysRole : list) {
             comboList.add(new Combo(sysRole.getRoleId(), sysRole.getRoleName(), null));
             redisService.set(MyConstants.REDIS_SYS_ROLE_INFO + sysRole.getRoleId(), sysRole);
-         }
+        }
 
         redisService.set(MyConstants.REDIS_COMBO_ROLE, comboList);
 
@@ -233,26 +224,4 @@ public class SysCacheService implements InitializingBean {
         redisService.set(MyConstants.REDIS_SYS_ORG_MAP, orgMap);
     }
 
-
-
-
-
-//    /**
-//     * 【10】将 PcmDepFixed 信息加载到 Redis
-//     */
-//    public void loadPcmDepFixedToRedis() {
-//        List<Combo> comboList = new ArrayList<>();
-//        comboList.add(new Combo(null, "请选择", null));
-//
-//        // 查询所有 PcmDepFixed 信息
-//        List<PcmDepFixed> pcmDepFixedList = pcmDepFixedService.list();
-//        for (PcmDepFixed pcmDepFixed : pcmDepFixedList) {
-//            comboList.add(new Combo(pcmDepFixed.getDepFixedId(), pcmDepFixed.getCustId(), pcmDepFixed.getCustName()));
-//            redisService.set(MyConstants.REDIS_DEP_FIXED + pcmDepFixed.getDepFixedId(), pcmDepFixed.getCustId());
-//        }
-//
-//        redisService.set(MyConstants.DEP_FIXED_ID, comboList);
-//
-//        log.info("-------------------【10】PcmDepFixed 信息加载到 Redis 完成-------------------");
-//    }
 }

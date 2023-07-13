@@ -1,16 +1,11 @@
 package com.gientech.sys.codeInfo;
 
-import java.io.Serializable;
-
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import javax.validation.constraints.*;
+import java.io.Serializable;
 
 /**
  * 【代码信息】SysCodeInfo新增DTO类【不要的属性，一定要删除！发现3次要开除】

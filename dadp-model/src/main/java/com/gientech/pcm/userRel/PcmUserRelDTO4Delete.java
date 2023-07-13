@@ -1,5 +1,6 @@
 package com.gientech.pcm.userRel;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -7,6 +8,7 @@ import lombok.Data;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 【客户经理归属关系】PcmUserRel删除DTO类【不要的属性，一定要删除！发现3次要开除】

@@ -1,10 +1,5 @@
 package com.gientech.sys.log;
 
-import java.util.Date;
-
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.gientech.common.exception.AppException;
 import com.gientech.common.util.IpUtil;
@@ -12,8 +7,11 @@ import com.gientech.common.util.MyStringUtil;
 import com.gientech.common.view.DataGrid;
 import com.gientech.core.base.BaseService;
 import com.gientech.core.security.util.HttpUtil;
-
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Date;
 
 /**
  * 登录日志--Service

@@ -1,9 +1,9 @@
 package com.gientech.sys.roleData;
 
-import java.io.Serializable;
-
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * 【数据权限】查询结果的VO类【不要的属性，一定要删除！发现3次要开除】

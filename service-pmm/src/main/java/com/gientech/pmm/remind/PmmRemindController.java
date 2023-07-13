@@ -23,8 +23,8 @@ import javax.validation.Valid;
  * @author cjm
  * @date 2023/7/8 15:03
  */
-@Api(tags = "【3-01】提醒表")
-@ApiSort(value = 301)
+@Api(tags = "【1-26】提醒表")
+@ApiSort(value = 127)
 @Validated
 @RestController
 @RequestMapping("/pmm/remind")
@@ -83,19 +83,19 @@ public class PmmRemindController extends BaseController {
 //        return Result.success();
 //    }
 //
-//    /**
-//     * 【4】删除--删除DTO
-//     *
-//     * @param pmmRemindDTO4Delete
-//     * @param bindingResult
-//     * @return
-//     */
-//    @ApiOperation(value = "删除")
-//    @ApiOperationSupport(order = 4)
-//    @OperLog(title = "提醒表", operType = OperType.DELETE)
-//    @PostMapping("/delete")
-//    public Result<Object> delete(@Valid @RequestBody PmmRemindDTO4Delete pmmRemindDTO4Delete, BindingResult bindingResult){
-//        this.pmmRemindService.deleteRemind(pmmRemindDTO4Delete.getRemindIds());
-//        return Result.success();
-//    }
+    /**
+     * 【4】删除--删除DTO
+     *
+     * @param pmmRemindDTO4Delete
+     * @param bindingResult
+     * @return
+     */
+    @ApiOperation(value = "删除")
+    @ApiOperationSupport(order = 4)
+    @OperLog(title = "提醒表", operType = OperType.DELETE)
+    @PostMapping("/delete")
+    public Result<Object> delete(@Valid @RequestBody PmmRemindDTO4Delete pmmRemindDTO4Delete, BindingResult bindingResult){
+        this.pmmRemindService.deleteRemind(pmmRemindDTO4Delete.getRemindIds());
+        return Result.success();
+    }
 }

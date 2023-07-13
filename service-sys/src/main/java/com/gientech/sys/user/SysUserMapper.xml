@@ -11,29 +11,32 @@
 					<![CDATA[ LOGIN_NAME = #{dto.loginName} and ]]>
 				</if>
 				<if test="dto.tel != null and dto.tel != ''">
-					<![CDATA[ TEL = #{dto.tel} and ]]>
+					<![CDATA[ TEL like #{dto.tel} and ]]>
 				</if>
 				<if test="dto.orgId != null and dto.orgId != ''">
-					<![CDATA[ ORG_ID = #{dto.orgId} and ]]>
+					<![CDATA[ ORG_ID like #{dto.orgId} and ]]>
 				</if>
 				<if test="dto.lawOrgId != null and dto.lawOrgId != ''">
-					<![CDATA[ LAW_ORG_ID = #{dto.lawOrgId} and ]]>
+					<![CDATA[ LAW_ORG_ID like #{dto.lawOrgId} and ]]>
 				</if>
 				<if test="dto.idCardNo != null and dto.idCardNo != ''">
-					<![CDATA[ ID_CARD_NO = #{dto.idCardNo} and ]]>
+					<![CDATA[ ID_CARD_NO like #{dto.idCardNo} and ]]>
 				</if>
 				<if test="dto.roleId != null and dto.roleId != ''">
-					<![CDATA[ ROLE_ID = #{dto.roleId} and ]]>
+					<![CDATA[ ROLE_ID like #{dto.roleId} and ]]>
 				</if>
 				<if test="dto.status != null and dto.status != ''">
-					<![CDATA[ STATUS = #{dto.status} and ]]>
+					<![CDATA[ STATUS like #{dto.status} and ]]>
+				</if>
+				<if test="dto.userId != null and dto.userId != ''">
+					<![CDATA[ USER_ID = #{dto.userId} and ]]>
 				</if>
 				<!-- Add more conditions if needed -->
 			</trim>
 		</where>
 	</sql>
 
-	<select id="getSysUserList" resultType="com.gientech.sys.user.SysUser" parameterType="com.gientech.sys.user.SysUserDTO4List">
+	<select id="getSysUserList" resultType="com.gientech.sys.user.SysUserVO" parameterType="com.gientech.sys.user.SysUserDTO4List">
 		SELECT
 		USER_ID as userId,
 		USER_NAME as userName,

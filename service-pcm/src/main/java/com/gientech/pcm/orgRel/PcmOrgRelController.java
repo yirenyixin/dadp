@@ -5,7 +5,6 @@ import com.gientech.common.enums.OperType;
 import com.gientech.common.view.DataGrid;
 import com.gientech.core.base.BaseController;
 import com.gientech.core.log.annotation.OperLog;
-import com.gientech.core.security.annotation.PreAuthorize;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.github.xiaoymin.knife4j.annotations.ApiSort;
 import io.swagger.annotations.Api;
@@ -25,8 +24,8 @@ import javax.validation.Valid;
  *
  * @author 吴俊达
  */
-@Api(tags = "【2-05】机构归属关系")
-@ApiSort(value = 205) // 排序号生成后要修改
+@Api(tags = "【2-02】机构归属关系")
+@ApiSort(value = 202) // 排序号生成后要修改
 @Validated
 @RestController
 @RequestMapping("/pcm/orgRel")
@@ -44,7 +43,7 @@ public class PcmOrgRelController extends BaseController {
     @ApiOperation(value = "新增后保存")
     @ApiOperationSupport(order = 1)
     @OperLog(title = "机构归属关系", operType = OperType.INSERT)
-    @PreAuthorize(hasAuth = "pcmOrgRel") // 菜单id或功能id
+//    @PreAuthorize(hasAuth = "pcmOrgRel") // 菜单id或功能id
     @PostMapping("/save")
     public Result<Object> save(@Valid @RequestBody PcmOrgRelDTO4Save pcmOrgRelDTO4Save, BindingResult bindingResult) {
         this.pcmOrgRelService.saveOrgRel(pcmOrgRelDTO4Save);
@@ -61,7 +60,7 @@ public class PcmOrgRelController extends BaseController {
     @ApiOperation(value = "删除")
     @ApiOperationSupport(order = 2)
     @OperLog(title = "机构归属关系", operType = OperType.DELETE)
-    @PreAuthorize(hasAuth = "pcmOrgRel") // 菜单id或功能id
+//    @PreAuthorize(hasAuth = "pcmOrgRel") // 菜单id或功能id
     @PostMapping("/delete")
     public Result<Object> delete(@Valid @RequestBody PcmOrgRelDTO4Delete pcmOrgRelDTO4Delete, BindingResult bindingResult) {
         this.pcmOrgRelService.deleteOrgRel(pcmOrgRelDTO4Delete.getOrgRelIds());
@@ -78,7 +77,7 @@ public class PcmOrgRelController extends BaseController {
     @ApiOperation(value = "修改")
     @ApiOperationSupport(order = 3)
     @OperLog(title = "机构归属关系", operType = OperType.UPDATE)
-    @PreAuthorize(hasAuth = "pcmOrgRel") // 菜单id或功能id
+//    @PreAuthorize(hasAuth = "pcmOrgRel") // 菜单id或功能id
     @PostMapping("/update")
     public Result<Object> update(@Valid @RequestBody PcmOrgRelDTO4Update pcmOrgRelDTO4Update, BindingResult bindingResult) {
         this.pcmOrgRelService.updateOrgRel(pcmOrgRelDTO4Update);
@@ -95,7 +94,7 @@ public class PcmOrgRelController extends BaseController {
     @ApiOperation(value = "查询和分页")
     @ApiOperationSupport(order = 4)
     @OperLog(title = "机构归属关系", operType = OperType.SEARCH)
-    @PreAuthorize(hasAuth = "pcmOrgRel") // 菜单id或功能id
+//    @PreAuthorize(hasAuth = "pcmOrgRel") // 菜单id或功能id
     @PostMapping(value = "/list")
     public Result<DataGrid<PcmOrgRelVO>> list(@Valid @RequestBody PcmOrgRelDTO4List pcmOrgRelDTO4List, BindingResult bindingResult) {
         return Result.success(this.pcmOrgRelService.listOrgRel(pcmOrgRelDTO4List));

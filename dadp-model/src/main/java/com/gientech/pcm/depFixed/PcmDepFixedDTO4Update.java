@@ -1,13 +1,14 @@
 package com.gientech.pcm.depFixed;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
-
-import javax.validation.constraints.*;
-
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+import java.io.Serializable;
 
 @Data
 @ApiModel(value = "PCM_DEP_FIXED - PcmDepFixedDTO4Update")
@@ -68,12 +69,12 @@ public class PcmDepFixedDTO4Update implements Serializable {
     @ApiModelProperty(value = "FLOAT_RATE", position = 11)
     @DecimalMin(value = "0", message = "[floatRate] 浮动比率不能小于0")
     @DecimalMax(value = "999999.999999", message = "[floatRate] 浮动比率不能大于999999.999999")
-    private BigDecimal floatRate; // 浮动比率
+    private Float floatRate; // 浮动比率
 
     @ApiModelProperty(value = "RATE", position = 12)
     @DecimalMin(value = "0", message = "[rate] 协议利率不能小于0")
     @DecimalMax(value = "999999.999999", message = "[rate] 协议利率不能大于999999.999999")
-    private BigDecimal rate; // 协议利率
+    private Float rate; // 协议利率
 
     @ApiModelProperty(value = "CURR_NO", required = true, position = 13)
 //    @NotBlank(message = "[currNo] 币种不能为空")
@@ -83,7 +84,7 @@ public class PcmDepFixedDTO4Update implements Serializable {
     @ApiModelProperty(value = "BAL", position = 14)
     @DecimalMin(value = "0", message = "[bal] 上日余额不能小于0")
     @DecimalMax(value = "99999999999999999999.99", message = "[bal] 上日余额不能大于99999999999999999999.99")
-    private BigDecimal bal; // 上日余额
+    private Float bal; // 上日余额
 
     @ApiModelProperty(value = "TERM", required = true, position = 15)
 //    @NotBlank(message = "[term] 存期不能为空")

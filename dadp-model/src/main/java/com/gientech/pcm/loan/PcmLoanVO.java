@@ -1,9 +1,9 @@
 package com.gientech.pcm.loan;
 
-import java.io.Serializable;
-
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import java.io.Serializable;
 
 @Data
 public class PcmLoanVO implements Serializable {

@@ -1,16 +1,14 @@
 package com.gientech.pcm.depCurr;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import java.io.Serializable;
 
 @Data
 @ApiModel(value = "活期存款--更新DTO")
@@ -24,7 +22,7 @@ public class PcmDepCurrDTO4Update implements Serializable {
     private String custId; // 客户ID
 
     @ApiModelProperty(value = "ID", required = true, position = 2)
-    @NotBlank(message = "[depCurrId] ID不能为空")
+//    @NotBlank(message = "[depCurrId] ID不能为空")
     @Size(max = 32, message = "ID的长度必须小于等于32")
     private String depCurrId; // ID
 
@@ -66,7 +64,7 @@ public class PcmDepCurrDTO4Update implements Serializable {
     @ApiModelProperty(value = "上日余额", position = 10)
     @DecimalMin(value = "0", message = "[bal] 上日余额不能小于0")
     @DecimalMax(value = "99999999999999999999.99", message = "[bal] 上日余额不能大于99999999999999999999.99")
-    private BigDecimal bal; // 上日余额
+    private Double bal; // 上日余额
 
     @ApiModelProperty(value = "账户状态", required = true, position = 11)
 //    @NotBlank(message = "[acctSts] 账户状态不能为空")
@@ -96,7 +94,7 @@ public class PcmDepCurrDTO4Update implements Serializable {
     @ApiModelProperty(value = "当前余额", position = 16)
     @DecimalMin(value = "0", message = "[currentBal] 当前余额不能小于0")
     @DecimalMax(value = "99999999999999999999.99", message = "[currentBal] 当前余额不能大于99999999999999999999.99")
-    private BigDecimal currentBal; // 当前余额
+    private Double currentBal; // 当前余额
 
     // Getters and setters
 }

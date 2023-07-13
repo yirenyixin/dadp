@@ -100,21 +100,4 @@ public class PcmCustController extends BaseController {
     public Result<DataGrid<PcmCustVO>> list(@Valid @RequestBody PcmCustDTO4List pcmCustDTO4List, BindingResult bindingResult) {
         return Result.success(this.pcmCustService.listCust(pcmCustDTO4List));
     }
-
-
-    /**
-     * 【5】查询分配客户
-     *
-     * @param pcmCustDTO4List 查询DTO
-     * @param bindingResult
-     * @return
-     */
-    @ApiOperation(value = "查询和分页")
-    @ApiOperationSupport(order = 4)
-    @OperLog(title = "客户", operType = OperType.SEARCH)
-    @PreAuthorize(hasAuth = "pcmCust") // 菜单id或功能id
-    @PostMapping(value = "/listAssCust")
-    public Result<DataGrid<PcmCustVO>> listAss(@Valid @RequestBody PcmCustDTO4List pcmCustDTO4List, BindingResult bindingResult) {
-        return Result.success(this.pcmCustService.listAssCust(pcmCustDTO4List));
-    }
 }

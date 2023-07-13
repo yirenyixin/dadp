@@ -5,7 +5,6 @@ import com.gientech.common.enums.OperType;
 import com.gientech.common.view.DataGrid;
 import com.gientech.core.base.BaseController;
 import com.gientech.core.log.annotation.OperLog;
-import com.gientech.core.security.annotation.PreAuthorize;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.github.xiaoymin.knife4j.annotations.ApiSort;
 import io.swagger.annotations.Api;
@@ -23,8 +22,8 @@ import javax.validation.Valid;
 /**
  * PcmProdOwn 控制器
  */
-@Api(tags = "【2-06】对私客户持有产品表")
-@ApiSort(value = 206)
+@Api(tags = "PCM_PROD_OWN")
+@ApiSort(value = 0)
 @Validated
 @RestController
 @RequestMapping("/pcm/prodOwn")
@@ -42,24 +41,24 @@ public class PcmProdOwnController extends BaseController {
      */
     @ApiOperation(value = "查询和分页")
     @ApiOperationSupport(order = 1)
-    @OperLog(title = "PPM_PROD_OWN", operType = OperType.SEARCH)
-    @PreAuthorize(hasAuth = "ppmProdOwn")
+    @OperLog(title = "PCM_PROD_OWN", operType = OperType.SEARCH)
+//    @PreAuthorize(hasAuth = "PCMProdOwn")
     @PostMapping(value = "/list")
     public Result<DataGrid<PcmProdOwnVO>> list(@Valid @RequestBody PcmProdOwnDTO4List pcmProdOwnDTO4List, BindingResult bindingResult) {
         return Result.success(this.pcmProdOwnService.listPcmProdOwn(pcmProdOwnDTO4List));
     }
 
     /**
-     * 新增 PPM_PROD_OWN
+     * 新增 PCM_PROD_OWN
      *
      * @param pcmProdOwnDTO4Save 新增DTO
      * @param bindingResult
      * @return
      */
-    @ApiOperation(value = "新增 PPM_PROD_OWN")
+    @ApiOperation(value = "新增 PCM_PROD_OWN")
     @ApiOperationSupport(order = 2)
-    @OperLog(title = "PPM_PROD_OWN", operType = OperType.INSERT)
-    @PreAuthorize(hasAuth = "ppmProdOwn")
+    @OperLog(title = "PCM_PROD_OWN", operType = OperType.INSERT)
+//    @PreAuthorize(hasAuth = "PCMProdOwn")
     @PostMapping("/save")
     public Result<Object> save(@Valid @RequestBody PcmProdOwnDTO4Save pcmProdOwnDTO4Save, BindingResult bindingResult) {
         this.pcmProdOwnService.savePcmProdOwn(pcmProdOwnDTO4Save);
@@ -67,16 +66,16 @@ public class PcmProdOwnController extends BaseController {
     }
 
     /**
-     * 修改 PPM_PROD_OWN
+     * 修改 PCM_PROD_OWN
      *
      * @param pcmProdOwnDTO4Update 修改DTO，一定要传主键
      * @param bindingResult
      * @return
      */
-    @ApiOperation(value = "修改 PPM_PROD_OWN")
+    @ApiOperation(value = "修改 PCM_PROD_OWN")
     @ApiOperationSupport(order = 3)
-    @OperLog(title = "PPM_PROD_OWN", operType = OperType.UPDATE)
-    @PreAuthorize(hasAuth = "ppmProdOwn")
+    @OperLog(title = "PCM_PROD_OWN", operType = OperType.UPDATE)
+//    @PreAuthorize(hasAuth = "PCMProdOwn")
     @PostMapping("/update")
     public Result<Object> update(@Valid @RequestBody PcmProdOwnDTO4Update pcmProdOwnDTO4Update, BindingResult bindingResult) {
         this.pcmProdOwnService.updatePcmProdOwn(pcmProdOwnDTO4Update);
@@ -84,16 +83,16 @@ public class PcmProdOwnController extends BaseController {
     }
 
     /**
-     * 删除 PPM_PROD_OWN
+     * 删除 PCM_PROD_OWN
      *
      * @param pcmProdOwnDTO4Delete
      * @param bindingResult
      * @return
      */
-    @ApiOperation(value = "删除 PPM_PROD_OWN")
+    @ApiOperation(value = "删除 PCM_PROD_OWN")
     @ApiOperationSupport(order = 4)
-    @OperLog(title = "PPM_PROD_OWN", operType = OperType.DELETE)
-    @PreAuthorize(hasAuth = "ppmProdOwn")
+    @OperLog(title = "PCM_PROD_OWN", operType = OperType.DELETE)
+//    @PreAuthorize(hasAuth = "PCMProdOwn")
     @PostMapping("/delete")
     public Result<Object> delete(@Valid @RequestBody PcmProdOwnDTO4Delete pcmProdOwnDTO4Delete, BindingResult bindingResult) {
         this.pcmProdOwnService.deletePcmProdOwn(pcmProdOwnDTO4Delete.getProdOwnIds());

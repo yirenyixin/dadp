@@ -1,16 +1,14 @@
 package com.gientech.pcm.depFixed;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import java.io.Serializable;
 
 @Data
 @ApiModel(value = "PCM_DEP_FIXED - PcmDepFixedDTO4Save")
@@ -71,12 +69,12 @@ public class PcmDepFixedDTO4Save implements Serializable {
     @ApiModelProperty(value = "FLOAT_RATE", position = 11)
     @DecimalMin(value = "0", message = "[floatRate] 浮动比率不能小于0")
     @DecimalMax(value = "999999.999999", message = "[floatRate] 浮动比率不能大于999999.999999")
-    private BigDecimal floatRate; // 浮动比率
+    private Float floatRate; // 浮动比率
 
     @ApiModelProperty(value = "RATE", position = 12)
     @DecimalMin(value = "0", message = "[rate] 协议利率不能小于0")
     @DecimalMax(value = "999999.999999", message = "[rate] 协议利率不能大于999999.999999")
-    private BigDecimal rate; // 协议利率
+    private Float rate; // 协议利率
 
     @ApiModelProperty(value = "CURR_NO", position = 13)
 //    @NotBlank(message = "[currNo] 币种不能为空")
@@ -86,7 +84,7 @@ public class PcmDepFixedDTO4Save implements Serializable {
     @ApiModelProperty(value = "BAL", position = 14)
     @DecimalMin(value = "0", message = "[bal] 上日余额不能小于0")
     @DecimalMax(value = "99999999999999999999.99", message = "[bal] 上日余额不能大于99999999999999999999.99")
-    private BigDecimal bal; // 上日余额
+    private Float bal; // 上日余额
 
     @ApiModelProperty(value = "TERM", position = 15)
 //    @NotBlank(message = "[term] 存期不能为空")
@@ -94,11 +92,11 @@ public class PcmDepFixedDTO4Save implements Serializable {
     private String term; // 存期
 
     @ApiModelProperty(value = "END_DATE", position = 16)
-//    @NotBlank(message = "[endDate] 到期日期不能为空")
+    @NotBlank(message = "[endDate] 到期日期不能为空")
     @Size(max = 8, message = "到期日期的长度必须小于等于8")
     private String endDate; // 到期日期
 
-    @ApiModelProperty(value = "ACCT_STS", required = true, position = 17)
+    @ApiModelProperty(value = "ACCT_STS", position = 17)
 //    @NotBlank(message = "[acctSts] 账户状态不能为空")
     @Size(max = 8, message = "账户状态的长度必须小于等于8")
     private String acctSts; // 账户状态

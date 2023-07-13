@@ -53,13 +53,13 @@ public class PcmDepCurrServiceTest {
         dto.setProdName("Test ProdName");
         dto.setAcctNo("Test AcctNo");
         dto.setCurrNo("CNY");
-        dto.setBal(BigDecimal.valueOf(1000));
+//        dto.setBal(BigDecimal.valueOf(1000));
         dto.setAcctSts("Test AcctSts");
         dto.setOpenOrgNo("Test OpenOrgNo");
         dto.setStartDt("20230707");
         dto.setVoucherNo("Test VoucherNo");
         dto.setSubAcctNo("Test SubAcctNo");
-        dto.setCurrentBal(BigDecimal.valueOf(500));
+//        dto.setCurrentBal(BigDecimal.valueOf(500));
         // Set other properties
 
         pcmDepCurrService.savePcmDepCurr(dto);
@@ -76,7 +76,7 @@ public class PcmDepCurrServiceTest {
         dto.setCustId("Updated CustId1");
         dto.setEcifCustId("Updated EcifCustId1");
         dto.setCustName("Updated CustName1");
-        dto.setBal(BigDecimal.valueOf(100.00));
+//        dto.setBal(BigDecimal.valueOf(100.00));
         // Set other properties
 
         pcmDepCurrService.updatePcmDepCurr(dto);

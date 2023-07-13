@@ -13,6 +13,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 @Slf4j
 @Service
 @Transactional
@@ -38,6 +41,11 @@ public class PcmLoanService extends BaseService<PcmLoanMapper, PcmLoan> {
 
         // 构造分页参数
         Page<PcmLoanVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
+
+
+        SimpleDateFormat formatter= new SimpleDateFormat("yyyyMMdd");
+        Date date = new Date(System.currentTimeMillis());
+        dto.setNowDate(formatter.format(date));
 
         return new DataGrid<>(this.getBaseMapper().getPcmLoanList(page, dto), page.getTotal());
     }

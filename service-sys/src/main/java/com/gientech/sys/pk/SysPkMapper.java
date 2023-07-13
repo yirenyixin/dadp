@@ -1,8 +1,7 @@
 package com.gientech.sys.pk;
 
-import org.apache.ibatis.annotations.Mapper;
-
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 流水号主键--的Mapper类

@@ -90,6 +90,7 @@ public class PmmRemindService extends BaseService<PmmRemindMapper, PmmRemind> {
 
         // 【2】处理前端传入排序条件
         dto.setOrderBy(MyStringUtil.getOrderBy(dto.getSort(), dto.getOrder(), "a.REMIND_ID asc"));
+        dto.setReceiverUserId(this.getUserSession().getUserId());
 
         // 【3】构造分页参数
         Page<PmmRemindVO> page = new Page<>(dto.getPageNo(),dto.getPageSize());

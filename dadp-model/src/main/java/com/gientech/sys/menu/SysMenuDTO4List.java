@@ -1,10 +1,10 @@
 package com.gientech.sys.menu;
 
-import java.io.Serializable;
-
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * 【菜单】SysMenu查询DTO类(tree)【不要的属性，一定要删除！发现3次要开除】

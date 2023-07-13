@@ -5,7 +5,6 @@ import com.gientech.common.enums.OperType;
 import com.gientech.common.view.DataGrid;
 import com.gientech.core.base.BaseController;
 import com.gientech.core.log.annotation.OperLog;
-import com.gientech.core.security.annotation.PreAuthorize;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.github.xiaoymin.knife4j.annotations.ApiSort;
 import io.swagger.annotations.Api;
@@ -23,8 +22,8 @@ import javax.validation.Valid;
 /**
  * PcmLoan 控制器
  */
-@Api(tags = "【2-04】对私贷款")
-@ApiSort(value = 204)
+@Api(tags = "PCM_LOAN")
+@ApiSort(value = 0)
 @Validated
 @RestController
 @RequestMapping("/pcm/loan")
@@ -43,7 +42,7 @@ public class PcmLoanController extends BaseController {
     @ApiOperation(value = "查询和分页")
     @ApiOperationSupport(order = 1)
     @OperLog(title = "PCM_LOAN", operType = OperType.SEARCH)
-    @PreAuthorize(hasAuth = "pcmLoan")
+//    @PreAuthorize(hasAuth = "pcmLoan")
     @PostMapping(value = "/list")
     public Result<DataGrid<PcmLoanVO>> list(@Valid @RequestBody PcmLoanDTO4List pcmLoanDTO4List, BindingResult bindingResult) {
         return Result.success(this.pcmLoanService.listPcmLoan(pcmLoanDTO4List));
@@ -59,7 +58,7 @@ public class PcmLoanController extends BaseController {
     @ApiOperation(value = "新增 PCM_LOAN")
     @ApiOperationSupport(order = 2)
     @OperLog(title = "PCM_LOAN", operType = OperType.INSERT)
-    @PreAuthorize(hasAuth = "pcmLoan")
+//    @PreAuthorize(hasAuth = "pcmLoan")
     @PostMapping("/save")
     public Result<Object> save(@Valid @RequestBody PcmLoanDTO4Save pcmLoanDTO4Save, BindingResult bindingResult) {
         this.pcmLoanService.savePcmLoan(pcmLoanDTO4Save);
@@ -76,7 +75,7 @@ public class PcmLoanController extends BaseController {
     @ApiOperation(value = "修改 PCM_LOAN")
     @ApiOperationSupport(order = 3)
     @OperLog(title = "PCM_LOAN", operType = OperType.UPDATE)
-    @PreAuthorize(hasAuth = "pcmLoan")
+//    @PreAuthorize(hasAuth = "pcmLoan")
     @PostMapping("/update")
     public Result<Object> update(@Valid @RequestBody PcmLoanDTO4Update pcmLoanDTO4Update, BindingResult bindingResult) {
         this.pcmLoanService.updatePcmLoan(pcmLoanDTO4Update);
@@ -93,7 +92,7 @@ public class PcmLoanController extends BaseController {
     @ApiOperation(value = "删除 PCM_LOAN")
     @ApiOperationSupport(order = 4)
     @OperLog(title = "PCM_LOAN", operType = OperType.DELETE)
-    @PreAuthorize(hasAuth = "pcmLoan")
+//    @PreAuthorize(hasAuth = "pcmLoan")
     @PostMapping("/delete")
     public Result<Object> delete(@Valid @RequestBody PcmLoanDTO4Delete pcmLoanDTO4Delete, BindingResult bindingResult) {
         this.pcmLoanService.deletePcmLoan(pcmLoanDTO4Delete.getLoanIds());

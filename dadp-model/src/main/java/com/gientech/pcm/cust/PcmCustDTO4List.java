@@ -48,10 +48,8 @@ public class PcmCustDTO4List implements Serializable {
 
 
 
-//    @ApiModelProperty(value = "客户ID", required = true, position = 11)
-//    @NotBlank(message = "[custID]客户ID，不能为空")
-//    @Size(max = 32, message = "客户ID的长度必须小于等于32")
-//    private String custId;
+    @ApiModelProperty(value = "客户ID", required = true, position = 11)
+    private String custId;
 //
 //    @ApiModelProperty(value = "ECIF客户ID", required = true, position = 12)
 //    @NotBlank(message = "[ecifCustId]ECIF客户ID，不能为空")
@@ -63,14 +61,14 @@ public class PcmCustDTO4List implements Serializable {
 //    @Size(max = 128, message = "客户名称的长度必须小于等于128")
     private String custName;
 
-//    @ApiModelProperty(value = "法人机构号", required = true, position = 14)
+    @ApiModelProperty(value = "法人机构号", required = true, position = 14)
 //    @NotBlank(message = "[lawOrgId]法人机构号，不能为空")
 //    @Size(max = 32, message = "法人机构号的长度必须小于等于32")
-//    private String lawOrgId;
-//
-//    @ApiModelProperty(value = "法人机构名称", position = 15)
+    private String lawOrgId;
+
+    @ApiModelProperty(value = "法人机构名称", position = 15)
 //    @Size(max = 128, message = "法人机构名称的长度必须小于等于128")
-//    private String lawOrgName;
+    private String lawOrgName;
 
     @ApiModelProperty(value = "客户状态", position = 16)
 //    @Size(max = 32, message = "客户状态的长度必须小于等于32")

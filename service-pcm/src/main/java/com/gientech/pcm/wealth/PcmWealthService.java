@@ -11,6 +11,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * @author cjm
  * @date 2023/7/7 19:22
@@ -81,6 +84,10 @@ public class PcmWealthService extends BaseService<PcmWealthMapper,PcmWealth> {
         dto.setOrderBy(MyStringUtil.getOrderBy(dto.getSort(),dto.getOrder(),"a.WEALTH_ID asc"));
         //构造分页函数
         Page<PcmWealthVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
+
+        SimpleDateFormat formatter= new SimpleDateFormat("yyyyMMdd");
+        Date date = new Date(System.currentTimeMillis());
+        dto.setNowDate(formatter.format(date));
 
         return new DataGrid<PcmWealthVO>(this.getBaseMapper().getPcmWealthList(page, dto), page.getTotal());
 

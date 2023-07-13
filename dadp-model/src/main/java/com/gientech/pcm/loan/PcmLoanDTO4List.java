@@ -1,17 +1,15 @@
 package com.gientech.pcm.loan;
 
-import java.io.Serializable;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import java.io.Serializable;
 
 @Data
 @ApiModel(value = "对私贷款--查询条件的DTO类")
@@ -134,5 +132,13 @@ public class PcmLoanDTO4List implements Serializable {
     private String loanUse; // 贷款用途
 
     // -----------------分割线---------------------------------------
+
+
+
+    @ApiModelProperty(value = "持有类型", position = 43)
+    private String isHis; // 是否历史持有  0当前  1 历史
+
+    @ApiModelProperty(value = "当前日期", position = 44)
+    private String nowDate;
 
 }

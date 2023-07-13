@@ -1,13 +1,12 @@
 package com.gientech.ppm.prod;
 
-import java.io.Serializable;
-
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
-
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+import java.io.Serializable;
 
 @Data
 @ApiModel(value = "产品表--更新DTO")
@@ -21,17 +20,17 @@ public class PpmProdDTO4Update implements Serializable {
     private String prodId; // 产品编号
 
     @ApiModelProperty(value = "PROD_NAME", required = true, position = 2)
-    @NotBlank(message = "[prodName] 产品名称不能为空")
+//    @NotBlank(message = "[prodName] 产品名称不能为空")
     @Size(max = 100, message = "产品名称的长度必须小于等于100")
     private String prodName; // 产品名称
 
     @ApiModelProperty(value = "KIND_ID", required = true, position = 3)
-    @NotBlank(message = "[kindId] 目录编号不能为空")
+//    @NotBlank(message = "[kindId] 目录编号不能为空")
     @Size(max = 32, message = "目录编号的长度必须小于等于32")
     private String kindId; // 目录编号
 
     @ApiModelProperty(value = "PROD_STATUS", required = true, position = 4)
-    @NotBlank(message = "[prodStatus] 产品状态不能为空")
+//    @NotBlank(message = "[prodStatus] 产品状态不能为空")
     @Size(max = 32, message = "产品状态的长度必须小于等于32")
     private String prodStatus; // 产品状态
 

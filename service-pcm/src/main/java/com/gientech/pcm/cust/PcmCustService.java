@@ -3,6 +3,7 @@ package com.gientech.pcm.cust;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.gientech.common.auth.UserSession;
 import com.gientech.common.exception.AppException;
 import com.gientech.common.util.MyBeanUtil;
 import com.gientech.common.util.MyStringUtil;
@@ -71,10 +72,10 @@ public class PcmCustService extends BaseService<PcmCustMapper, PcmCust> {
         PcmCust pcmCust = new PcmCust();
         MyBeanUtil.copyPropertiesIgnoreNull(dto, pcmCust);
 
-//        // 【2】校验EcifCustId是否重复.
-//        if (isExistEcifCustId(pcmCust)) {
-//            throw new AppException("保存失败,EcifCustId【" + pcmCust.getEcifCustId() + "】已经存在!");
-//        }
+        // 【2】校验EcifCustId是否重复.
+        if (isExistEcifCustId(pcmCust)) {
+            throw new AppException("保存失败,EcifCustId【" + pcmCust.getEcifCustId() + "】已经存在!");
+        }
 
         if (!this.updateById(pcmCust)) {
             throw new AppException("操作失败，你修改的数据不是最新的，请刷新后重新操作！");
@@ -92,35 +93,18 @@ public class PcmCustService extends BaseService<PcmCustMapper, PcmCust> {
         log.info("【查询条件--客户】" + dto);
 
         // 【1】 处理模糊查询条件的like(有3个方法addObjectLike，addObjectLikeLeft，addObjectLikeRight)
-        MyStringUtil.addObjectLike(dto, "custName,custState,custType,certType,certNo,isEmployee");
+        MyStringUtil.addObjectLike(dto, "custId,custName,custState,custType,certType,certNo,isEmployee,lawOrgId");
+//        UserSession session = this.getUserSession();
+//        if(!session.getRoleId().equals("admin")){
+//            dto.setLawOrgId(session.getOrgId());
+//        }
+
 
         // 【2】构造分页参数
         Page<PcmCustVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
 
         return new DataGrid<PcmCustVO>(this.getBaseMapper().getPcmCustList(page, dto), page.getTotal());
     }
-
-    /**
-     * 【5】查询分配客户
-     *
-     * @param dto
-     *
-     * @return
-     */
-    public DataGrid<PcmCustVO> listAssCust(PcmCustDTO4List dto) {
-        log.info("【查询条件--客户】" + dto);
-
-        // 【1】 处理模糊查询条件的like(有3个方法addObjectLike，addObjectLikeLeft，addObjectLikeRight)
-        MyStringUtil.addObjectLike(dto, "custName,custState,custType,certType,certNo,isEmployee");
-
-        // 【2】构造分页参数
-        Page<PcmCustVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
-
-        return new DataGrid<PcmCustVO>(this.getBaseMapper().getPcmAssCustList(page, dto), page.getTotal());
-    }
-
-
-
 
 
 
@@ -152,6 +136,7 @@ public class PcmCustService extends BaseService<PcmCustMapper, PcmCust> {
             QueryWrapper<PcmCust> queryWrapper = new QueryWrapper<>();
             queryWrapper.ne("CUST_ID", pcmCust.getCustId());
             queryWrapper.eq("ECIF_CUST_ID", pcmCust.getEcifCustId());
+            queryWrapper.eq("LAW_ORG_ID", pcmCust.getLawOrgId());
             return this.getOne(queryWrapper) != null;
         }
     }

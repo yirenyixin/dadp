@@ -9,23 +9,17 @@
         <where>
             <trim suffixOverrides="and">
                 <if test="dto.prodOwnId != null and dto.prodOwnId != ''">
-                    <![CDATA[ a.PROD_OWN_ID = #{dto.prodOwnId} and ]]>
+                    <![CDATA[ a.PROD_OWN_ID like #{dto.prodOwnId} and ]]>
                 </if>
-                <if test="dto.prodName != null and dto.prodName != ''">
-                    <![CDATA[ a.PROD_NAME = #{dto.prodName} and ]]>
-                </if>
-                <if test="dto.kindId != null and dto.kindId != ''">
-                    <![CDATA[ a.KIND_ID = #{dto.kindId} and ]]>
-                </if>
-                <if test="dto.prodStatus != null and dto.prodStatus != ''">
-                    <![CDATA[ a.PROD_STATUS = #{dto.prodStatus} and ]]>
+                <if test="dto.custId != null and dto.custId != ''">
+                    <![CDATA[ a.CUST_ID like #{dto.custId} and ]]>
                 </if>
                 <!-- Add more conditions if needed -->
             </trim>
         </where>
     </sql>
 
-    <select id="getPcmProdOwnList" resultType="com.gientech.pcm.prodOwn.PcmProdOwn" parameterType="com.gientech.pcm.prodOwn.PcmProdOwnDTO4List">
+    <select id="getPcmProdOwnList" resultType="com.gientech.pcm.prodOwn.PcmProdOwnVO" parameterType="com.gientech.pcm.prodOwn.PcmProdOwnDTO4List">
         SELECT
         a.PROD_OWN_ID as prodOwnId,
         a.CUST_ID as custId,

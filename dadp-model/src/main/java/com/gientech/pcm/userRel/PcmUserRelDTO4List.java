@@ -1,14 +1,14 @@
 package com.gientech.pcm.userRel;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.*;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 【客户经理归属关系】PcmUserRel查询DTO类【不要的属性，一定要删除！发现3次要开除】
@@ -45,31 +45,28 @@ public class PcmUserRelDTO4List implements Serializable {
 //    @Size(max = 70, message = "ID长度不能超过70个字符")
 //    private String userRelId;
 //
-//    @ApiModelProperty(value = "对私客户ID", required = true, position = 21)
+    @ApiModelProperty(value = "对私客户ID", required = true, position = 21)
 //    @NotBlank(message = "对私客户ID不能为空")
 //    @Size(max = 32, message = "对私客户ID长度不能超过32个字符")
-//    private String custId;
-//
-//    @ApiModelProperty(value = "法人机构号", required = true, position = 13)
-//    @NotBlank(message = "法人机构号不能为空")
-//    @Size(max = 32, message = "法人机构号长度不能超过32个字符")
-//    private String lawOrgId;
+    private String custId;
+
+    @ApiModelProperty(value = "法人机构号", position = 13)
+    private String lawOrgId;
 //
 //    @ApiModelProperty(value = "ECIF客户ID", required = true, position = 14)
 //    @Size(max = 32, message = "ECIF客户ID长度不能超过32个字符")
 //    private String ecifCustId;
 //
-//    @ApiModelProperty(value = "客户名称", required = true, position = 15)
+    @ApiModelProperty(value = "客户名称", required = true, position = 15)
 //    @Size(max = 128, message = "客户名称长度不能超过128个字符")
-//    private String custName;
+    private String custName;
 //
-//    @ApiModelProperty(value = "归属客户经理编号", position = 16)
-//    @Size(max = 32, message = "归属客户经理编号长度不能超过32个字符")
-//    private String belongMgrId;
+    @ApiModelProperty(value = "归属客户经理编号", position = 16)
+    private String belongMgrId;
 //
-//    @ApiModelProperty(value = "归属客户经理名称", position = 17)
+    @ApiModelProperty(value = "归属客户经理名称", position = 17)
 //    @Size(max = 128, message = "归属客户经理名称长度不能超过128个字符")
-//    private String belongMgrName;
+    private String belongMgrName;
 //
 //    @ApiModelProperty(value = "客户经理主协办类型", allowableValues = "1,2,3,4", position = 18)
 //    @Size(max = 32, message = "客户经理主协办类型长度不能超过32个字符")

@@ -1,10 +1,10 @@
 package com.gientech.sys.user;
 
-import java.io.Serializable;
-
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * 【用户】SysUser查询DTO类【不要的属性，一定要删除！发现3次要开除】

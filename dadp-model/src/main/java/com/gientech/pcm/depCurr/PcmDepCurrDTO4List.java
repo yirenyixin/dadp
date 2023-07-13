@@ -1,18 +1,15 @@
 package com.gientech.pcm.depCurr;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import java.io.Serializable;
 
 @Data
 @ApiModel(value = "对私活期存款--查询条件的DTO类")
@@ -72,7 +69,7 @@ public class PcmDepCurrDTO4List implements Serializable {
     private String currNo; // 币种
 
     @ApiModelProperty(value = "上日余额", position = 22)
-    private BigDecimal bal; // 上日余额
+    private Double bal; // 上日余额
 
     @ApiModelProperty(value = "账户状态", position = 23)
     private String acctSts; // 账户状态
@@ -90,7 +87,7 @@ public class PcmDepCurrDTO4List implements Serializable {
     private String subAcctNo; // 活期子账户
 
     @ApiModelProperty(value = "当前余额", position = 28)
-    private BigDecimal currentBal; // 当前余额
+    private Double currentBal; // 当前余额
 
     // -----------------分割线---------------------------------------
 

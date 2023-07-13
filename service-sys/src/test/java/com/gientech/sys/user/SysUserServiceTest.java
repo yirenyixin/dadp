@@ -28,6 +28,7 @@ public class SysUserServiceTest {
 		SysUserDTO4List dto = new SysUserDTO4List();
 		dto.setPageNo(1);
 		dto.setPageSize(10);
+		dto.setLawOrgId("9856C");
 //		dto.setLoginName("admin");
 		// Set other properties for filtering
 

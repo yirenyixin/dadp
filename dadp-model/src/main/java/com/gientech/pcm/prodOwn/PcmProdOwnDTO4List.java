@@ -1,17 +1,15 @@
 package com.gientech.pcm.prodOwn;
 
-import java.io.Serializable;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import java.io.Serializable;
 
 @Data
 @ApiModel(value = "持有产品表--查询条件的DTO类")
@@ -43,29 +41,39 @@ public class PcmProdOwnDTO4List implements Serializable {
 
     // -----------------分割线---------------------------------------
 
+
+
+
+
+
+
     @ApiModelProperty(value = "产品编号", position = 13)
     private String prodOwnId; // 产品编号
 
-    @ApiModelProperty(value = "产品名称", position = 14)
-    private String prodName; // 产品名称
 
-    @ApiModelProperty(value = "目录编号", position = 15)
-    private String kindId; // 目录编号
+    @ApiModelProperty(value = "客户号\n", position = 12)
+    private String custId; // 产品编号
 
-    @ApiModelProperty(value = "产品状态", position = 16)
-    private String prodStatus; // 产品状态
-
-    @ApiModelProperty(value = "产品介绍", position = 17)
-    private String proDescribe; // 产品介绍
-
-    @ApiModelProperty(value = "办理流程及所需材料", position = 18)
-    private String doFlow; // 办理流程及所需材料
-
-    @ApiModelProperty(value = "营销话术", position = 19)
-    private String marketDiscourse; // 营销话术
-
-    @ApiModelProperty(value = "产品特征", position = 20)
-    private String prodFeature; // 产品特征
+//    @ApiModelProperty(value = "产品名称", position = 14)
+//    private String prodName; // 产品名称
+//
+//    @ApiModelProperty(value = "目录编号", position = 15)
+//    private String kindId; // 目录编号
+//
+//    @ApiModelProperty(value = "产品状态", position = 16)
+//    private String prodStatus; // 产品状态
+//
+//    @ApiModelProperty(value = "产品介绍", position = 17)
+//    private String proDescribe; // 产品介绍
+//
+//    @ApiModelProperty(value = "办理流程及所需材料", position = 18)
+//    private String doFlow; // 办理流程及所需材料
+//
+//    @ApiModelProperty(value = "营销话术", position = 19)
+//    private String marketDiscourse; // 营销话术
+//
+//    @ApiModelProperty(value = "产品特征", position = 20)
+//    private String prodFeature; // 产品特征
 
     // 添加其他属性或方法，根据需要自行扩展
 

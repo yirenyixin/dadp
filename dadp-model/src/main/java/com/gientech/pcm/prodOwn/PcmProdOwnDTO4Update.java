@@ -1,15 +1,14 @@
 package com.gientech.pcm.prodOwn;
 
-import java.io.Serializable;
-
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.DecimalMin;
-import javax.validation.constraints.DecimalMax;
-import javax.validation.constraints.Size;
-
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+import java.io.Serializable;
 
 @Data
 @ApiModel(value = "持有产品表--更新DTO")
@@ -23,17 +22,17 @@ public class PcmProdOwnDTO4Update implements Serializable {
     private String prodOwnId; // 持有产品编号
 
     @ApiModelProperty(value = "CUST_ID", required = true, position = 2)
-    @NotBlank(message = "[custId] 客户号不能为空")
+//    @NotBlank(message = "[custId] 客户号不能为空")
     @Size(max = 32, message = "客户号的长度必须小于等于32")
     private String custId; // 客户号
 
     @ApiModelProperty(value = "LAW_ORG_ID", required = true, position = 3)
-    @NotBlank(message = "[lawOrgId] 法人机构号不能为空")
+//    @NotBlank(message = "[lawOrgId] 法人机构号不能为空")
     @Size(max = 32, message = "法人机构号的长度必须小于等于32")
     private String lawOrgId; // 法人机构号
 
     @ApiModelProperty(value = "ECIF_CUST_ID", required = true, position = 4)
-    @NotBlank(message = "[ecifCustId] ECIF客户号不能为空")
+//    @NotBlank(message = "[ecifCustId] ECIF客户号不能为空")
     @Size(max = 32, message = "ECIF客户号的长度必须小于等于32")
     private String ecifCustId; // ECIF客户号
 
