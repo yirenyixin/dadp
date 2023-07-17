@@ -1,46 +1,572 @@
-08:52:12.267 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 22 ms to scan 1 urls, producing 3 keys and 6 values 
-08:52:12.297 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 12 ms to scan 1 urls, producing 4 keys and 9 values 
-08:52:12.312 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 10 ms to scan 1 urls, producing 3 keys and 10 values 
-08:52:12.339 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 21 ms to scan 5 urls, producing 0 keys and 0 values 
-08:52:12.349 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 1 keys and 5 values 
-08:52:12.365 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
-08:52:12.378 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 2 keys and 8 values 
-08:52:12.405 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 22 ms to scan 5 urls, producing 0 keys and 0 values 
-08:52:14.403 [restartedMain] INFO  c.gientech.StartPmm - [logStartupProfileInfo,652] - The following profiles are active: dev
-08:52:15.669 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
-08:52:15.680 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
-08:52:15.680 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
-08:52:15.680 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
-08:52:15.680 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-08:52:15.680 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-08:52:15.680 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-08:52:15.681 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-08:52:15.681 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-08:52:15.681 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-08:52:15.681 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-08:52:15.681 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-08:52:15.681 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-08:52:15.681 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-08:52:15.681 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-08:52:15.681 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
-08:52:15.718 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-08:52:15.886 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-08:52:15.886 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-08:52:16.497 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9804"]
-08:52:16.499 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-08:52:16.499 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
-08:52:16.721 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-08:52:19.928 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-08:52:21.947 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-08:52:21.978 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-08:52:21.982 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-08:52:24.177 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9804"]
-08:52:24.196 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-pmm 192.168.76.1:9804 register finished
-08:52:25.688 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
-08:52:25.691 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
-08:52:25.714 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
-08:52:25.784 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
-08:52:25.822 [restartedMain] INFO  c.gientech.StartPmm - [logStarted,61] - Started StartPmm in 17.442 seconds (JVM running for 19.235)
-08:52:26.472 [RMI TCP Connection(11)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-08:52:26.500 [RMI TCP Connection(12)-192.168.226.1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
-08:52:26.619 [RMI TCP Connection(12)-192.168.226.1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+00:02:49.316 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+00:02:49.316 [http-nio-9804-exec-6] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:03:08.328 [http-nio-9804-exec-9] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:03:08.328 [http-nio-9804-exec-8] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+00:03:10.908 [http-nio-9804-exec-10] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+00:03:10.908 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:03:16.529 [http-nio-9804-exec-4] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:03:16.529 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:03:18.903 [http-nio-9804-exec-3] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:03:18.903 [http-nio-9804-exec-5] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:03:20.209 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+00:03:24.043 [http-nio-9804-exec-6] INFO  c.g.p.r.PmmRemindService - [deleteRemind,50] - 删除提醒表：86a697ab1efb11eebd0780fa5b84dec2
+00:03:24.092 [http-nio-9804-exec-9] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+00:03:24.368 [http-nio-9804-exec-8] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:03:24.371 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+00:04:16.089 [http-nio-9804-exec-10] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+00:04:22.332 [http-nio-9804-exec-4] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:04:22.332 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+00:07:03.073 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [deleteRemind,50] - 删除提醒表：86a697ab1efb11eebd0780fa5b84dec2
+00:07:03.131 [http-nio-9804-exec-6] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+00:07:03.992 [http-nio-9804-exec-9] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:03.993 [http-nio-9804-exec-8] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+00:07:29.858 [http-nio-9804-exec-10] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+00:07:29.858 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:40.259 [http-nio-9804-exec-4] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:40.259 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:42.353 [http-nio-9804-exec-5] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:42.364 [http-nio-9804-exec-3] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:43.262 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:43.262 [http-nio-9804-exec-6] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:43.825 [http-nio-9804-exec-9] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:43.825 [http-nio-9804-exec-8] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:44.176 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:44.176 [http-nio-9804-exec-10] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:44.512 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:44.512 [http-nio-9804-exec-4] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:44.883 [http-nio-9804-exec-3] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:44.897 [http-nio-9804-exec-5] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:45.141 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:45.141 [http-nio-9804-exec-6] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:45.580 [http-nio-9804-exec-8] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:45.581 [http-nio-9804-exec-9] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+00:07:46.579 [http-nio-9804-exec-10] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+00:07:47.039 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindTempService - [listRemind,86] - 查询条件--时间管理参数：PmmRemindTempDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindTempId=, eventType=, eventSmallType=, thresholdMon=null, dayNum=null, remindRoleId=, isOk=, validDay=null, modifyUserId=, modifyTime=null, modifyOrgId=)
+07:52:51.457 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 29 ms to scan 1 urls, producing 3 keys and 6 values 
+07:52:51.486 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 10 ms to scan 1 urls, producing 4 keys and 9 values 
+07:52:51.503 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 10 ms to scan 1 urls, producing 3 keys and 10 values 
+07:52:51.545 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 36 ms to scan 5 urls, producing 0 keys and 0 values 
+07:52:51.553 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 1 keys and 5 values 
+07:52:51.570 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+07:52:51.587 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 13 ms to scan 1 urls, producing 2 keys and 8 values 
+07:52:51.616 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 24 ms to scan 5 urls, producing 0 keys and 0 values 
+07:52:54.701 [restartedMain] INFO  c.gientech.StartPmm - [logStartupProfileInfo,652] - The following profiles are active: dev
+07:52:56.431 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+07:52:56.447 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+07:52:56.447 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+07:52:56.448 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+07:52:56.448 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+07:52:56.448 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+07:52:56.448 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+07:52:56.448 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+07:52:56.449 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+07:52:56.449 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+07:52:56.449 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+07:52:56.449 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+07:52:56.449 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+07:52:56.449 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+07:52:56.449 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+07:52:56.449 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+07:52:56.495 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+07:52:56.757 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+07:52:56.758 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+07:52:57.461 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9804"]
+07:52:57.462 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+07:52:57.462 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+07:52:57.692 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+07:53:01.063 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+07:53:03.183 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+07:53:03.221 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+07:53:03.227 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+07:53:06.373 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9804"]
+07:53:06.418 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-pmm 192.168.76.1:9804 register finished
+07:53:08.379 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+07:53:08.387 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+07:53:08.441 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+07:53:08.656 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+07:53:08.662 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+07:53:08.717 [restartedMain] INFO  c.gientech.StartPmm - [logStarted,61] - Started StartPmm in 21.712 seconds (JVM running for 23.489)
+07:53:09.108 [RMI TCP Connection(17)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:53:10.728 [RMI TCP Connection(19)-192.168.226.1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+07:53:11.045 [RMI TCP Connection(19)-192.168.226.1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+07:53:52.267 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+07:53:52.267 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+07:53:52.768 [http-nio-9804-exec-1] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+07:53:52.789 [http-nio-9804-exec-1] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+07:53:52.795 [http-nio-9804-exec-1] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+07:53:52.819 [http-nio-9804-exec-1] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+07:53:52.821 [http-nio-9804-exec-1] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@72f48cb9
+07:53:53.802 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+07:53:57.911 [http-nio-9804-exec-5] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+07:53:57.911 [http-nio-9804-exec-4] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+07:56:52.361 [http-nio-9804-exec-9] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+07:58:46.503 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:00:22.220 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:05:49.834 [http-nio-9804-exec-5] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:05:49.834 [http-nio-9804-exec-4] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:06:07.650 [http-nio-9804-exec-6] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:07:10.238 [http-nio-9804-exec-3] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:07:12.150 [http-nio-9804-exec-8] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:07:12.150 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:07:14.285 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+08:07:25.455 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:07:35.798 [lettuce-nioEventLoop-4-2] INFO  i.l.c.p.CommandHandler - [log,217] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+08:07:35.798 [lettuce-nioEventLoop-4-1] INFO  i.l.c.p.CommandHandler - [log,217] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+08:07:35.903 [lettuce-eventExecutorLoop-1-3] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was localhost/127.0.0.1:6379
+08:07:35.903 [lettuce-eventExecutorLoop-1-4] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was localhost/127.0.0.1:6379
+08:07:37.719 [Thread-31] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+08:07:38.452 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+08:07:38.786 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+08:07:39.130 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+08:07:39.148 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+08:55:07.818 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 22 ms to scan 1 urls, producing 3 keys and 6 values 
+08:55:07.837 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 4 keys and 9 values 
+08:55:07.846 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 3 keys and 10 values 
+08:55:07.868 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 19 ms to scan 5 urls, producing 0 keys and 0 values 
+08:55:07.878 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 1 keys and 5 values 
+08:55:07.894 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 11 ms to scan 1 urls, producing 1 keys and 7 values 
+08:55:07.908 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 10 ms to scan 1 urls, producing 2 keys and 8 values 
+08:55:07.934 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 22 ms to scan 5 urls, producing 0 keys and 0 values 
+08:55:10.142 [restartedMain] INFO  c.gientech.StartPmm - [logStartupProfileInfo,652] - The following profiles are active: dev
+08:55:11.915 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+08:55:11.925 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+08:55:11.926 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+08:55:11.926 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+08:55:11.926 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+08:55:11.926 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+08:55:11.926 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+08:55:11.926 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+08:55:11.927 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+08:55:11.927 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+08:55:11.927 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+08:55:11.927 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+08:55:11.927 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+08:55:11.927 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+08:55:11.927 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+08:55:11.927 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+08:55:11.972 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+08:55:12.149 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+08:55:12.149 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+08:55:12.677 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9804"]
+08:55:12.677 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+08:55:12.678 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+08:55:12.881 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+08:55:15.295 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+08:55:17.250 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+08:55:17.277 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+08:55:17.280 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+08:55:19.536 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9804"]
+08:55:19.555 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-pmm 192.168.76.1:9804 register finished
+08:55:21.035 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+08:55:21.037 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+08:55:21.063 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+08:55:21.136 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+08:55:21.138 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+08:55:21.160 [restartedMain] INFO  c.gientech.StartPmm - [logStarted,61] - Started StartPmm in 17.354 seconds (JVM running for 18.995)
+08:55:21.839 [RMI TCP Connection(21)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:55:21.871 [RMI TCP Connection(20)-192.168.226.1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+08:55:21.999 [RMI TCP Connection(20)-192.168.226.1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+08:55:44.530 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:55:45.125 [http-nio-9804-exec-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+08:55:45.148 [http-nio-9804-exec-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+08:55:45.153 [http-nio-9804-exec-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+08:55:45.180 [http-nio-9804-exec-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+08:55:45.181 [http-nio-9804-exec-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@16dbdfe6
+08:55:46.168 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+08:56:15.375 [http-nio-9804-exec-4] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:56:15.376 [http-nio-9804-exec-3] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:56:20.603 [http-nio-9804-exec-5] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:56:20.603 [http-nio-9804-exec-6] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+08:56:24.242 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+09:00:08.348 [http-nio-9804-exec-10] INFO  c.g.p.r.PmmRemindTempService - [listRemind,86] - 查询条件--时间管理参数：PmmRemindTempDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindTempId=, eventType=, eventSmallType=, thresholdMon=null, dayNum=null, remindRoleId=, isOk=, validDay=null, modifyUserId=, modifyTime=null, modifyOrgId=)
+09:00:12.888 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:00:12.891 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:01:13.284 [http-nio-9804-exec-3] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:02:05.999 [http-nio-9804-exec-6] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+09:02:06.971 [http-nio-9804-exec-5] INFO  c.g.p.r.PmmRemindTempService - [listRemind,86] - 查询条件--时间管理参数：PmmRemindTempDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindTempId=, eventType=, eventSmallType=, thresholdMon=null, dayNum=null, remindRoleId=, isOk=, validDay=null, modifyUserId=, modifyTime=null, modifyOrgId=)
+09:02:24.760 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:02:24.760 [http-nio-9804-exec-8] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:08:01.889 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:12:03.736 [http-nio-9804-exec-3] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:12:03.736 [http-nio-9804-exec-4] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:12:05.341 [http-nio-9804-exec-6] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+09:12:48.909 [http-nio-9804-exec-5] INFO  c.g.p.r.PmmRemindTempService - [listRemind,86] - 查询条件--时间管理参数：PmmRemindTempDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindTempId=, eventType=, eventSmallType=, thresholdMon=null, dayNum=null, remindRoleId=, isOk=, validDay=null, modifyUserId=, modifyTime=null, modifyOrgId=)
+09:20:11.445 [http-nio-9804-exec-9] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:20:17.677 [http-nio-9804-exec-10] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:20:17.677 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:20:21.665 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+09:20:39.656 [http-nio-9804-exec-4] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:20:39.668 [http-nio-9804-exec-3] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+09:22:45.756 [http-nio-9804-exec-8] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+09:22:45.756 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:25:06.343 [http-nio-9804-exec-10] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+09:25:06.343 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:25:21.921 [http-nio-9804-exec-4] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)
+09:25:21.921 [http-nio-9804-exec-3] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:28:04.817 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:28:15.091 [http-nio-9804-exec-8] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+09:37:16.373 [http-nio-9804-exec-9] INFO  c.g.p.r.PmmRemindTempService - [listRemind,86] - 查询条件--时间管理参数：PmmRemindTempDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindTempId=, eventType=, eventSmallType=, thresholdMon=null, dayNum=null, remindRoleId=, isOk=, validDay=null, modifyUserId=, modifyTime=null, modifyOrgId=)
+10:12:53.815 [lettuce-nioEventLoop-4-2] INFO  i.l.c.p.CommandHandler - [log,217] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+10:12:53.815 [lettuce-nioEventLoop-4-1] INFO  i.l.c.p.CommandHandler - [log,217] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+10:12:53.925 [lettuce-eventExecutorLoop-1-6] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was localhost/127.0.0.1:6379
+10:12:53.925 [lettuce-eventExecutorLoop-1-8] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was localhost/127.0.0.1:6379
+10:12:58.820 [Thread-29] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+10:12:59.542 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+10:12:59.848 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+10:13:00.168 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+10:13:00.187 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+10:47:39.639 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 39 ms to scan 1 urls, producing 3 keys and 6 values 
+10:47:39.676 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+10:47:39.691 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 10 ms to scan 1 urls, producing 3 keys and 10 values 
+10:47:39.724 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 26 ms to scan 5 urls, producing 0 keys and 0 values 
+10:47:39.739 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+10:47:39.757 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 14 ms to scan 1 urls, producing 1 keys and 7 values 
+10:47:39.778 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 14 ms to scan 1 urls, producing 2 keys and 8 values 
+10:47:39.814 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 30 ms to scan 5 urls, producing 0 keys and 0 values 
+10:47:49.458 [restartedMain] INFO  c.gientech.StartPmm - [logStartupProfileInfo,652] - The following profiles are active: dev
+10:47:51.936 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+10:47:51.960 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+10:47:51.960 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+10:47:51.961 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+10:47:51.961 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+10:47:51.961 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+10:47:51.961 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+10:47:51.961 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+10:47:51.962 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+10:47:51.962 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+10:47:51.962 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+10:47:51.962 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+10:47:51.963 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+10:47:51.963 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+10:47:51.963 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+10:47:51.963 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+10:47:52.026 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+10:47:52.254 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+10:47:52.254 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+10:47:52.796 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9804"]
+10:47:52.797 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:47:52.797 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+10:47:53.003 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:47:56.250 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+10:47:58.559 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+10:47:58.590 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:47:58.594 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:48:00.925 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9804"]
+10:48:00.951 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-pmm 192.168.76.1:9804 register finished
+10:48:02.626 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+10:48:02.630 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+10:48:02.671 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+10:48:02.811 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+10:48:02.815 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+10:48:02.844 [restartedMain] INFO  c.gientech.StartPmm - [logStarted,61] - Started StartPmm in 27.498 seconds (JVM running for 29.017)
+10:48:03.210 [RMI TCP Connection(32)-192.168.226.1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+10:48:03.381 [RMI TCP Connection(32)-192.168.226.1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+10:48:04.157 [RMI TCP Connection(34)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:00:37.712 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+11:00:37.712 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+11:00:38.254 [http-nio-9804-exec-1] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:00:38.277 [http-nio-9804-exec-1] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+11:00:38.281 [http-nio-9804-exec-1] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+11:00:38.302 [http-nio-9804-exec-1] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:00:38.304 [http-nio-9804-exec-1] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@33877f63
+11:00:39.285 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:16:44.259 [Thread-31] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+11:16:44.570 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+11:16:44.572 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+11:16:44.885 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+11:16:44.898 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+11:26:58.218 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 20 ms to scan 1 urls, producing 3 keys and 6 values 
+11:26:58.237 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 4 keys and 9 values 
+11:26:58.245 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+11:26:58.267 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 18 ms to scan 6 urls, producing 0 keys and 0 values 
+11:26:58.274 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 1 keys and 5 values 
+11:26:58.284 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 1 keys and 7 values 
+11:26:58.296 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 2 keys and 8 values 
+11:26:58.317 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 17 ms to scan 6 urls, producing 0 keys and 0 values 
+11:27:00.571 [restartedMain] INFO  c.gientech.StartPmm - [logStartupProfileInfo,652] - The following profiles are active: dev
+11:27:02.643 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+11:27:02.655 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+11:27:02.656 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+11:27:02.656 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+11:27:02.656 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+11:27:02.656 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+11:27:02.657 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+11:27:02.657 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+11:27:02.657 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+11:27:02.657 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+11:27:02.657 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+11:27:02.658 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+11:27:02.658 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+11:27:02.658 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+11:27:02.658 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+11:27:02.658 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+11:27:02.697 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+11:27:02.908 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+11:27:02.909 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+11:27:03.492 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9804"]
+11:27:03.492 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:27:03.493 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+11:27:03.689 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:27:06.374 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+11:27:08.373 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:27:08.399 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:27:08.402 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:27:10.523 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9804"]
+11:27:10.543 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-pmm 192.168.76.1:9804 register finished
+11:27:12.051 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+11:27:12.054 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+11:27:12.080 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+11:27:12.194 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+11:27:12.196 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+11:27:12.202 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+11:27:12.206 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+11:27:12.217 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+11:27:12.219 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+11:27:12.223 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+11:27:12.227 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+11:27:12.244 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+11:27:12.246 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+11:27:12.252 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+11:27:12.257 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+11:27:12.263 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+11:27:12.265 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+11:27:12.268 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+11:27:12.270 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+11:27:12.276 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+11:27:12.277 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+11:27:12.280 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+11:27:12.283 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+11:27:12.290 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+11:27:12.291 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+11:27:12.294 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+11:27:12.298 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+11:27:12.306 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_7
+11:27:12.308 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_7
+11:27:12.310 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_7
+11:27:12.314 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_7
+11:27:12.328 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_8
+11:27:12.330 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_8
+11:27:12.336 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_9
+11:27:12.338 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_9
+11:27:12.341 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_8
+11:27:12.344 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
+11:27:12.362 [restartedMain] INFO  c.gientech.StartPmm - [logStarted,61] - Started StartPmm in 18.083 seconds (JVM running for 19.601)
+11:27:12.863 [RMI TCP Connection(19)-192.168.226.1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+11:27:12.994 [RMI TCP Connection(19)-192.168.226.1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+11:27:13.456 [RMI TCP Connection(21)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:28:42.557 [Thread-1] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+11:28:42.563 [Thread-1] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+11:28:42.900 [Thread-1] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+11:28:42.914 [Thread-1] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+11:28:46.160 [restartedMain] INFO  c.gientech.StartPmm - [logStartupProfileInfo,652] - The following profiles are active: dev
+11:28:46.850 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+11:28:46.859 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+11:28:46.859 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+11:28:46.859 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+11:28:46.859 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+11:28:46.859 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+11:28:46.859 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+11:28:46.860 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+11:28:46.860 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+11:28:46.860 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+11:28:46.860 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+11:28:46.860 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+11:28:46.860 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+11:28:46.860 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+11:28:46.860 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+11:28:46.860 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+11:28:46.867 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+11:28:46.890 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+11:28:46.891 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+11:28:47.016 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9804"]
+11:28:47.016 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:28:47.016 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+11:28:47.092 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:28:48.253 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+11:28:49.996 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:28:50.015 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:28:51.817 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9804"]
+11:28:51.821 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-pmm 192.168.76.1:9804 register finished
+11:28:53.247 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+11:28:53.248 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+11:28:53.253 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+11:28:53.269 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+11:28:53.270 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+11:28:53.280 [restartedMain] INFO  c.gientech.StartPmm - [logStarted,61] - Started StartPmm in 10.176 seconds (JVM running for 120.519)
+11:29:38.144 [Thread-33] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+11:29:38.147 [Thread-33] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+11:29:41.888 [restartedMain] INFO  c.gientech.StartPmm - [logStartupProfileInfo,652] - The following profiles are active: dev
+11:29:42.695 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+11:29:42.702 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+11:29:42.702 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+11:29:42.702 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-pmm,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+11:29:42.703 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+11:29:42.703 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+11:29:42.703 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+11:29:42.703 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+11:29:42.703 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+11:29:42.703 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+11:29:42.703 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+11:29:42.703 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+11:29:42.704 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+11:29:42.704 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+11:29:42.704 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+11:29:42.704 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+11:29:42.712 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+11:29:42.745 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+11:29:42.745 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+11:29:42.888 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9804"]
+11:29:42.889 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:29:42.889 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+11:29:42.972 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:29:44.393 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+11:29:46.256 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:29:46.275 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:29:48.138 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9804"]
+11:29:48.143 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-pmm 192.168.76.1:9804 register finished
+11:29:49.631 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+11:29:49.632 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+11:29:49.641 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+11:29:49.674 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+11:29:49.675 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+11:29:49.678 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+11:29:49.681 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+11:29:49.688 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+11:29:49.690 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+11:29:49.692 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+11:29:49.697 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+11:29:49.711 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+11:29:49.712 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+11:29:49.716 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+11:29:49.720 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+11:29:49.724 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+11:29:49.725 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+11:29:49.727 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+11:29:49.729 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+11:29:49.734 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+11:29:49.735 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+11:29:49.737 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+11:29:49.739 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+11:29:49.744 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+11:29:49.745 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+11:29:49.747 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+11:29:49.749 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+11:29:49.755 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_7
+11:29:49.757 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_7
+11:29:49.759 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_7
+11:29:49.761 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_7
+11:29:49.766 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_8
+11:29:49.768 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_8
+11:29:49.774 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_9
+11:29:49.776 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_9
+11:29:49.778 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_8
+11:29:49.780 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
+11:29:49.786 [restartedMain] INFO  c.gientech.StartPmm - [logStarted,61] - Started StartPmm in 11.239 seconds (JVM running for 177.025)
+13:54:23.223 [http-nio-9804-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:54:23.374 [http-nio-9804-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-2 - Starting...
+13:54:23.378 [http-nio-9804-exec-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-2 - Start completed.
+13:54:23.388 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+13:54:23.388 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+13:54:23.945 [http-nio-9804-exec-1] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+13:54:23.968 [http-nio-9804-exec-1] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+13:54:23.972 [http-nio-9804-exec-1] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+13:54:23.994 [http-nio-9804-exec-1] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+13:54:23.996 [http-nio-9804-exec-1] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@731e2c47
+13:54:24.975 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+13:57:04.507 [http-nio-9804-exec-5] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+13:57:23.345 [http-nio-9804-exec-6] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+13:57:34.922 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+13:57:53.399 [http-nio-9804-exec-8] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+13:58:57.613 [http-nio-9804-exec-10] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+13:59:51.606 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+14:00:06.645 [http-nio-9804-exec-2] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+14:00:37.275 [http-nio-9804-exec-4] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+14:08:31.114 [http-nio-9804-exec-5] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+14:12:23.301 [http-nio-9804-exec-7] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+14:41:19.043 [http-nio-9804-exec-10] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+14:41:19.043 [http-nio-9804-exec-9] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=100, sort=null, order=null, orderBy=null, remindId=null, remindContent=null, validDay=null, createDate=null, receiverUserId=null, custId=null, lawOrgId=null, eventType=null, eventSmallType=null)
+14:42:17.300 [http-nio-9804-exec-1] INFO  c.g.p.r.PmmRemindService - [listRemind,86] - 查询条件--提醒表：PmmRemindDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, remindId=, remindContent=, validDay=null, createDate=null, receiverUserId=, custId=, lawOrgId=, eventType=, eventSmallType=)

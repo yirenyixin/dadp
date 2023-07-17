@@ -1,22 +1,108 @@
-00:00:20.665 [http-nio-9801-exec-6] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:01:17.399 [http-nio-9801-exec-1] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:01:56.048 [http-nio-9801-exec-7] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:06:35.996 [http-nio-9801-exec-3] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:07:02.434 [http-nio-9801-exec-1] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:07:27.639 [http-nio-9801-exec-7] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:07:48.087 [http-nio-9801-exec-9] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:07:51.307 [http-nio-9801-exec-6] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:08:43.864 [http-nio-9801-exec-1] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:09:13.882 [http-nio-9801-exec-7] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:09:34.546 [http-nio-9801-exec-3] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:10:38.237 [http-nio-9801-exec-5] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:12:09.109 [http-nio-9801-exec-4] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:12:50.380 [http-nio-9801-exec-3] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:17:34.628 [http-nio-9801-exec-7] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:17:58.235 [http-nio-9801-exec-3] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:23:47.937 [http-nio-9801-exec-7] INFO  c.g.s.l.SysLogService - [saveLog,70] - 【新增--日志】SysLog(logId=1678802276124835842, userId=9658, userName=朱永莉, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Wed Jul 12 00:23:47 CST 2023)
-00:23:53.533 [http-nio-9801-exec-3] INFO  c.g.s.u.SysUserService - [listSysUser,31] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=, idCardNo=, address=null, email=, tellerNo=, workingYears=0, wechatNo=, roleId=, status=, sortNo=0)
-00:25:30.002 [lettuce-nioEventLoop-28-1] INFO  i.l.c.p.CommandHandler - [log,217] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+00:03:16.454 [http-nio-9801-exec-4] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679521886641934338, userId=0006, userName=尚磊, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 00:03:16 CST 2023)
+00:07:40.191 [http-nio-9801-exec-6] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679522992830894081, userId=0006, userName=尚磊, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 00:07:40 CST 2023)
+07:53:06.489 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 32 ms to scan 1 urls, producing 3 keys and 6 values 
+07:53:06.511 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 4 keys and 9 values 
+07:53:06.523 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 3 keys and 10 values 
+07:53:06.557 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 29 ms to scan 5 urls, producing 0 keys and 0 values 
+07:53:06.566 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 1 keys and 5 values 
+07:53:06.583 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+07:53:06.599 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 13 ms to scan 1 urls, producing 2 keys and 8 values 
+07:53:06.621 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 19 ms to scan 5 urls, producing 0 keys and 0 values 
+07:53:10.614 [restartedMain] INFO  c.gientech.StartSys - [logStartupProfileInfo,652] - The following profiles are active: dev
+07:53:12.720 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+07:53:12.736 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+07:53:12.737 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+07:53:12.737 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+07:53:12.738 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+07:53:12.738 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+07:53:12.738 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+07:53:12.738 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+07:53:12.738 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+07:53:12.739 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+07:53:12.739 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+07:53:12.739 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+07:53:12.739 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+07:53:12.739 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+07:53:12.739 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+07:53:12.739 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+07:53:12.796 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+07:53:13.077 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+07:53:13.077 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+07:53:13.858 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9801"]
+07:53:13.859 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+07:53:13.859 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+07:53:14.187 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+07:53:16.965 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+07:53:17.100 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+07:53:18.058 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadConfigToRedis,85] - -------------------【1】系统参数sysConfig，加载到redis完成-------------------
+07:53:18.167 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadCodeTypeToRedis,104] - -------------------【2】代码类别sysCodeType，加载到redis完成-------------------
+07:53:18.194 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleDataToRedis,202] - -------------------【6】数据权限SysRoleData，加载到redis完成-------------------
+07:53:18.206 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadOrgToRedis,153] - -------------------【3】机构sysOrg，加载到redis完成-------------------
+07:53:18.213 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadUserToRedis,171] - -------------------【4】用户sysUser，加载到redis完成-------------------
+07:53:18.217 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleToRedis,190] - -------------------【5】用户sysRole，加载到redis完成-------------------
+07:53:18.679 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+07:53:20.594 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+07:53:20.624 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+07:53:20.627 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+07:53:23.057 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9801"]
+07:53:23.082 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-sys 192.168.76.1:9801 register finished
+07:53:24.606 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+07:53:24.610 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+07:53:24.634 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+07:53:24.724 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+07:53:24.726 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+07:53:24.728 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+07:53:24.731 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+07:53:24.738 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+07:53:24.739 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+07:53:24.741 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+07:53:24.745 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+07:53:24.750 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+07:53:24.752 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+07:53:24.754 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+07:53:24.756 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+07:53:24.761 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+07:53:24.780 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+07:53:24.783 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+07:53:24.785 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+07:53:24.788 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+07:53:24.797 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+07:53:24.800 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+07:53:24.802 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: getUsingPOST_1
+07:53:24.803 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+07:53:24.805 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+07:53:24.806 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_7
+07:53:24.812 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_8
+07:53:24.813 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+07:53:24.816 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+07:53:24.818 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+07:53:24.821 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_7
+07:53:24.823 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_9
+07:53:24.829 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_10
+07:53:24.831 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_7
+07:53:24.833 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_8
+07:53:24.835 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_7
+07:53:24.841 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_11
+07:53:24.844 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_8
+07:53:24.846 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_9
+07:53:24.849 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
+07:53:24.858 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_12
+07:53:24.860 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_9
+07:53:24.863 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_10
+07:53:24.867 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_9
+07:53:24.884 [restartedMain] INFO  c.gientech.StartSys - [logStarted,61] - Started StartSys in 23.054 seconds (JVM running for 24.986)
+07:53:26.009 [RMI TCP Connection(14)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:53:51.862 [http-nio-9801-exec-1] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679640314551820290, userId=9658, userName=朱永莉, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 07:53:51 CST 2023)
+07:53:52.174 [http-nio-9801-exec-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+07:53:52.205 [http-nio-9801-exec-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+07:53:52.210 [http-nio-9801-exec-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+07:53:52.234 [http-nio-9801-exec-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+07:53:52.236 [http-nio-9801-exec-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@154b4e57
+07:53:53.226 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+07:53:57.810 [http-nio-9801-exec-6] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679640339503734786, userId=0006, userName=尚磊, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 07:53:57 CST 2023)
+08:07:35.798 [lettuce-nioEventLoop-4-1] INFO  i.l.c.p.CommandHandler - [log,217] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
 	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
@@ -36,4 +122,427 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-00:25:30.110 [lettuce-eventExecutorLoop-26-11] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was localhost/127.0.0.1:6379
+08:07:35.798 [lettuce-nioEventLoop-4-2] INFO  i.l.c.p.CommandHandler - [log,217] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+08:07:35.903 [lettuce-eventExecutorLoop-1-8] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was localhost/127.0.0.1:6379
+08:07:35.903 [lettuce-eventExecutorLoop-1-7] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was localhost/127.0.0.1:6379
+08:07:42.215 [lettuce-eventExecutorLoop-1-14] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was localhost:6379
+08:07:42.215 [lettuce-eventExecutorLoop-1-13] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was localhost:6379
+08:07:45.822 [Thread-29] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+08:07:46.485 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+08:07:46.812 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+08:07:47.151 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+08:07:47.165 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+08:55:00.589 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 41 ms to scan 1 urls, producing 3 keys and 6 values 
+08:55:00.625 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 20 ms to scan 1 urls, producing 4 keys and 9 values 
+08:55:00.640 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 11 ms to scan 1 urls, producing 3 keys and 10 values 
+08:55:00.679 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 33 ms to scan 5 urls, producing 0 keys and 0 values 
+08:55:00.686 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 1 keys and 5 values 
+08:55:00.702 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+08:55:00.722 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 14 ms to scan 1 urls, producing 2 keys and 8 values 
+08:55:00.747 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 22 ms to scan 5 urls, producing 0 keys and 0 values 
+08:55:03.100 [restartedMain] INFO  c.gientech.StartSys - [logStartupProfileInfo,652] - The following profiles are active: dev
+08:55:04.648 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+08:55:04.657 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+08:55:04.659 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+08:55:04.659 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+08:55:04.659 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+08:55:04.659 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+08:55:04.659 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+08:55:04.659 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+08:55:04.659 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+08:55:04.659 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+08:55:04.659 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+08:55:04.659 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+08:55:04.660 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+08:55:04.660 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+08:55:04.660 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+08:55:04.660 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+08:55:04.704 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+08:55:04.875 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+08:55:04.875 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+08:55:05.365 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9801"]
+08:55:05.366 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+08:55:05.366 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+08:55:05.544 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+08:55:07.898 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+08:55:08.057 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+08:55:09.050 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadConfigToRedis,85] - -------------------【1】系统参数sysConfig，加载到redis完成-------------------
+08:55:09.204 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadCodeTypeToRedis,104] - -------------------【2】代码类别sysCodeType，加载到redis完成-------------------
+08:55:09.232 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleDataToRedis,202] - -------------------【6】数据权限SysRoleData，加载到redis完成-------------------
+08:55:09.244 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadOrgToRedis,153] - -------------------【3】机构sysOrg，加载到redis完成-------------------
+08:55:09.251 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadUserToRedis,171] - -------------------【4】用户sysUser，加载到redis完成-------------------
+08:55:09.256 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleToRedis,190] - -------------------【5】用户sysRole，加载到redis完成-------------------
+08:55:09.967 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+08:55:12.485 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+08:55:12.519 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+08:55:12.524 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+08:55:14.820 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9801"]
+08:55:14.846 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-sys 192.168.76.1:9801 register finished
+08:55:16.372 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+08:55:16.375 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+08:55:16.408 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+08:55:16.497 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+08:55:16.500 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+08:55:16.503 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+08:55:16.505 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+08:55:16.512 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+08:55:16.514 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+08:55:16.517 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+08:55:16.519 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+08:55:16.525 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+08:55:16.526 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+08:55:16.530 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+08:55:16.533 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+08:55:16.539 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+08:55:16.558 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+08:55:16.561 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+08:55:16.564 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+08:55:16.565 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+08:55:16.577 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+08:55:16.580 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+08:55:16.581 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: getUsingPOST_1
+08:55:16.583 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+08:55:16.585 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+08:55:16.586 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_7
+08:55:16.592 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_8
+08:55:16.593 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+08:55:16.595 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+08:55:16.602 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+08:55:16.606 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_7
+08:55:16.607 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_9
+08:55:16.611 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_10
+08:55:16.613 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_7
+08:55:16.615 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_8
+08:55:16.617 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_7
+08:55:16.623 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_11
+08:55:16.624 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_8
+08:55:16.626 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_9
+08:55:16.629 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
+08:55:16.638 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_12
+08:55:16.641 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_9
+08:55:16.644 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_10
+08:55:16.648 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_9
+08:55:16.667 [restartedMain] INFO  c.gientech.StartSys - [logStarted,61] - Started StartSys in 20.937 seconds (JVM running for 22.85)
+08:55:17.512 [RMI TCP Connection(9)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:55:44.069 [http-nio-9801-exec-1] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679655884688994306, userId=0006, userName=尚磊, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 08:55:44 CST 2023)
+08:55:44.454 [http-nio-9801-exec-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+08:55:44.485 [http-nio-9801-exec-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+08:55:44.492 [http-nio-9801-exec-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+08:55:44.514 [http-nio-9801-exec-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+08:55:44.517 [http-nio-9801-exec-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@7558d659
+08:55:45.497 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+08:56:15.251 [http-nio-9801-exec-5] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679656015429644290, userId=9658, userName=朱永莉, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 08:56:15 CST 2023)
+08:56:20.501 [http-nio-9801-exec-10] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679656037487489026, userId=0006, userName=尚磊, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 08:56:20 CST 2023)
+09:00:12.798 [http-nio-9801-exec-3] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679657011790753793, userId=9658, userName=朱永莉, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:00:12 CST 2023)
+09:00:17.506 [http-nio-9801-exec-7] INFO  c.g.s.o.SysOrgService - [listOrg,40] - 【tree查询条件--机构】
+09:00:17.511 [http-nio-9801-exec-9] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=manager, status=, sortNo=0)
+09:00:33.951 [http-nio-9801-exec-4] INFO  c.g.s.o.SysOrgService - [listOrg,40] - 【tree查询条件--机构】
+09:00:33.951 [http-nio-9801-exec-1] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=manager, status=, sortNo=0)
+09:01:13.286 [http-nio-9801-exec-6] INFO  c.g.s.o.SysOrgService - [listOrg,40] - 【tree查询条件--机构】
+09:01:13.286 [http-nio-9801-exec-9] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=manager, status=, sortNo=0)
+09:02:01.771 [http-nio-9801-exec-1] INFO  c.g.s.o.SysOrgService - [listOrg,40] - 【tree查询条件--机构】
+09:02:01.771 [http-nio-9801-exec-4] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=manager, status=, sortNo=0)
+09:02:24.353 [http-nio-9801-exec-5] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679657563593388033, userId=0006, userName=尚磊, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:02:24 CST 2023)
+09:03:07.415 [http-nio-9801-exec-6] INFO  c.g.s.o.SysOrgService - [listOrg,40] - 【tree查询条件--机构】
+09:03:07.415 [http-nio-9801-exec-10] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=manager, status=, sortNo=0)
+09:03:09.119 [http-nio-9801-exec-2] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=1, sort=null, order=null, orderBy=null, userId=0001, userName=null, loginName=null, tel=null, sex=null, orgId=null, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=null, status=null, sortNo=null)
+09:03:10.759 [http-nio-9801-exec-8] INFO  c.g.s.o.SysOrgService - [listOrg,40] - 【tree查询条件--机构】
+09:03:10.759 [http-nio-9801-exec-4] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=manager, status=, sortNo=0)
+09:03:12.098 [http-nio-9801-exec-10] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=1, sort=null, order=null, orderBy=null, userId=0002, userName=null, loginName=null, tel=null, sex=null, orgId=null, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=null, status=null, sortNo=null)
+09:03:13.508 [http-nio-9801-exec-2] INFO  c.g.s.o.SysOrgService - [listOrg,40] - 【tree查询条件--机构】
+09:03:13.508 [http-nio-9801-exec-9] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=manager, status=, sortNo=0)
+09:03:14.739 [http-nio-9801-exec-3] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=1, sort=null, order=null, orderBy=null, userId=0003, userName=null, loginName=null, tel=null, sex=null, orgId=null, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=null, status=null, sortNo=null)
+09:03:19.801 [http-nio-9801-exec-5] INFO  c.g.s.o.SysOrgService - [listOrg,40] - 【tree查询条件--机构】
+09:03:19.801 [http-nio-9801-exec-10] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=manager, status=, sortNo=0)
+09:12:03.637 [http-nio-9801-exec-9] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679659993294974978, userId=7121, userName=梁向方, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:12:03 CST 2023)
+09:12:47.168 [http-nio-9801-exec-6] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679660175835279362, userId=7121, userName=梁向方, logInfo=切换角色--admin, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:12:47 CST 2023)
+09:12:55.956 [http-nio-9801-exec-7] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679660212694822914, userId=7121, userName=梁向方, logInfo=切换角色--manager, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:12:55 CST 2023)
+09:12:57.650 [http-nio-9801-exec-4] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679660219846111233, userId=7121, userName=梁向方, logInfo=切换角色--admin, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:12:57 CST 2023)
+09:12:58.627 [http-nio-9801-exec-8] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679660223935557634, userId=7121, userName=梁向方, logInfo=切换角色--manager, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:12:58 CST 2023)
+09:13:00.176 [http-nio-9801-exec-1] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679660230428340226, userId=7121, userName=梁向方, logInfo=切换角色--admin, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:13:00 CST 2023)
+09:13:00.999 [http-nio-9801-exec-6] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679660233884446722, userId=7121, userName=梁向方, logInfo=切换角色--manager, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:13:00 CST 2023)
+09:13:03.576 [http-nio-9801-exec-9] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679660244655419394, userId=7121, userName=梁向方, logInfo=切换角色--admin, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:13:03 CST 2023)
+09:13:05.177 [http-nio-9801-exec-4] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679660251399860226, userId=7121, userName=梁向方, logInfo=切换角色--manager, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:13:05 CST 2023)
+09:20:11.451 [http-nio-9801-exec-7] INFO  c.g.s.o.SysOrgService - [listOrg,40] - 【tree查询条件--机构】
+09:20:11.451 [http-nio-9801-exec-9] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=manager, status=, sortNo=0)
+09:20:17.498 [http-nio-9801-exec-8] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679662064681365506, userId=0006, userName=尚磊, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:20:17 CST 2023)
+09:26:59.023 [http-nio-9801-exec-2] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679663748828639233, userId=0006, userName=尚磊, logInfo=切换角色--admin, ipAddr=127.0.0.1, logTime=Fri Jul 14 09:26:59 CST 2023)
+10:12:53.821 [lettuce-nioEventLoop-4-2] INFO  i.l.c.p.CommandHandler - [log,217] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+10:12:53.821 [lettuce-nioEventLoop-4-1] INFO  i.l.c.p.CommandHandler - [log,217] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+10:12:53.931 [lettuce-eventExecutorLoop-1-6] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was localhost/127.0.0.1:6379
+10:12:53.931 [lettuce-eventExecutorLoop-1-5] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was localhost/127.0.0.1:6379
+10:12:56.330 [Thread-29] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+10:12:57.314 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+10:12:57.620 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+10:12:57.939 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+10:12:57.948 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+10:47:54.044 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 32 ms to scan 1 urls, producing 3 keys and 6 values 
+10:47:54.065 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 4 keys and 9 values 
+10:47:54.075 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 3 keys and 10 values 
+10:47:54.108 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 29 ms to scan 5 urls, producing 0 keys and 0 values 
+10:47:54.118 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 1 keys and 5 values 
+10:47:54.132 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 11 ms to scan 1 urls, producing 1 keys and 7 values 
+10:47:54.146 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 2 keys and 8 values 
+10:47:54.171 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 22 ms to scan 5 urls, producing 0 keys and 0 values 
+10:47:56.743 [restartedMain] INFO  c.gientech.StartSys - [logStartupProfileInfo,652] - The following profiles are active: dev
+10:47:58.293 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+10:47:58.314 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+10:47:58.314 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+10:47:58.315 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+10:47:58.315 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+10:47:58.315 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+10:47:58.315 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+10:47:58.315 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+10:47:58.316 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+10:47:58.316 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+10:47:58.316 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+10:47:58.316 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+10:47:58.316 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+10:47:58.316 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+10:47:58.316 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+10:47:58.316 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+10:47:58.377 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+10:47:58.583 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+10:47:58.583 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+10:47:59.156 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9801"]
+10:47:59.157 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:47:59.157 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+10:47:59.354 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:48:01.859 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+10:48:02.078 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+10:48:03.471 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadConfigToRedis,85] - -------------------【1】系统参数sysConfig，加载到redis完成-------------------
+10:48:03.642 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadCodeTypeToRedis,104] - -------------------【2】代码类别sysCodeType，加载到redis完成-------------------
+10:48:03.665 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleDataToRedis,202] - -------------------【6】数据权限SysRoleData，加载到redis完成-------------------
+10:48:03.675 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadOrgToRedis,153] - -------------------【3】机构sysOrg，加载到redis完成-------------------
+10:48:03.683 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadUserToRedis,171] - -------------------【4】用户sysUser，加载到redis完成-------------------
+10:48:03.686 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleToRedis,190] - -------------------【5】用户sysRole，加载到redis完成-------------------
+10:48:04.445 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+10:48:06.845 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+10:48:06.877 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:48:06.881 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:48:09.002 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9801"]
+10:48:09.021 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-sys 192.168.76.1:9801 register finished
+10:48:10.480 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+10:48:10.483 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+10:48:10.508 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+10:48:10.581 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+10:48:10.583 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+10:48:10.585 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+10:48:10.589 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+10:48:10.595 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+10:48:10.597 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+10:48:10.599 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+10:48:10.602 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+10:48:10.607 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+10:48:10.609 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+10:48:10.612 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+10:48:10.614 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+10:48:10.619 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+10:48:10.636 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+10:48:10.640 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+10:48:10.642 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+10:48:10.645 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+10:48:10.656 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+10:48:10.659 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+10:48:10.661 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: getUsingPOST_1
+10:48:10.662 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+10:48:10.664 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+10:48:10.665 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_7
+10:48:10.670 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_8
+10:48:10.671 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+10:48:10.672 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+10:48:10.674 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+10:48:10.676 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_7
+10:48:10.678 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_9
+10:48:10.682 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_10
+10:48:10.683 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_7
+10:48:10.685 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_8
+10:48:10.687 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_7
+10:48:10.691 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_11
+10:48:10.694 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_8
+10:48:10.696 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_9
+10:48:10.698 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
+10:48:10.706 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_12
+10:48:10.707 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_9
+10:48:10.710 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_10
+10:48:10.714 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_9
+10:48:10.731 [restartedMain] INFO  c.gientech.StartSys - [logStarted,61] - Started StartSys in 21.885 seconds (JVM running for 23.596)
+10:48:11.304 [RMI TCP Connection(20)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:00:37.025 [http-nio-9801-exec-1] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679687312424390657, userId=9999, userName=admin, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 11:00:37 CST 2023)
+11:00:37.331 [http-nio-9801-exec-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:00:37.356 [http-nio-9801-exec-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+11:00:37.360 [http-nio-9801-exec-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+11:00:37.374 [http-nio-9801-exec-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:00:37.376 [http-nio-9801-exec-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@2291caef
+11:00:38.370 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:17:20.013 [Thread-29] INFO  c.n.l.PollingServerListUpdater - [run,53] - Shutting down the Executor Pool for PollingServerListUpdater
+11:17:20.345 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+11:17:20.347 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.
+11:17:20.672 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+11:17:20.680 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+11:26:43.655 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 27 ms to scan 1 urls, producing 3 keys and 6 values 
+11:26:43.677 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 4 keys and 9 values 
+11:26:43.687 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+11:26:43.708 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 17 ms to scan 5 urls, producing 0 keys and 0 values 
+11:26:43.717 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 9 ms to scan 1 urls, producing 1 keys and 5 values 
+11:26:43.727 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 8 ms to scan 1 urls, producing 1 keys and 7 values 
+11:26:43.737 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 2 keys and 8 values 
+11:26:43.758 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 18 ms to scan 5 urls, producing 0 keys and 0 values 
+11:26:45.998 [restartedMain] INFO  c.gientech.StartSys - [logStartupProfileInfo,652] - The following profiles are active: dev
+11:26:48.073 [restartedMain] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - [postProcessBeanFactory,48] - Post-processing PropertySource instances
+11:26:48.084 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys-dev.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+11:26:48.085 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys.properties,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+11:26:48.085 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource bootstrapProperties-service-sys,DEFAULT_GROUP [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+11:26:48.085 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+11:26:48.085 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+11:26:48.085 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+11:26:48.086 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+11:26:48.086 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+11:26:48.086 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+11:26:48.086 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+11:26:48.086 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application-dev.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+11:26:48.086 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+11:26:48.087 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+11:26:48.087 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+11:26:48.087 [restartedMain] INFO  c.u.j.EncryptablePropertySourceConverter - [makeEncryptable,41] - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+11:26:48.149 [restartedMain] INFO  c.u.j.f.DefaultLazyPropertyFilter - [lambda$null$2,34] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+11:26:48.539 [restartedMain] INFO  c.u.j.r.DefaultLazyPropertyResolver - [lambda$null$2,35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+11:26:48.539 [restartedMain] INFO  c.u.j.d.DefaultLazyPropertyDetector - [lambda$null$2,33] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+11:26:49.527 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9801"]
+11:26:49.528 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:26:49.528 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+11:26:49.794 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:26:52.873 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+11:26:53.000 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+11:26:53.999 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadConfigToRedis,85] - -------------------【1】系统参数sysConfig，加载到redis完成-------------------
+11:26:54.122 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadCodeTypeToRedis,104] - -------------------【2】代码类别sysCodeType，加载到redis完成-------------------
+11:26:54.144 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleDataToRedis,202] - -------------------【6】数据权限SysRoleData，加载到redis完成-------------------
+11:26:54.155 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadOrgToRedis,153] - -------------------【3】机构sysOrg，加载到redis完成-------------------
+11:26:54.160 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadUserToRedis,171] - -------------------【4】用户sysUser，加载到redis完成-------------------
+11:26:54.164 [restartedMain] INFO  c.g.s.c.SysCacheService - [loadRoleToRedis,190] - -------------------【5】用户sysRole，加载到redis完成-------------------
+11:26:54.793 [restartedMain] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+11:26:56.837 [restartedMain] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:26:56.863 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:26:56.867 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:26:59.407 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9801"]
+11:26:59.439 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-sys 192.168.76.1:9801 register finished
+11:27:01.242 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,93] - Documentation plugins bootstrapped
+11:27:01.248 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [bootstrapDocumentationPlugins,79] - Found 1 custom documentation plugin(s)
+11:27:01.280 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,44] - Scanning for api listing references
+11:27:01.431 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_1
+11:27:01.435 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_1
+11:27:01.440 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_1
+11:27:01.448 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_1
+11:27:01.467 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_2
+11:27:01.472 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_2
+11:27:01.476 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_2
+11:27:01.481 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_2
+11:27:01.491 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_3
+11:27:01.494 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_3
+11:27:01.503 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_3
+11:27:01.509 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_3
+11:27:01.524 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_4
+11:27:01.565 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_4
+11:27:01.577 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_4
+11:27:01.587 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_4
+11:27:01.599 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_5
+11:27:01.640 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_6
+11:27:01.647 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_5
+11:27:01.652 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: getUsingPOST_1
+11:27:01.657 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_5
+11:27:01.662 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_5
+11:27:01.668 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_7
+11:27:01.692 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_8
+11:27:01.703 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_6
+11:27:01.707 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_6
+11:27:01.712 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_6
+11:27:01.722 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_7
+11:27:01.728 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_9
+11:27:01.737 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_10
+11:27:01.740 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_7
+11:27:01.745 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_8
+11:27:01.751 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_7
+11:27:01.764 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_11
+11:27:01.768 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_8
+11:27:01.771 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_9
+11:27:01.778 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_8
+11:27:01.801 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: listUsingPOST_12
+11:27:01.808 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: deleteUsingPOST_9
+11:27:01.815 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: saveUsingPOST_10
+11:27:01.823 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,41] - Generating unique operation named: updateUsingPOST_9
+11:27:01.852 [restartedMain] INFO  c.gientech.StartSys - [logStarted,61] - Started StartSys in 22.788 seconds (JVM running for 24.501)
+11:27:02.840 [RMI TCP Connection(22)-192.168.226.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:54:22.673 [http-nio-9801-exec-2] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679731040761540610, userId=9999, userName=admin, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 13:54:22 CST 2023)
+13:54:22.982 [http-nio-9801-exec-1] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+13:54:23.005 [http-nio-9801-exec-1] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: service-sys instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+13:54:23.010 [http-nio-9801-exec-1] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+13:54:23.023 [http-nio-9801-exec-1] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+13:54:23.025 [http-nio-9801-exec-1] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client service-sys initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-sys,current list of Servers=[192.168.76.1:9801],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.76.1:9801;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@2d50b411
+13:54:24.013 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-sys.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+13:54:29.360 [http-nio-9801-exec-8] INFO  c.g.s.o.SysOrgService - [listOrg,40] - 【tree查询条件--机构】
+13:54:29.364 [http-nio-9801-exec-6] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=10, sort=null, order=null, orderBy=null, userId=, userName=, loginName=, tel=, sex=, orgId=, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=manager, status=, sortNo=0)
+13:54:31.059 [http-nio-9801-exec-10] INFO  c.g.s.u.SysUserService - [listSysUser,35] - 【list查询条件--SYS_USER】SysUserDTO4List(pageNo=1, pageSize=1, sort=null, order=null, orderBy=null, userId=0001, userName=null, loginName=null, tel=null, sex=null, orgId=null, lawOrgId=null, idCardNo=null, address=null, email=null, tellerNo=null, workingYears=null, wechatNo=null, roleId=null, status=null, sortNo=null)
+14:41:18.958 [http-nio-9801-exec-1] INFO  c.g.s.l.SysLogService - [saveLog,68] - 【新增--日志】SysLog(logId=1679742853116981249, userId=0006, userName=尚磊, logInfo=登陆成功, ipAddr=127.0.0.1, logTime=Fri Jul 14 14:41:18 CST 2023)

@@ -1,2 +1,140 @@
-00:23:47.941 [http-nio-9801-exec-7] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
-00:23:47.943 [http-nio-9801-exec-7] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+00:03:16.461 [http-nio-9801-exec-4] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+00:03:16.462 [http-nio-9801-exec-4] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+00:07:40.194 [http-nio-9801-exec-6] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+00:07:40.194 [http-nio-9801-exec-6] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+07:53:51.898 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+07:53:51.899 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+07:53:57.813 [http-nio-9801-exec-6] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+07:53:57.814 [http-nio-9801-exec-6] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+08:07:46.481 [SpringContextShutdownHook] ERROR c.a.c.n.d.NacosWatch - [stop,181] - namingService unsubscribe failed, properties:NacosDiscoveryProperties{serverAddr='localhost:8848', endpoint='', namespace='', watchDelay=30000, logName='', service='service-sys', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.76.1', networkInterface='', port=9801, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, failFast=true}
+com.alibaba.nacos.api.exception.NacosException: Request nacos server failed: 
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:279)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doUnsubscribe(NamingGrpcClientProxy.java:249)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.unsubscribe(NamingGrpcClientProxy.java:235)
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.unsubscribe(NamingClientProxyDelegate.java:156)
+	at com.alibaba.nacos.client.naming.NacosNamingService.unsubscribe(NacosNamingService.java:417)
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.stop(NacosWatch.java:177)
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.stop(NacosWatch.java:108)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:238)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$300(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:377)
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:210)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:128)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1022)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949)
+Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected,current status:UNHEALTHY
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:655)
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:635)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:269)
+	... 14 common frames omitted
+08:07:46.811 [SpringContextShutdownHook] ERROR c.a.c.n.r.NacosServiceRegistry - [deregister,110] - ERR_NACOS_DEREGISTER, de-register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='localhost:8848', endpoint='', namespace='', watchDelay=30000, logName='', service='service-sys', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.76.1', networkInterface='', port=9801, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, failFast=true}},
+com.alibaba.nacos.api.exception.NacosException: Request nacos server failed: 
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:279)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doDeregisterService(NamingGrpcClientProxy.java:153)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.deregisterService(NamingGrpcClientProxy.java:139)
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.deregisterService(NamingClientProxyDelegate.java:100)
+	at com.alibaba.nacos.client.naming.NacosNamingService.deregisterInstance(NacosNamingService.java:180)
+	at com.alibaba.nacos.client.naming.NacosNamingService.deregisterInstance(NacosNamingService.java:170)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.deregister(NacosServiceRegistry.java:106)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.deregister(AbstractAutoServiceRegistration.java:256)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.stop(AbstractAutoServiceRegistration.java:271)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.destroy(AbstractAutoServiceRegistration.java:208)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:183)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949)
+Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected,current status:UNHEALTHY
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:655)
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:635)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:269)
+	... 26 common frames omitted
+08:55:44.109 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+08:55:44.110 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+08:56:15.255 [http-nio-9801-exec-5] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+08:56:15.256 [http-nio-9801-exec-5] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+08:56:20.505 [http-nio-9801-exec-10] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+08:56:20.505 [http-nio-9801-exec-10] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+09:00:12.801 [http-nio-9801-exec-3] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+09:00:12.802 [http-nio-9801-exec-3] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+09:02:24.357 [http-nio-9801-exec-5] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+09:02:24.357 [http-nio-9801-exec-5] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+09:12:03.641 [http-nio-9801-exec-9] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+09:12:03.641 [http-nio-9801-exec-9] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+09:20:17.538 [http-nio-9801-exec-8] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+09:20:17.539 [http-nio-9801-exec-8] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+10:12:57.303 [SpringContextShutdownHook] ERROR c.a.c.n.d.NacosWatch - [stop,181] - namingService unsubscribe failed, properties:NacosDiscoveryProperties{serverAddr='localhost:8848', endpoint='', namespace='', watchDelay=30000, logName='', service='service-sys', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.76.1', networkInterface='', port=9801, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, failFast=true}
+com.alibaba.nacos.api.exception.NacosException: Request nacos server failed: 
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:279)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doUnsubscribe(NamingGrpcClientProxy.java:249)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.unsubscribe(NamingGrpcClientProxy.java:235)
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.unsubscribe(NamingClientProxyDelegate.java:156)
+	at com.alibaba.nacos.client.naming.NacosNamingService.unsubscribe(NacosNamingService.java:417)
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.stop(NacosWatch.java:177)
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.stop(NacosWatch.java:108)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:238)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$300(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:377)
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:210)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:128)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1022)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949)
+Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected,current status:UNHEALTHY
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:655)
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:635)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:269)
+	... 14 common frames omitted
+10:12:57.619 [SpringContextShutdownHook] ERROR c.a.c.n.r.NacosServiceRegistry - [deregister,110] - ERR_NACOS_DEREGISTER, de-register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='localhost:8848', endpoint='', namespace='', watchDelay=30000, logName='', service='service-sys', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.76.1', networkInterface='', port=9801, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, failFast=true}},
+com.alibaba.nacos.api.exception.NacosException: Request nacos server failed: 
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:279)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doDeregisterService(NamingGrpcClientProxy.java:153)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.deregisterService(NamingGrpcClientProxy.java:139)
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.deregisterService(NamingClientProxyDelegate.java:100)
+	at com.alibaba.nacos.client.naming.NacosNamingService.deregisterInstance(NacosNamingService.java:180)
+	at com.alibaba.nacos.client.naming.NacosNamingService.deregisterInstance(NacosNamingService.java:170)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.deregister(NacosServiceRegistry.java:106)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.deregister(AbstractAutoServiceRegistration.java:256)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.stop(AbstractAutoServiceRegistration.java:271)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.destroy(AbstractAutoServiceRegistration.java:208)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:183)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949)
+Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected,current status:UNHEALTHY
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:655)
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:635)
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:269)
+	... 26 common frames omitted
+11:00:37.061 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+11:00:37.061 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+13:54:22.714 [http-nio-9801-exec-2] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+13:54:22.714 [http-nio-9801-exec-2] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
+14:41:18.965 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,125] - ==前置通知异常==
+14:41:18.966 [http-nio-9801-exec-1] ERROR c.g.c.l.a.LogAspect - [saveOperLog,126] - 异常信息:null
