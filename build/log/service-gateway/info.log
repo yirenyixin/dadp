@@ -139,3 +139,16 @@
 },Server stats: [[Server:192.168.76.1:9802;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
 ]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@47d2decc
 13:54:32.105 [PollingServerListUpdater-1] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: service-pcm.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+13:29:36.250 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 30 ms to scan 1 urls, producing 3 keys and 6 values 
+13:29:36.286 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 12 ms to scan 1 urls, producing 4 keys and 9 values 
+13:29:36.298 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 10 ms to scan 1 urls, producing 3 keys and 10 values 
+13:29:36.304 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 3 ms to scan 1 urls, producing 0 keys and 0 values 
+13:29:36.312 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 7 ms to scan 1 urls, producing 1 keys and 5 values 
+13:29:36.320 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+13:29:36.327 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+13:29:36.330 [restartedMain] INFO  o.r.Reflections - [scan,232] - Reflections took 0 ms to scan 1 urls, producing 0 keys and 0 values 
+13:29:37.475 [restartedMain] INFO  c.g.g.StartGateway - [logStartupProfileInfo,652] - The following profiles are active: dev
+13:29:38.918 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13:29:38.925 [restartedMain] INFO  c.n.c.s.URLConfigurationSource - [<init>,127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13:29:42.145 [restartedMain] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP service-gateway 192.168.20.43:9999 register finished
+13:29:42.177 [restartedMain] INFO  c.g.g.StartGateway - [logStarted,61] - Started StartGateway in 7.342 seconds (JVM running for 8.864)

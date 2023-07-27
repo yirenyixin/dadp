@@ -5,6 +5,7 @@ import com.gientech.common.enums.OperType;
 import com.gientech.common.view.DataGrid;
 import com.gientech.core.base.BaseController;
 import com.gientech.core.log.annotation.OperLog;
+import com.gientech.core.security.annotation.PreAuthorize;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.github.xiaoymin.knife4j.annotations.ApiSort;
 import io.swagger.annotations.Api;
@@ -43,7 +44,7 @@ public class PmmRemindController extends BaseController {
     @ApiOperation(value = "查询和分页")
     @ApiOperationSupport(order = 1)
     @OperLog(title = "提醒表", operType = OperType.SEARCH)
-    //@PreAuthorize(hasAuth = "pmmRemind") // 菜单id或功能id
+    @PreAuthorize(hasAuth = "pmmRemind") // 菜单id或功能id
     @PostMapping(value = "/list")
     public Result<DataGrid<PmmRemindVO>> list(@Valid @RequestBody PmmRemindDTO4List pmmRemindDTO4List, BindingResult bindingResult){
 

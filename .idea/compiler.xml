@@ -7,11 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-gateway" />
-        <module name="service-study" />
         <module name="service-pmm" />
+        <module name="service-study" />
         <module name="dadp-core" />
-        <module name="service-sys" />
         <module name="service-ppm" />
+        <module name="service-sys" />
         <module name="dadp-feign" />
         <module name="dadp-model" />
         <module name="dadp-common" />
