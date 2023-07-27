@@ -1,13 +1,11 @@
 package com.gientech.pcm.depCurr;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
-
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
 import lombok.Data;
+
+import java.io.Serializable;
 
 @Data
 @TableName(value = "T_PCM_DEP_CURR")
@@ -43,7 +41,7 @@ public class PcmDepCurr implements Serializable {
     private String currNo; // 币种
 
     @TableField(value = "BAL")
-    private BigDecimal bal; // 上日余额
+    private Float bal; // 上日余额
 
     @TableField(value = "ACCT_STS")
     private String acctSts; // 账户状态
@@ -61,7 +59,7 @@ public class PcmDepCurr implements Serializable {
     private String subAcctNo; // 活期子账户
 
     @TableField(value = "CURRENT_BAL")
-    private BigDecimal currentBal; // 当前余额
+    private Float currentBal; // 当前余额
 
     // Getters and setters
 }

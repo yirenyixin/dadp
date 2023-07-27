@@ -11,6 +11,12 @@
                 <if test="dto.custId != null and dto.custId !=''">
                     <![CDATA[ a.CUST_ID like #{dto.custId} and ]]>
                 </if>
+                <if test="dto.isHis != null and dto.isHis != '1'.toString() ">
+                    <![CDATA[ a.END_DATE  >=  #{dto.nowDate} and ]]>
+                </if>
+                <if test="dto.isHis != null and dto.isHis != '0'.toString() ">
+                    <![CDATA[ a.END_DATE < #{dto.nowDate} and ]]>
+                </if>
                 <!-- Add more conditions if needed -->
             </trim>
         </where>

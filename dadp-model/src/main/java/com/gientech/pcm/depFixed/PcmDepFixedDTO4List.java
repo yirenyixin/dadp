@@ -1,18 +1,15 @@
 package com.gientech.pcm.depFixed;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import java.io.Serializable;
 
 @Data
 @ApiModel(value = "对私定期存款--查询条件的DTO类")
@@ -75,16 +72,16 @@ public class PcmDepFixedDTO4List implements Serializable {
     private String acctType; // 存款类型
 
     @ApiModelProperty(value = "浮动比率", position = 23)
-    private BigDecimal floatRate; // 浮动比率
+    private Double floatRate; // 浮动比率
 
     @ApiModelProperty(value = "协议利率", position = 24)
-    private BigDecimal rate; // 协议利率
+    private Double rate; // 协议利率
 
     @ApiModelProperty(value = "币种", position = 25)
     private String currNo; // 币种
 
     @ApiModelProperty(value = "上日余额", position = 26)
-    private BigDecimal bal; // 上日余额
+    private Double bal; // 上日余额
 
     @ApiModelProperty(value = "存期", position = 27)
     private String term; // 存期
@@ -104,6 +101,20 @@ public class PcmDepFixedDTO4List implements Serializable {
     @ApiModelProperty(value = "凭证号", position = 32)
     private String voucherNo; // 凭证号
 
+
+
+
+
+
     // -----------------分割线---------------------------------------
+
+
+
+
+    @ApiModelProperty(value = "持有类型", position = 33)
+    private String isHis; // 是否历史持有  0当前  1 历史
+
+    @ApiModelProperty(value = "当前日期", position = 34)
+    private String nowDate;
 
 }

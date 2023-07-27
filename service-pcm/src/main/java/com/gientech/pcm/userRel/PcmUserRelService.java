@@ -3,11 +3,14 @@ package com.gientech.pcm.userRel;
 
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.gientech.common.auth.UserSession;
 import com.gientech.common.exception.AppException;
 import com.gientech.common.util.MyBeanUtil;
+import com.gientech.common.util.MyStringUtil;
 import com.gientech.common.view.DataGrid;
 import com.gientech.core.base.BaseService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -52,14 +55,16 @@ public class PcmUserRelService extends BaseService<PcmUserRelMapper, PcmUserRel>
         // 【1】删除
         String[] userRelIdArray = StrUtil.splitToArray(userRelIds, ",");
         for (String userRelId : userRelIdArray) {
+            System.out.println("删除1");
             this.removeById(userRelId);
+            System.out.println("删除2");
         }
     }
 
     /**
      * 【3】修改
      *
-     * @param pcmUserRel
+     * @param dto
      */
     public void updateUserRel(PcmUserRelDTO4Update dto) {
         log.info("【修改--客户经理归属关系】" + dto);
@@ -86,8 +91,18 @@ public class PcmUserRelService extends BaseService<PcmUserRelMapper, PcmUserRel>
         // 【1】构造分页参数
         Page<PcmUserRelVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
 
+        UserSession session = this.getUserSession();
+        if(!session.getRoleId().equals("admin")){
+            dto.setBelongMgrId(session.getUserId());
+        }
+
+
         return new DataGrid<PcmUserRelVO>(this.getBaseMapper().getPcmUserRelList(page, dto), page.getTotal());
     }
+
+
+
+
 
 
 

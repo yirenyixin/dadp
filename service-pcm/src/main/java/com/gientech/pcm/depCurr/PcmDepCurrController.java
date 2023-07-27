@@ -5,7 +5,6 @@ import com.gientech.common.enums.OperType;
 import com.gientech.common.view.DataGrid;
 import com.gientech.core.base.BaseController;
 import com.gientech.core.log.annotation.OperLog;
-import com.gientech.core.security.annotation.PreAuthorize;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.github.xiaoymin.knife4j.annotations.ApiSort;
 import io.swagger.annotations.Api;
@@ -23,8 +22,8 @@ import javax.validation.Valid;
 /**
  * PcmDepCurr 控制器
  */
-@Api(tags = "【2-02】对私活期存款")
-@ApiSort(value = 202)
+@Api(tags = "PCM_DEP_CURR")
+@ApiSort(value = 0)
 @Validated
 @RestController
 @RequestMapping("/pcm/depCurr")
@@ -43,7 +42,7 @@ public class PcmDepCurrController extends BaseController {
     @ApiOperation(value = "查询和分页")
     @ApiOperationSupport(order = 1)
     @OperLog(title = "PCM_DEP_CURR", operType = OperType.SEARCH)
-    @PreAuthorize(hasAuth = "pcmDepCurr")
+//    @PreAuthorize(hasAuth = "pcmDepCurr")
     @PostMapping(value = "/list")
     public Result<DataGrid<PcmDepCurrVO>> list(@Valid @RequestBody PcmDepCurrDTO4List pcmDepCurrDTO4List, BindingResult bindingResult) {
         return Result.success(this.pcmDepCurrService.listPcmDepCurr(pcmDepCurrDTO4List));
@@ -59,7 +58,7 @@ public class PcmDepCurrController extends BaseController {
     @ApiOperation(value = "新增 PCM_DEP_CURR")
     @ApiOperationSupport(order = 2)
     @OperLog(title = "PCM_DEP_CURR", operType = OperType.INSERT)
-    @PreAuthorize(hasAuth = "pcmDepCurr")
+//    @PreAuthorize(hasAuth = "pcmDepCurr")
     @PostMapping("/save")
     public Result<Object> save(@Valid @RequestBody PcmDepCurrDTO4Save pcmDepCurrDTO4Save, BindingResult bindingResult) {
         this.pcmDepCurrService.savePcmDepCurr(pcmDepCurrDTO4Save);
@@ -76,7 +75,7 @@ public class PcmDepCurrController extends BaseController {
     @ApiOperation(value = "修改 PCM_DEP_CURR")
     @ApiOperationSupport(order = 3)
     @OperLog(title = "PCM_DEP_CURR", operType = OperType.UPDATE)
-    @PreAuthorize(hasAuth = "pcmDepCurr")
+//    @PreAuthorize(hasAuth = "pcmDepCurr")
     @PostMapping("/update")
     public Result<Object> update(@Valid @RequestBody PcmDepCurrDTO4Update pcmDepCurrDTO4Update, BindingResult bindingResult) {
         this.pcmDepCurrService.updatePcmDepCurr(pcmDepCurrDTO4Update);
@@ -93,7 +92,7 @@ public class PcmDepCurrController extends BaseController {
     @ApiOperation(value = "删除 PCM_DEP_CURR")
     @ApiOperationSupport(order = 4)
     @OperLog(title = "PCM_DEP_CURR", operType = OperType.DELETE)
-    @PreAuthorize(hasAuth = "pcmDepCurr")
+//    @PreAuthorize(hasAuth = "pcmDepCurr")
     @PostMapping("/delete")
     public Result<Object> delete(@Valid @RequestBody PcmDepCurrDTO4Delete pcmDepCurrDTO4Delete, BindingResult bindingResult) {
         this.pcmDepCurrService.deletePcmDepCurr(pcmDepCurrDTO4Delete.getDepCurrIds());

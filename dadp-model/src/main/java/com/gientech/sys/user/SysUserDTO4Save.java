@@ -1,13 +1,12 @@
 package com.gientech.sys.user;
 
-import java.io.Serializable;
-
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
-
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+import java.io.Serializable;
 
 @Data
 @ApiModel(value = "系统用户--更新DTO")
@@ -52,12 +51,12 @@ public class SysUserDTO4Save implements Serializable {
 	private String orgAddr; // 所属机构地址
 
 	@ApiModelProperty(value = "法人机构号", position = 9)
-	@NotBlank(message = "[lawOrgId] 法人机构号不能为空")
+//	@NotBlank(message = "[lawOrgId] 法人机构号不能为空")
 	@Size(max = 32, message = "法人机构号的长度必须小于等于32")
 	private String lawOrgId; // 法人机构号
 
 	@ApiModelProperty(value = "身份证号码", position = 10)
-	@NotBlank(message = "[idCardNo] 身份证号码不能为空")
+//	@NotBlank(message = "[idCardNo] 身份证号码不能为空")
 	@Size(max = 20, message = "身份证号码的长度必须小于等于20")
 	private String idCardNo; // 身份证号码
 

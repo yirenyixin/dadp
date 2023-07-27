@@ -5,7 +5,6 @@ import com.gientech.common.enums.OperType;
 import com.gientech.common.view.DataGrid;
 import com.gientech.core.base.BaseController;
 import com.gientech.core.log.annotation.OperLog;
-import com.gientech.core.security.annotation.PreAuthorize;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.github.xiaoymin.knife4j.annotations.ApiSort;
 import io.swagger.annotations.Api;
@@ -23,8 +22,8 @@ import javax.validation.Valid;
 /**
  * PCM_DEP_FIXED 控制器
  */
-@Api(tags = "【2-03】对私定期存款")
-@ApiSort(value = 203)
+@Api(tags = "PCM_DEP_FIXED")
+@ApiSort(value = 0)
 @Validated
 @RestController
 @RequestMapping("/pcm/depFixed")
@@ -43,7 +42,7 @@ public class PcmDepFixedController extends BaseController {
     @ApiOperation(value = "查询和分页")
     @ApiOperationSupport(order = 1)
     @OperLog(title = "PCM_DEP_FIXED", operType = OperType.SEARCH)
-    @PreAuthorize(hasAuth = "pcmDepFixed")
+//    @PreAuthorize(hasAuth = "pcmDepFixed")
     @PostMapping(value = "/list")
     public Result<DataGrid<PcmDepFixedVO>> list(@Valid @RequestBody PcmDepFixedDTO4List pcmDepFixedDTO4List, BindingResult bindingResult) {
         return Result.success(this.pcmDepFixedService.listPcmDepFixed(pcmDepFixedDTO4List));
@@ -59,7 +58,7 @@ public class PcmDepFixedController extends BaseController {
     @ApiOperation(value = "新增 PCM_DEP_FIXED")
     @ApiOperationSupport(order = 2)
     @OperLog(title = "PCM_DEP_FIXED", operType = OperType.INSERT)
-    @PreAuthorize(hasAuth = "pcmDepFixed")
+//    @PreAuthorize(hasAuth = "pcmDepFixed")
     @PostMapping("/save")
     public Result<Object> save(@Valid @RequestBody PcmDepFixedDTO4Save pcmDepFixedDTO4Save, BindingResult bindingResult) {
         this.pcmDepFixedService.savePcmDepFixed(pcmDepFixedDTO4Save);
@@ -76,7 +75,7 @@ public class PcmDepFixedController extends BaseController {
     @ApiOperation(value = "修改 PCM_DEP_FIXED")
     @ApiOperationSupport(order = 3)
     @OperLog(title = "PCM_DEP_FIXED", operType = OperType.UPDATE)
-    @PreAuthorize(hasAuth = "pcmDepFixed")
+    //@PreAuthorize(hasAuth = "pcmDepFixed")
     @PostMapping("/update")
     public Result<Object> update(@Valid @RequestBody PcmDepFixedDTO4Update pcmDepFixedDTO4Update, BindingResult bindingResult) {
         this.pcmDepFixedService.updatePcmDepFixed(pcmDepFixedDTO4Update);
@@ -93,7 +92,7 @@ public class PcmDepFixedController extends BaseController {
     @ApiOperation(value = "删除 PCM_DEP_FIXED")
     @ApiOperationSupport(order = 4)
     @OperLog(title = "PCM_DEP_FIXED", operType = OperType.DELETE)
-    @PreAuthorize(hasAuth = "pcmDepFixed")
+   // @PreAuthorize(hasAuth = "pcmDepFixed")
     @PostMapping("/delete")
     public Result<Object> delete(@Valid @RequestBody PcmDepFixedDTO4Delete pcmDepFixedDTO4Delete, BindingResult bindingResult) {
         this.pcmDepFixedService.deletePcmDepFixed(pcmDepFixedDTO4Delete.getDepFixedIds());

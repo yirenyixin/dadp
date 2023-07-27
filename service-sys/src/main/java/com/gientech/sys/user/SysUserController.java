@@ -100,6 +100,27 @@ public class SysUserController extends BaseController {
 		return Result.success();
 	}
 
+
+
+	@ApiOperation(value = "得到 userCodeInfo")
+	@ApiOperationSupport(order = 5)
+	@OperLog(title = "SYS_USER", operType = OperType.SEARCH)
+//	@PreAuthorize(hasAuth = "sysUser")
+	@PostMapping("/listCode")
+	public String listCode(@Valid @RequestBody SysUserDTO4List sysUserDTO4List, BindingResult bindingResult) {
+		return sysUserService.listSysUserCodeInfo(sysUserDTO4List);
+//		return Result.success();
+	}
+
+
+
+
+
+
+
+
+
+
 	// TODO: 添加新的方法
 
 }

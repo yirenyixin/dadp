@@ -22,8 +22,9 @@ import javax.validation.Valid;
 import java.util.List;
 
 /**
- * @author cjm
- * @date 2023/7/8 20:44
+ * 机构--Controller
+ * 
+ * @author 胡砥峰
  */
 @Api(tags = "【1-16】机构")
 @ApiSort(value = 116) // 排序号生成后要修改
@@ -32,100 +33,99 @@ import java.util.List;
 @RequestMapping("/sys/org")
 public class SysOrgController extends BaseController {
 
-    @Autowired
-    private SysOrgService sysOrgService;
+	@Autowired
+	private SysOrgService sysOrgService;
 
-    /**
-     * 【1】查询出树型list（不传参，显示全部。传参显示此节点为最高节点）
-     *
-     * @param sysOrgDTO4List
-     * @param bindingResult
-     * @return
-     */
-    @ApiOperation(value = "查询出树型list")
-    @ApiOperationSupport(order = 1)
-    @OperLog(title = "机构", operType = OperType.SEARCH)
-    @PreAuthorize(hasAuth = "sysOrg") // 菜单id或功能id
-    @PostMapping(value = "/list")
-    public Result<List<Tree>> list(@Valid @RequestBody SysOrgDTO4List sysOrgDTO4List, BindingResult bindingResult) {
-        return Result.success(this.sysOrgService.listOrg(sysOrgDTO4List.getTopOrgId()));
-    }
+	/**
+	 * 【1】查询出树型list（不传参，显示全部。传参显示此节点为最高节点）
+	 * 
+	 * @param sysOrgDTO4List
+	 * @param bindingResult
+	 * @return
+	 */
+	@ApiOperation(value = "查询出树型list")
+	@ApiOperationSupport(order = 1)
+	@OperLog(title = "机构", operType = OperType.SEARCH)
+	@PreAuthorize(hasAuth = "sysOrg") // 菜单id或功能id
+	@PostMapping(value = "/list")
+	public Result<List<Tree>> list(@Valid @RequestBody SysOrgDTO4List sysOrgDTO4List, BindingResult bindingResult) {
+		return Result.success(this.sysOrgService.listOrg(sysOrgDTO4List.getTopOrgId()));
+	}
 
-    /**
-     * 【2】新增后保存
-     *
-     * @param sysOrgDTO4Save 新增DTO
-     * @param bindingResult
-     * @return
-     */
-    @ApiOperation(value = "新增后保存")
-    @ApiOperationSupport(order = 2)
-    @OperLog(title = "机构", operType = OperType.INSERT)
-    @PreAuthorize(hasAuth = "sysOrg") // 菜单id或功能id
-    @PostMapping("/save")
-    public Result<Object> save(@Valid @RequestBody SysOrgDTO4Save sysOrgDTO4Save, BindingResult bindingResult) {
-        this.sysOrgService.saveOrg(sysOrgDTO4Save);
-        return Result.success();
-    }
+	/**
+	 * 【2】新增后保存
+	 * 
+	 * @param sysOrgDTO4Save 新增DTO
+	 * @param bindingResult
+	 * @return
+	 */
+	@ApiOperation(value = "新增后保存")
+	@ApiOperationSupport(order = 2)
+	@OperLog(title = "机构", operType = OperType.INSERT)
+	@PreAuthorize(hasAuth = "sysOrg") // 菜单id或功能id
+	@PostMapping("/save")
+	public Result<Object> save(@Valid @RequestBody SysOrgDTO4Save sysOrgDTO4Save, BindingResult bindingResult) {
+		this.sysOrgService.saveOrg(sysOrgDTO4Save);
+		return Result.success();
+	}
 
-    /**
-     * 【3】修改
-     *
-     * @param sysOrgDTO4Update 修改DTO，一定要传主键
-     * @param bindingResult
-     * @return
-     */
-    @ApiOperation(value = "修改")
-    @ApiOperationSupport(order = 3)
-    @OperLog(title = "机构", operType = OperType.UPDATE)
-    @PreAuthorize(hasAuth = "sysOrg") // 菜单id或功能id
-    @PostMapping("/update")
-    public Result<Object> update(@Valid @RequestBody SysOrgDTO4Update sysOrgDTO4Update, BindingResult bindingResult) {
-        this.sysOrgService.updateOrg(sysOrgDTO4Update);
-        return Result.success();
-    }
+	/**
+	 * 【3】修改
+	 * 
+	 * @param sysOrgDTO4Update 修改DTO，一定要传主键
+	 * @param bindingResult
+	 * @return
+	 */
+	@ApiOperation(value = "修改")
+	@ApiOperationSupport(order = 3)
+	@OperLog(title = "机构", operType = OperType.UPDATE)
+	@PreAuthorize(hasAuth = "sysOrg") // 菜单id或功能id
+	@PostMapping("/update")
+	public Result<Object> update(@Valid @RequestBody SysOrgDTO4Update sysOrgDTO4Update, BindingResult bindingResult) {
+		this.sysOrgService.updateOrg(sysOrgDTO4Update);
+		return Result.success();
+	}
 
-    /**
-     * 【4】删除
-     *
-     * @param sysOrgDTO4Delete
-     * @param bindingResult
-     * @return
-     */
-    @ApiOperation(value = "删除")
-    @ApiOperationSupport(order = 4)
-    @OperLog(title = "机构", operType = OperType.DELETE)
-    @PreAuthorize(hasAuth = "sysOrg") // 菜单id或功能id
-    @PostMapping("/delete")
-    public Result<Object> delete(@Valid @RequestBody SysOrgDTO4Delete sysOrgDTO4Delete, BindingResult bindingResult) {
-        System.out.println("=======ORGID="+sysOrgDTO4Delete.getOrgId());
-        this.sysOrgService.deleteOrg(sysOrgDTO4Delete.getOrgId());
-        return Result.success();
-    }
+	/**
+	 * 【4】删除
+	 * 
+	 * @param sysOrgDTO4Delete
+	 * @param bindingResult
+	 * @return
+	 */
+	@ApiOperation(value = "删除")
+	@ApiOperationSupport(order = 4)
+	@OperLog(title = "机构", operType = OperType.DELETE)
+	@PreAuthorize(hasAuth = "sysOrg") // 菜单id或功能id
+	@PostMapping("/delete")
+	public Result<Object> delete(@Valid @RequestBody SysOrgDTO4Delete sysOrgDTO4Delete, BindingResult bindingResult) {
+		this.sysOrgService.deleteOrg(sysOrgDTO4Delete.getOrgId());
+		return Result.success();
+	}
 
-    /**
-     * 【5】根据id获取tree对象
-     *
-     * @param sysOrgDTO4Get
-     * @param bindingResult
-     * @return
-     */
-    @ApiOperation(value = "根据id获取机构对象")
-    @ApiOperationSupport(order = 5)
-    @OperLog(title = "机构", operType = OperType.OTHER)
-    @PreAuthorize(hasAuth = "sysOrg") // 菜单id或功能id
-    @PostMapping("/get")
-    public Result<Object> get(@Valid @RequestBody SysOrgDTO4Get sysOrgDTO4Get, BindingResult bindingResult) {
+	/**
+	 * 【5】根据id获取tree对象
+	 * 
+	 * @param sysOrgDTO4Get
+	 * @param bindingResult
+	 * @return
+	 */
+	@ApiOperation(value = "根据id获取机构对象")
+	@ApiOperationSupport(order = 5)
+	@OperLog(title = "机构", operType = OperType.OTHER)
+	@PreAuthorize(hasAuth = "sysOrg") // 菜单id或功能id
+	@PostMapping("/get")
+	public Result<Object> get(@Valid @RequestBody SysOrgDTO4Get sysOrgDTO4Get, BindingResult bindingResult) {
 
-        SysOrg sysOrg = this.sysOrgService.getOrg(sysOrgDTO4Get.getOrgId());
+		SysOrg sysOrg = this.sysOrgService.getOrg(sysOrgDTO4Get.getOrgId());
 
-        if (sysOrg != null) {
-            return Result.success(sysOrg);
-        } else {
-            return Result.error("没找到数据,请检查!");
-        }
-    }
+		if (sysOrg != null) {
+			return Result.success(sysOrg);
+		} else {
+			return Result.error("没找到数据,请检查!");
+		}
+	}
 
-    /************* 【上面代码是基本的CRUD功能，新增的方法放在下面！】 *********************************************************************************************/
+	/************* 【上面代码是基本的CRUD功能，新增的方法放在下面！】 *********************************************************************************************/
 
 }

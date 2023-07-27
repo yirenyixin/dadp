@@ -22,17 +22,17 @@ public class PcmCustDTO4Update implements Serializable {
     private String custId;
 
     @ApiModelProperty(value = "ECIF客户ID", required = true, position = 2)
-    @NotBlank(message = "[ecifCustId]ECIF客户ID，不能为空")
+//    @NotBlank(message = "[ecifCustId]ECIF客户ID，不能为空")
     @Size(max = 32, message = "ECIF客户ID的长度必须小于等于32")
     private String ecifCustId;
 
     @ApiModelProperty(value = "客户名称", required = true, position = 3)
-    @NotBlank(message = "[custName]客户名称，不能为空")
+//    @NotBlank(message = "[custName]客户名称，不能为空")
     @Size(max = 128, message = "客户名称的长度必须小于等于128")
     private String custName;
 
     @ApiModelProperty(value = "法人机构号", required = true, position = 4)
-    @NotBlank(message = "[lawOrgId]法人机构号，不能为空")
+//    @NotBlank(message = "[lawOrgId]法人机构号，不能为空")
     @Size(max = 32, message = "法人机构号的长度必须小于等于32")
     private String lawOrgId;
 
@@ -45,17 +45,17 @@ public class PcmCustDTO4Update implements Serializable {
     private String custState;
 
     @ApiModelProperty(value = "证件类型", required = true, position = 7)
-    @NotBlank(message = "[certType]证件类型，不能为空")
+//    @NotBlank(message = "[certType]证件类型，不能为空")
     @Size(max = 32, message = "证件类型的长度必须小于等于32")
     private String certType;
 
     @ApiModelProperty(value = "证件号码", required = true, position = 8)
-    @NotBlank(message = "[certNo]证件号码，不能为空")
+//    @NotBlank(message = "[certNo]证件号码，不能为空")
     @Size(max = 20, message = "证件号码的长度必须小于等于20")
     private String certNo;
 
     @ApiModelProperty(value = "证件号码归属地", required = true, position = 9)
-    @NotBlank(message = "[certAddr]证件号码归属地，不能为空")
+//    @NotBlank(message = "[certAddr]证件号码归属地，不能为空")
     @Size(max = 150, message = "证件号码归属地的长度必须小于等于150")
     private String certAddr;
 

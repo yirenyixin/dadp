@@ -48,10 +48,10 @@ public class PcmOrgRelDTO4List implements Serializable {
 //    @Size(max = 70, message = "ORG_REL_ID长度不能超过70位")
 //    private String orgRelId;
 //
-//    @ApiModelProperty(value = "对私客户ID", position = 12)
+    @ApiModelProperty(value = "对私客户ID", position = 12)
 //    @NotBlank(message = "对私客户ID不能为空")
 //    @Size(max = 32, message = "对私客户ID长度不能超过32位")
-//    private String custId;
+    private String custId;
 //
 //    @ApiModelProperty(value = "法人机构号", position = 13)
 //    @NotBlank(message = "法人机构号不能为空")

@@ -1,12 +1,11 @@
 package com.gientech.sys.log;
 
-import java.io.Serializable;
-import java.util.Date;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
-
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 【登录日志】查询结果的VO类【不要的属性，一定要删除！发现3次要开除】

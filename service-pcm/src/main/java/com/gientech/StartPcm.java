@@ -1,12 +1,10 @@
 package com.gientech;
 
 import com.gientech.common.view.DataGrid;
-import com.gientech.pcm.depCurr.PcmDepCurrDTO4List;
-import com.gientech.pcm.depCurr.PcmDepCurrVO;
-import com.gientech.pmm.remind.PmmRemindDTO4List;
-import com.gientech.pmm.remind.PmmRemindDTO4Update;
-import com.gientech.pmm.remind.PmmRemindService;
-import com.gientech.pmm.remind.PmmRemindVO;
+import com.gientech.pmm.remind.*;
+import com.gientech.pcm.cust.*;
+import com.gientech.pcm.userRel.*;
+import com.gientech.pcm.wealth.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -14,98 +12,194 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.List;
 
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
 @EnableScheduling
-@EnableAsync // 开启异步调用(操作日志要用)
 public class StartPcm {
 
 	public static void main(String[] args) {
-
-		SpringApplication.run(StartPcm.class, args);
-
+		ConfigurableApplicationContext context = SpringApplication.run(StartPcm.class, args);
 		System.out.println("---------------pcm启动成功---------------");
 	}
 
 //	@Component
 //	public static class MyApplicationRunner implements ApplicationRunner {
-//		private PmmRemindService pmmRemindService; // 注入PmmRemindService类的实例
+//		private PmmRemindService pmmRemindService;
+//		private PcmCustService pcmCustService;
+//		private PcmWealthService pcmWealthService;
+//		private PcmUserRelService pcmUserRelService;
 //
 //		@Autowired
-//		public MyApplicationRunner(PmmRemindService pmmRemindService) {
+//		public MyApplicationRunner(PmmRemindService pmmRemindService, PcmCustService pcmCustService, PcmWealthService pcmWealthService, PcmUserRelService pcmUserRelService) {
 //			this.pmmRemindService = pmmRemindService;
+//			this.pcmCustService = pcmCustService;
+//			this.pcmWealthService = pcmWealthService;
+//			this.pcmUserRelService = pcmUserRelService;
 //		}
-//		@Override
-//		public void run(ApplicationArguments args) throws Exception {
-//			// 在应用程序启动后启动线程
-//			Thread thread = new Thread(() -> {
-//				// 获取当前时间
-////				Calendar now = Calendar.getInstance();
-////				int currentHour = now.get(Calendar.HOUR_OF_DAY);
-////
-////				// 计算延迟时间（距离下一次12点的小时数）
-////				int delayHours;
-////				if (currentHour >= 12) {
-////					delayHours = 24 - currentHour + 12;
-////				} else {
-////					delayHours = 12 - currentHour;
-////				}
-////
-////				// 设置定时器，在延迟时间后执行线程的逻辑代码
-////				Timer timer = new Timer();
-////				timer.schedule(new TimerTask() {
-////					@Override
-////					public void run() {
-////						// 线程的逻辑代码，发送信息
-////						System.out.println("Sending message at 12:00 AM");
-////					}
-////				}, delayHours * 60 * 60 * 1000); // 将延迟时间转换为毫秒
-//				// 在线程中调用另一个启动类的方法
-//				// 在线程中调用StartPmm启动类的方法
-//				// 获取当前时间
-//				Calendar now = Calendar.getInstance();
 //
-//// 在线程中调用StartPmm启动类的方法
-//				PmmRemindDTO4List dto = new PmmRemindDTO4List();
-//				dto.setPageNo(1);
-//				dto.setPageSize(10);
-//				DataGrid<PmmRemindVO> dataGrid = pmmRemindService.listRemind(dto);
-//				if (dataGrid != null && dataGrid.getRows() != null) {
-//					for (int i = 0; i < dataGrid.getRows().size(); i++) {
-//						PmmRemindVO remind = dataGrid.getRows().get(i);
-//						Date createDate = remind.getCreateDate();
-//						Calendar createCal = Calendar.getInstance();
-//						createCal.setTime(createDate);
+//		public void processReminders() throws Exception {
+//			// 获取当前时间
+//			Calendar now = Calendar.getInstance();
+//			List<PmmRemindDTO4Save> remindList = new ArrayList<>();//增加提醒
+//			List remindDTO4Deletes=new ArrayList<>();//删除已经过了有效期的提醒
 //
-//						// 计算两个日期之间的天数差
-//						long diff = Math.abs(now.getTimeInMillis() - createCal.getTimeInMillis());
-//						long diffDays = diff / (24 * 60 * 60 * 1000);
-//
-//						// 判断是否小于15天
-//						if (diffDays < 15) {
-//							String message = "客户" + remind.getCustId()+ "的理财产品\"" + "\"还有" + diffDays + "天到期";
-//							System.out.println(message);
-//
-//							// 存入天数
-//							PmmRemindDTO4Update updateDto = new PmmRemindDTO4Update();
-//							updateDto.setRemindContent(message);
-//							pmmRemindService.updateRemind(updateDto);
+//			//调用pmmRemindService方法
+//			PmmRemindDTO4List remindDTO4List=new PmmRemindDTO4List();
+//			remindDTO4List.setPageSize(1);
+//			remindDTO4List.setPageSize(9999);
+//			DataGrid<PmmRemindVO> dataGrid0 =pmmRemindService.listRemind(remindDTO4List) ;
+//			if (dataGrid0 != null && dataGrid0.getRows() != null) {
+//				for (int i = 0; i < dataGrid0.getRows().size(); i++) {
+//					PmmRemindVO remindVO=dataGrid0.getRows().get(i);
+//					if(remindVO.getCreateDate()!=null){
+//						int valIdDay=remindVO.getValidDay();
+//						Date createDate=remindVO.getCreateDate();
+//						int comparisonResult = compareDatesAndValidate(String.valueOf(createDate), valIdDay);
+//						if(comparisonResult>0){//超过有效日期
+//							remindDTO4Deletes.add(remindVO.getRemindId());
 //						}
 //					}
 //				}
-//			});
-//			thread.start();
+//			}
+//			// 调用PcmCustService的方法
+//			PcmCustDTO4List custDTO4List = new PcmCustDTO4List();
+//			custDTO4List.setPageNo(1);
+//			custDTO4List.setPageSize(9999);
+//			DataGrid<PcmCustVO> dataGrid1 = pcmCustService.listCust(custDTO4List);
+//			if (dataGrid1 != null && dataGrid1.getRows() != null) {
+//				for (int i = 0; i < dataGrid1.getRows().size(); i++) {
+//					PcmCustVO custVO = dataGrid1.getRows().get(i);
+//					if (custVO.getBirthday() != null && !custVO.getBirthday().isEmpty()) {
+//						SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
+//						Date utilDate = dateFormat.parse(custVO.getBirthday());
+//						LocalDate birthday = LocalDate.ofInstant(utilDate.toInstant(), ZoneId.systemDefault());
+//
+//						long daysDifference = getDaysDifference(LocalDate.now(), birthday);
+//						if (daysDifference >= 14 && daysDifference <= 15) {
+//							PmmRemindDTO4Save dto = new PmmRemindDTO4Save();
+//							dto.setRemindContent("客户" + custVO.getCustId() + "生日还有" + "15" + "天就要到了！");
+//							dto.setValidDay(2);
+//							dto.setCreateDate(now.getTime());
+//							dto.setCustId(custVO.getCustId());
+//							dto.setLawOrgId(custVO.getLawOrgId());
+//							dto.setEventType("11104");
+//							dto.setEventSmallType("1110401");
+//							remindList.add(dto);
+//						}
+//					}
+//				}
+//			}
+//
+//			// 调用PcmWealthService的方法
+//			PcmWealthDTO4List wealthDTO4List = new PcmWealthDTO4List();
+//			wealthDTO4List.setPageNo(1);
+//			wealthDTO4List.setPageSize(9999);
+//			DataGrid<PcmWealthVO> dataGrid2 = pcmWealthService.listWealth(wealthDTO4List);
+//			if (dataGrid2 != null && dataGrid2.getRows() != null) {
+//				for (int i = 0; i < dataGrid2.getRows().size(); i++) {
+//					PcmWealthVO pcmWealthVO = dataGrid2.getRows().get(i);
+//					if (pcmWealthVO.getEndDate() != null) {
+//						long daysDifference = getDaysWealthDifference(now.getTime(), pcmWealthVO.getEndDate());
+//						if (daysDifference >= 9 && daysDifference <= 10) {
+//							PmmRemindDTO4Save dto = new PmmRemindDTO4Save();
+//							dto.setRemindContent("客户" + pcmWealthVO.getCustId() + "理财"+pcmWealthVO.getProdName()+"还有" + "10" + "天到期！");
+//							dto.setValidDay(2);
+//							dto.setCreateDate(now.getTime());
+//							dto.setCustId(pcmWealthVO.getCustId());
+//							dto.setLawOrgId(pcmWealthVO.getLawOrgId());
+//							dto.setEventType("11104");
+//							dto.setEventSmallType("1110401");
+//							remindList.add(dto);
+//						}
+//					}
+//				}
+//				// 批量保存理财到期提醒
+//				for (PmmRemindDTO4Save remind : remindList) {
+//					pmmRemindService.saveRemind(remind);
+//				}
+//				//删除超过有效期的提醒
+//				for(int i=0;i<remindDTO4Deletes.size();i++){
+//					pmmRemindService.deleteRemind(remindDTO4Deletes.get(i).toString());
+//				}
+//			}
+//		}
+//
+//		/**
+//		 * 计算两个日期之间的天数差
+//		 */
+//		private long getDaysDifference(LocalDate now, LocalDate date2) {
+//			LocalDate birthday = date2.withYear(now.getYear()); // 设置生日的年份为当前年份
+//			long difference = ChronoUnit.DAYS.between(now, birthday);
+//			return Math.abs(difference);
+//		}
+//
+//		private long getDaysWealthDifference(Date date1, String date2) {
+//			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+//			Date endDate;
+//			try {
+//				endDate = dateFormat.parse(date2);
+//			} catch (ParseException e) {
+//				e.printStackTrace();
+//				return 0;
+//			}
+//			long difference = Math.abs(date1.getTime() - endDate.getTime());
+//			return difference / (24 * 60 * 60 * 1000);
+//		}
+//		public static int compareDatesAndValidate(String createDateStr, int valIdDay) throws ParseException {
+//			// 定义日期格式
+//			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//
+//			// 将日期字符串解析为Date对象
+//			Date createDate = dateFormat.parse(createDateStr);
+//
+//			// 将Java的Date对象转换为Java 8的LocalDate对象
+//			LocalDate currentDate = LocalDate.now();
+//			LocalDate createLocalDate = createDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+//
+//			// 计算两个日期之间的天数差
+//			long daysDifference = Duration.between(createLocalDate.atStartOfDay(), currentDate.atStartOfDay()).toDays();
+//
+//			// 将天数差与valIdDay进行比较
+//			return Long.compare(daysDifference, valIdDay);
+//		}
+//
+//		@Override
+//		public void run(ApplicationArguments args) throws Exception {
+//			// 无需在此处执行逻辑
+//
 //		}
 //	}
+//
+//	@Component
+//	public static class ScheduledTasks {
+//		private MyApplicationRunner myApplicationRunner;
+//
+//		@Autowired
+//		public ScheduledTasks(MyApplicationRunner myApplicationRunner) {
+//			this.myApplicationRunner = myApplicationRunner;
+//		}
+//
+//		@Scheduled(cron = "0 30 11 * * ?") // 每天午夜12点触发任务 分别是秒 分  时
+//		public void runProcessReminders() throws Exception {
+//			myApplicationRunner.processReminders();
+//		}
+//	}
+
 }

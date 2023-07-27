@@ -1,21 +1,20 @@
 package com.gientech.pcm.depCurr;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
-
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import java.io.Serializable;
 
 @Data
 public class PcmDepCurrVO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "客户ID", position = 1)
-    private String custId;
-
-    @ApiModelProperty(value = "ID", position = 2)
+    @ApiModelProperty(value = "ID", position = 1)
     private String depCurrId;
+
+    @ApiModelProperty(value = "客户ID", position = 2)
+    private String custId;
 
     @ApiModelProperty(value = "ECIF客户ID", position = 3)
     private String ecifCustId;
@@ -39,7 +38,7 @@ public class PcmDepCurrVO implements Serializable {
     private String currNo;
 
     @ApiModelProperty(value = "上日余额", position = 10)
-    private BigDecimal bal;
+    private Double bal;
 
     @ApiModelProperty(value = "账户状态", position = 11)
     private String acctSts;
@@ -57,7 +56,7 @@ public class PcmDepCurrVO implements Serializable {
     private String subAcctNo;
 
     @ApiModelProperty(value = "当前余额", position = 16)
-    private BigDecimal currentBal;
+    private Double currentBal;
 
     // Getters and setters
 }

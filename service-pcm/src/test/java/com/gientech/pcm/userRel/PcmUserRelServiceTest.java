@@ -1,9 +1,15 @@
 package com.gientech.pcm.userRel;
 
+import com.gientech.StartPcm;
 import com.gientech.common.BaseControllerTest;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = StartPcm.class)
 class PcmUserRelServiceTest extends BaseControllerTest {
 
     @Autowired
@@ -32,6 +38,7 @@ class PcmUserRelServiceTest extends BaseControllerTest {
         PcmUserRelDTO4List pcmUserRelDTO4List = new PcmUserRelDTO4List();
         pcmUserRelDTO4List.setPageNo(1);
         pcmUserRelDTO4List.setPageSize(10);
+        pcmUserRelDTO4List.setBelongMgrId("0001");
         System.out.println(pcmUserRelService.listUserRel(pcmUserRelDTO4List));
     }
 }

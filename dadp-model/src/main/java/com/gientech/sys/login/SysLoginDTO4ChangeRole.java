@@ -1,11 +1,10 @@
 package com.gientech.sys.login;
 
-import java.io.Serializable;
-
-import javax.validation.constraints.NotBlank;
-
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
 
 @Data
 public class SysLoginDTO4ChangeRole implements Serializable {

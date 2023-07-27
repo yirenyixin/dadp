@@ -1,16 +1,14 @@
 package com.gientech.pcm.prodOwn;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import java.io.Serializable;
 
 @Data
 @ApiModel(value = "持有产品表--保存DTO")
@@ -57,22 +55,22 @@ public class PcmProdOwnDTO4Save implements Serializable {
     @ApiModelProperty(value = "DEP_BAL", position = 9)
     @DecimalMin(value = "0", inclusive = false, message = "活期余额必须大于0")
     @DecimalMax(value = "9999999999.999999", message = "活期余额的最大值为9999999999.999999")
-    private BigDecimal depBal; // 活期余额
+    private Double depBal; // 活期余额
 
     @ApiModelProperty(value = "FIXED_DEP_BAL", position = 10)
     @DecimalMin(value = "0", inclusive = false, message = "定期余额必须大于0")
     @DecimalMax(value = "9999999999.999999", message = "定期余额的最大值为9999999999.999999")
-    private BigDecimal fixedDepBal; // 定期余额
+    private Double fixedDepBal; // 定期余额
 
     @ApiModelProperty(value = "LOAN_BAL", position = 11)
     @DecimalMin(value = "0", inclusive = false, message = "贷款余额必须大于0")
     @DecimalMax(value = "9999999999.999999", message = "贷款余额的最大值为9999999999.999999")
-    private BigDecimal loanBal; // 贷款余额
+    private Double loanBal; // 贷款余额
 
     @ApiModelProperty(value = "WEALTH_BAL", position = 12)
     @DecimalMin(value = "0", inclusive = false, message = "理财余额必须大于0")
     @DecimalMax(value = "9999999999.999999", message = "理财余额的最大值为9999999999.999999")
-    private BigDecimal wealthBal; // 理财余额
+    private Double wealthBal; // 理财余额
 
     // Getters and setters
 }

@@ -94,4 +94,12 @@ public class PcmWealthDTO4List implements Serializable {
 
     @ApiModelProperty(value = "持有收益率", position = 21)
     private BigDecimal holdProfitRate; // 持有收益率
+
+
+
+    @ApiModelProperty(value = "持有类型", position = 22)
+    private String isHis; // 是否历史持有  0当前  1 历史
+
+    @ApiModelProperty(value = "当前日期", position = 23)
+    private String nowDate;
 }

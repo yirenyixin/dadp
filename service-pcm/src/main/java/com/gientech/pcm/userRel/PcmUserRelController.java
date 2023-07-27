@@ -6,6 +6,7 @@ import com.gientech.common.view.DataGrid;
 import com.gientech.core.base.BaseController;
 import com.gientech.core.log.annotation.OperLog;
 import com.gientech.core.security.annotation.PreAuthorize;
+
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.github.xiaoymin.knife4j.annotations.ApiSort;
 import io.swagger.annotations.Api;
@@ -25,8 +26,8 @@ import javax.validation.Valid;
  *
  * @author 吴俊达
  */
-@Api(tags = "【2-07】客户经理归属关系")
-@ApiSort(value = 207) // 排序号生成后要修改
+@Api(tags = "【2-03】客户经理归属关系")
+@ApiSort(value = 203) // 排序号生成后要修改
 @Validated
 @RestController
 @RequestMapping("/pcm/userRel")
@@ -44,7 +45,7 @@ public class PcmUserRelController extends BaseController {
     @ApiOperation(value = "新增后保存")
     @ApiOperationSupport(order = 1)
     @OperLog(title = "机构归属关系", operType = OperType.INSERT)
-    @PreAuthorize(hasAuth = "pcmUserRel") // 菜单id或功能id
+//    @PreAuthorize(hasAuth = "pcmUserRel") // 菜单id或功能id
     @PostMapping("/save")
     public Result<Object> save(@Valid @RequestBody PcmUserRelDTO4Save pcmUserRelDTO4Save, BindingResult bindingResult) {
         this.pcmUserRelService.saveUserRel(pcmUserRelDTO4Save);
@@ -61,7 +62,7 @@ public class PcmUserRelController extends BaseController {
     @ApiOperation(value = "删除")
     @ApiOperationSupport(order = 2)
     @OperLog(title = "机构归属关系", operType = OperType.DELETE)
-    @PreAuthorize(hasAuth = "pcmUserRel") // 菜单id或功能id
+//    @PreAuthorize(hasAuth = "pcmUserRel") // 菜单id或功能id
     @PostMapping("/delete")
     public Result<Object> delete(@Valid @RequestBody PcmUserRelDTO4Delete pcmUserRelDTO4Delete, BindingResult bindingResult) {
         this.pcmUserRelService.deleteUserRel(pcmUserRelDTO4Delete.getUserRelIds());
@@ -78,7 +79,7 @@ public class PcmUserRelController extends BaseController {
     @ApiOperation(value = "修改")
     @ApiOperationSupport(order = 3)
     @OperLog(title = "机构归属关系", operType = OperType.UPDATE)
-    @PreAuthorize(hasAuth = "pcmUserRel") // 菜单id或功能id
+//    @PreAuthorize(hasAuth = "pcmUserRel") // 菜单id或功能id
     @PostMapping("/update")
     public Result<Object> update(@Valid @RequestBody PcmUserRelDTO4Update pcmUserRelDTO4Update, BindingResult bindingResult) {
         this.pcmUserRelService.updateUserRel(pcmUserRelDTO4Update);
@@ -95,7 +96,7 @@ public class PcmUserRelController extends BaseController {
     @ApiOperation(value = "查询和分页")
     @ApiOperationSupport(order = 4)
     @OperLog(title = "机构归属关系", operType = OperType.SEARCH)
-    @PreAuthorize(hasAuth = "pcmUserRel") // 菜单id或功能id
+//    @PreAuthorize(hasAuth = "pcmUserRel") // 菜单id或功能id
     @PostMapping(value = "/list")
     public Result<DataGrid<PcmUserRelVO>> list(@Valid @RequestBody PcmUserRelDTO4List pcmUserRelDTO4List, BindingResult bindingResult) {
         return Result.success(this.pcmUserRelService.listUserRel(pcmUserRelDTO4List));

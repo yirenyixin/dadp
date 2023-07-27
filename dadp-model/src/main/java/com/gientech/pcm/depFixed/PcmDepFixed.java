@@ -1,14 +1,12 @@
 package com.gientech.pcm.depFixed;//package com.example.model;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
-
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
 import lombok.Data;
+
+import java.io.Serializable;
 
 @Data
 @TableName(value = "T_PCM_DEP_FIXED")
@@ -47,16 +45,16 @@ public class PcmDepFixed implements Serializable {
     private String acctType; // 存款类型
 
     @TableField(value = "FLOAT_RATE")
-    private BigDecimal floatRate; // 浮动比率
+    private Float floatRate; // 浮动比率
 
     @TableField(value = "RATE")
-    private BigDecimal rate; // 协议利率
+    private Float rate; // 协议利率
 
     @TableField(value = "CURR_NO")
     private String currNo; // 币种
 
     @TableField(value = "BAL")
-    private BigDecimal bal; // 上日余额
+    private Float bal; // 上日余额
 
     @TableField(value = "TERM")
     private String term; // 存期

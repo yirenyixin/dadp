@@ -1,13 +1,12 @@
 package com.gientech.sys.roleAuth;
 
-import java.io.Serializable;
-
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * 操作权限实体类，和数据库完全对应【此类不可修改】

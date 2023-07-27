@@ -1,19 +1,13 @@
 package com.gientech.sys.pk;
 
-import java.io.Serializable;
-
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
 import lombok.Data;
+
+import javax.validation.constraints.*;
+import java.io.Serializable;
 
 /**
  * 流水号主键实体类，和数据库完全对应【此类不可修改】

@@ -14,6 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * PCM_DEP_FIXED 服务类
  */
@@ -42,6 +45,13 @@ public class PcmDepFixedService extends BaseService<PcmDepFixedMapper, PcmDepFix
 
         // 构造分页参数
         Page<PcmDepFixedVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
+
+
+
+        SimpleDateFormat formatter= new SimpleDateFormat("yyyyMMdd");
+        Date date = new Date(System.currentTimeMillis());
+        dto.setNowDate(formatter.format(date));
+
 
         return new DataGrid<>(this.getBaseMapper().getPcmDepFixedList(page, dto), page.getTotal());
 

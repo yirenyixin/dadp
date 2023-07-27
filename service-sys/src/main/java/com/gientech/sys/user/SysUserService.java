@@ -1,6 +1,8 @@
 package com.gientech.sys.user;
 
 import cn.hutool.core.util.StrUtil;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.gientech.common.exception.AppException;
@@ -12,6 +14,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Slf4j
 @Service
@@ -41,6 +45,60 @@ public class SysUserService extends BaseService<SysUserMapper, SysUser> {
 
 		return new DataGrid<>(this.getBaseMapper().getSysUserList(page, dto), page.getTotal());
 	}
+
+
+	private static String unescapeJsonString(String jsonString) {
+		jsonString = jsonString.replace("\\\"", "\"");  // 替换转义的双引号
+		jsonString = jsonString.replace("\\\\", "\\");  // 替换转义的反斜杠
+		// 添加其他需要替换的转义字符，如 \n、\r 等等
+
+		return jsonString;
+	}
+	public String listSysUserCodeInfo(SysUserDTO4List dto){
+		// 处理模糊查询条件的like
+		MyStringUtil.addObjectLike(dto, "userName,loginName");
+
+		// 处理排序条件
+		dto.setOrderBy(MyStringUtil.getOrderBy(dto.getSort(), dto.getOrder(), "CREATE_TIME desc"));
+
+		// 构造分页参数
+		Page<SysUserVO> page = new Page<>(dto.getPageNo(), dto.getPageSize());
+		List<SysUserVO> list = this.getBaseMapper().getSysUserList(page, dto);
+
+
+
+		JSONObject jsonObject = new JSONObject();
+		JSONArray jsonArray = new JSONArray();
+
+		JSONObject objectFirst = new JSONObject();
+		objectFirst.put("value",null);
+		objectFirst.put("content","请选择");
+		objectFirst.put("parentValue",null);
+		jsonArray.add(objectFirst);
+
+		for(SysUserVO user : list){
+			if(!user.getRoleId().equals("admin")){
+				JSONObject object = new JSONObject();
+				String value = user.getUserId();
+				String content = user.getUserName();
+				String parentValue = null;
+				object.put("value",value);
+				object.put("content",content);
+				object.put("parentValue",parentValue);
+				jsonArray.add(object);
+			}
+		}
+		jsonObject.put("userCodeInfo",jsonArray);
+		System.out.println(unescapeJsonString(jsonObject.toJSONString()));
+		return unescapeJsonString(jsonObject.toJSONString());
+	}
+
+
+
+
+
+
+
 
 	/**
 	 * 新增 SYS_USER

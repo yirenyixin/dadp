@@ -43,7 +43,7 @@ public class PpmProdController extends BaseController {
     @ApiOperation(value = "查询和分页")
     @ApiOperationSupport(order = 1)
     @OperLog(title = "PPM_PROD", operType = OperType.SEARCH)
-    @PreAuthorize(hasAuth = "ppmProd")
+//    @PreAuthorize(hasAuth = "ppmProd")
     @PostMapping(value = "/list")
     public Result<DataGrid<PpmProdVO>> list(@Valid @RequestBody PpmProdDTO4List ppmProdDTO4List, BindingResult bindingResult) {
         return Result.success(this.ppmProdService.listPpmProd(ppmProdDTO4List));
@@ -59,7 +59,7 @@ public class PpmProdController extends BaseController {
     @ApiOperation(value = "新增 PPM_PROD")
     @ApiOperationSupport(order = 2)
     @OperLog(title = "PPM_PROD", operType = OperType.INSERT)
-    @PreAuthorize(hasAuth = "ppmProd")
+//    @PreAuthorize(hasAuth = "ppmProd")
     @PostMapping("/save")
     public Result<Object> save(@Valid @RequestBody PpmProdDTO4Save ppmProdDTO4Save, BindingResult bindingResult) {
         this.ppmProdService.savePpmProd(ppmProdDTO4Save);
@@ -76,7 +76,7 @@ public class PpmProdController extends BaseController {
     @ApiOperation(value = "修改 PPM_PROD")
     @ApiOperationSupport(order = 3)
     @OperLog(title = "PPM_PROD", operType = OperType.UPDATE)
-    @PreAuthorize(hasAuth = "ppmProd")
+//    @PreAuthorize(hasAuth = "ppmProd")
     @PostMapping("/update")
     public Result<Object> update(@Valid @RequestBody PpmProdDTO4Update ppmProdDTO4Update, BindingResult bindingResult) {
         this.ppmProdService.updatePpmProd(ppmProdDTO4Update);
@@ -93,7 +93,7 @@ public class PpmProdController extends BaseController {
     @ApiOperation(value = "删除 PPM_PROD")
     @ApiOperationSupport(order = 4)
     @OperLog(title = "PPM_PROD", operType = OperType.DELETE)
-    @PreAuthorize(hasAuth = "ppmProd")
+//    @PreAuthorize(hasAuth = "ppmProd")
     @PostMapping("/delete")
     public Result<Object> delete(@Valid @RequestBody PpmProdDTO4Delete ppmProdDTO4Delete, BindingResult bindingResult) {
         this.ppmProdService.deletePpmProd(ppmProdDTO4Delete.getProdIds());

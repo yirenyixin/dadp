@@ -1,15 +1,14 @@
 package com.gientech.sys.log;
 
-import java.io.Serializable;
-import java.util.Date;
-
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
-
 import lombok.Data;
+
+import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 登录日志实体类，和数据库完全对应【此类不可修改】

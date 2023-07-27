@@ -1,9 +1,9 @@
 package com.gientech.pcm.prodOwn;
-import java.io.Serializable;
-import java.math.BigDecimal;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import java.io.Serializable;
 
 @Data
 public class PcmProdOwnVO implements Serializable {
@@ -35,16 +35,16 @@ public class PcmProdOwnVO implements Serializable {
     private String isWealth;
 
     @ApiModelProperty(value = "活期余额", position = 9)
-    private BigDecimal depBal;
+    private Double depBal;
 
     @ApiModelProperty(value = "定期余额", position = 10)
-    private BigDecimal fixedDepBal;
+    private Double fixedDepBal;
 
     @ApiModelProperty(value = "贷款余额", position = 11)
-    private BigDecimal loanBal;
+    private Double loanBal;
 
     @ApiModelProperty(value = "理财余额", position = 12)
-    private BigDecimal wealthBal;
+    private Double wealthBal;
 
     // Getters and setters
 }

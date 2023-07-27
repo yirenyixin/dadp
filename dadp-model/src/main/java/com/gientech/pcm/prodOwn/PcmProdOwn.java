@@ -1,13 +1,11 @@
 package com.gientech.pcm.prodOwn;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
-
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
 import lombok.Data;
+
+import java.io.Serializable;
 
 @Data
 @TableName(value = "T_PCM_PROD_OWN")
@@ -40,16 +38,16 @@ public class PcmProdOwn implements Serializable {
     private String isWealth; // 是否持有理财
 
     @TableField(value = "DEP_BAL")
-    private BigDecimal depBal; // 活期余额
+    private Double depBal; // 活期余额
 
     @TableField(value = "FIXED_DEP_BAL")
-    private BigDecimal fixedDepBal; // 定期余额
+    private Double fixedDepBal; // 定期余额
 
     @TableField(value = "LOAN_BAL")
-    private BigDecimal loanBal; // 贷款余额
+    private Double loanBal; // 贷款余额
 
     @TableField(value = "WEALTH_BAL")
-    private BigDecimal wealthBal; // 理财余额
+    private Double wealthBal; // 理财余额
 
     // 省略Getter和Setter方法
 }

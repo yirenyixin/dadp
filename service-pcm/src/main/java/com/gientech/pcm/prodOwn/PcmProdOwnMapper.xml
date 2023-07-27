@@ -11,7 +11,6 @@
                 <if test="dto.prodOwnId != null and dto.prodOwnId != ''">
                     <![CDATA[ a.PROD_OWN_ID like #{dto.prodOwnId} and ]]>
                 </if>
-
                 <if test="dto.custId != null and dto.custId != ''">
                     <![CDATA[ a.CUST_ID like #{dto.custId} and ]]>
                 </if>
@@ -39,7 +38,7 @@
         ORDER BY a.PROD_OWN_ID
     </select>
 
-    <select id="getPcmProdOwn" resultType="com.gientech.pcm.prodOwn.PcmProdOwnVO" parameterType="String">
+    <select id="getPcmProdOwn" resultType="com.gientech.pcm.prodOwn.PcmProdOwn" parameterType="String">
         SELECT
             a.PROD_OWN_ID as prodOwnId,
             a.CUST_ID as custId,

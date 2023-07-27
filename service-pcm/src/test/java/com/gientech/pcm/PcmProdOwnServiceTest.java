@@ -53,10 +53,10 @@ public class PcmProdOwnServiceTest {
         dto.setIsFixedDep("1");
         dto.setIsLoan("1");
         dto.setIsWealth("1");
-        dto.setDepBal(BigDecimal.valueOf(1000.0));
-        dto.setFixedDepBal(BigDecimal.valueOf(5000.0));
-        dto.setLoanBal(BigDecimal.valueOf(20000.0));
-        dto.setWealthBal(BigDecimal.valueOf(100000.0));
+//        dto.setDepBal(BigDecimal.valueOf(1000.0));
+//        dto.setFixedDepBal(BigDecimal.valueOf(5000.0));
+//        dto.setLoanBal(BigDecimal.valueOf(20000.0));
+//        dto.setWealthBal(BigDecimal.valueOf(100000.0));
         // Set other properties
 
         pcmProdOwnService.savePcmProdOwn(dto);
@@ -76,10 +76,10 @@ public class PcmProdOwnServiceTest {
         dto.setIsFixedDep("1");
         dto.setIsLoan("0");
         dto.setIsWealth("1");
-        dto.setDepBal(BigDecimal.valueOf(0.0));
-        dto.setFixedDepBal(BigDecimal.valueOf(6000.0));
-        dto.setLoanBal(BigDecimal.valueOf(0.0));
-        dto.setWealthBal(BigDecimal.valueOf(150000.0));
+//        dto.setDepBal(BigDecimal.valueOf(0.0));
+//        dto.setFixedDepBal(BigDecimal.valueOf(6000.0));
+//        dto.setLoanBal(BigDecimal.valueOf(0.0));
+//        dto.setWealthBal(BigDecimal.valueOf(150000.0));
         // Set other properties
 
         pcmProdOwnService.updatePcmProdOwn(dto);

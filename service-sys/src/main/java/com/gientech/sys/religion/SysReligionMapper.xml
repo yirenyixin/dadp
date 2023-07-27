@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 【特别注意：sql的关键字一律小写！！尽量不使用某数据库专有的方法(项目制可按需使用)】 -->
+<mapper namespace="com.gientech.sys.religion.SysReligionMapper">
+
+	<!-- 查询条件置顶 -->
+	<sql id="sysReligionList_filter">
+		<where>
+			<trim suffixOverrides="and">
+				<if test="dto.religionId != null and dto.religionId !=''">
+					<![CDATA[RELIGION_ID like #{dto.religionId} and	]]>
+				</if>
+				<if test="dto.religionName != null and dto.religionName !=''">
+					<![CDATA[RELIGION_NAME like #{dto.religionName} and	]]>
+				</if>
+				<if test="dto.remark != null and dto.remark !=''">
+					<![CDATA[REMARK like #{dto.remark} and	]]>
+				</if>
+			</trim>
+		</where>
+	</sql>
+
+	<select id="getSysReligionList" resultType="com.gientech.sys.religion.SysReligionVO" parameterType="com.gientech.sys.religion.SysReligionDTO4List">
+		select *
+		from T_SYS_RELIGION
+		<include refid="sysReligionList_filter" />
+		order by <![CDATA[	${dto.orderBy}	]]>
+	</select>
+
+</mapper>

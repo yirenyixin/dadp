@@ -16,6 +16,4 @@ import java.util.List;
 public interface PcmCustMapper  extends BaseMapper<PcmCust> {
 
     public List<PcmCustVO> getPcmCustList(Page<PcmCustVO> page, @Param("dto") PcmCustDTO4List dto);
-
-    public List<PcmCustVO> getPcmAssCustList(Page<PcmCustVO> page, @Param("dto") PcmCustDTO4List dto);
 }
